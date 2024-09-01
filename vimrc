@@ -317,7 +317,7 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 var lspOpts = {
   aleSupport: false,
   autoComplete: true,
-  autoHighlight: false,
+  autoHighlight: true,
   autoHighlightDiags: true,
   autoPopulateDiags: false,
   completionMatcher: 'case',
@@ -335,7 +335,7 @@ var lspOpts = {
   keepFocusInReferences: true,
   completionTextEdit: false,
   diagVirtualTextAlign: 'above',
-  diagVirtualTextWrap: 'default',
+  diagVirtualTextWrap: 'wrap',
   noNewlineInCompletion: false,
   omniComplete: null,
   outlineOnRight: false,
@@ -350,7 +350,7 @@ var lspOpts = {
   showSignature: true,
   snippetSupport: false,
   ultisnipsSupport: false,
-  useBufferCompletion: false,
+  useBufferCompletion: true,
   usePopupInCodeAction: true,
   useQuickfixForLocations: false,
   vsnipSupport: false,
@@ -420,45 +420,45 @@ var lspServers = [
     args: ['--stdio'],
   },
 
- # vscode-html-language-server
-  {
-    name: 'vscode-html-language-server',
-    filetype: ['html'],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-html-language-server',
-    args: ['--stdio'],
-  },
+ # # vscode-html-language-server
+ #  {
+ #    name: 'vscode-html-language-server',
+ #    filetype: ['html'],
+ #    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-html-language-server',
+ #    args: ['--stdio'],
+ #  },
 
- # vscode-css-language-server
-  {
-    name: 'vscode-css-language-servers',
-    filetype: ['css'],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-css-language-server',
-    args: ['--stdio'],
-  },
+ # # vscode-css-language-server
+ #  {
+ #    name: 'vscode-css-language-servers',
+ #    filetype: ['css'],
+ #    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-css-language-server',
+ #    args: ['--stdio'],
+ #  },
 
- # vscode-json-language-server
-  {
-    name: 'vscode-json-language-servers',
-    filetype: ['json'],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-json-language-server',
-    args: ['--stdio'],
-  },
+ # # vscode-json-language-server
+ #  {
+ #    name: 'vscode-json-language-servers',
+ #    filetype: ['json'],
+ #    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-json-language-server',
+ #    args: ['--stdio'],
+ #  },
 
- # vscode-eslint-language-server
-  {
-    name: 'vscode-eslint-language-servers',
-    filetype: ['eslint'],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-eslint-language-server',
-    args: ['--stdio'],
-  },
+ # # vscode-eslint-language-server
+ #  {
+ #    name: 'vscode-eslint-language-servers',
+ #    filetype: ['eslint'],
+ #    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-eslint-language-server',
+ #    args: ['--stdio'],
+ #  },
 
- # vscode-markdown-language-server
-  {
-    name: 'vscode-markdown-language-servers',
-    filetype: ['markdown'],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-markdown-language-server',
-    args: ['--stdio'],
-  },
+ # # vscode-markdown-language-server
+ #  {
+ #    name: 'vscode-markdown-language-servers',
+ #    filetype: ['markdown'],
+ #    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-markdown-language-server',
+ #    args: ['--stdio'],
+ #  },
 
  # Glint language server
   {
@@ -514,7 +514,10 @@ augroup Lsp
     nnoremap <buffer> <LocalLeader>f <Cmd>LspFormat<CR>
     nnoremap <buffer> <LocalLeader>a <Cmd>LspCodeAction<CR>
     nnoremap <buffer> <LocalLeader>r <Cmd>LspRename<CR>
-    nnoremap <buffer> <LocalLeader>d <Cmd>LspDiag first<CR>
+    nnoremap <buffer> <LocalLeader>ds <Cmd>LspDiag show<CR>
+    nnoremap <buffer> <LocalLeader>dc <Cmd>LspDiag current<CR>
+    nnoremap <buffer> <LocalLeader>df <Cmd>LspDiag first<CR>
+    nnoremap <buffer> <LocalLeader>h <Cmd>LspHover<CR>
     nnoremap <buffer> [d <Cmd>LspDiag next<CR>
     nnoremap <buffer> ]d <Cmd>LspDiag prev<CR>
   }

@@ -1,0 +1,36 @@
+ vsnipSupport	  Need snippet completion plugins hrsh7th/vim-vsnip and hrsh7th/vim-vsnip-integ.
+ 
+ 
+ 
+ ultisnipsSupport	 
+ 
+ 
+ 
+snippetSupport		|Boolean| option.  Enable snippet completion support.
+			Need a snippet completion plugin like vim-vsnip.
+			By default this is set to false.
+
+						*lsp-opt-ultisnipsSupport*
+ultisnipsSupport	|Boolean| option.  Enable SirVer/ultisnips support.
+			Need a snippet completion plugin SirVer/ultisnips.
+			By default this is set to false.
+
+						*lsp-opt-vssnipSupport*
+vsnipSupport		|Boolean| option.  Enable hrsh7th/vim-vsnip support.
+			Need snippet completion plugins hrsh7th/vim-vsnip
+			and hrsh7th/vim-vsnip-integ.  Make sure
+			ultisnipsSupport is set to false before enabling this.
+			By default this option is set to false.
+
+
+
+
+showDiagInBalloon	|Boolean| option.  When the mouse is over a range of
+			text referenced by a diagnostic, display the
+			diagnostic text in a balloon.  By default this is set
+			to true.  In a GUI Vim, this needs the |+balloon_eval|
+			feature.  In a terminal Vim, this needs the
+			|+balloon_eval_term| feature.  In a terminal Vim,
+			'mouse' option should be set to enable mouse.
+			If this option is set to true, then the 'ballooneval'
+			and 'balloonevalterm' options are set.

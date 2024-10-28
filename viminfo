@@ -11,948 +11,1382 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/bak
+~MSle0~/airline
+
+# Last Substitute Search Pattern:
+~MSle0&dutycalculator
 
 # Last Substitute String:
 $false
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1725210562,,"q"
-:clo
-|2,0,1725210556,,"clo"
-:cola
-|2,0,1725210548,,"cola"
-:w
-|2,0,1725190656,,"w"
-:llast
-|2,0,1725188235,,"llast"
-:lfirst
-|2,0,1725188221,,"lfirst"
-:lnext
-|2,0,1725188212,,"lnext"
-:lopen
-|2,0,1725188199,,"lopen"
-:q!
-|2,0,1725188161,,"q!"
-:LspCodeAction
-|2,0,1725187993,,"LspCodeAction"
-:Lsp
-|2,0,1725183894,,"Lsp"
-:LspInlayHints disable
-|2,0,1725183378,,"LspInlayHints disable"
-:LspInlayHints
-|2,0,1725183271,,"LspInlayHints"
-:LspShowReferences
-|2,0,1725181249,,"LspShowReferences"
-:LspDiag show
-|2,0,1725179952,,"LspDiag show"
-:LspShow
-|2,0,1725179775,,"LspShow"
-:LspHover
-|2,0,1725179680,,"LspHover"
-:LspDiag
-|2,0,1725176243,,"LspDiag"
+|2,0,1730097209,,"q"
+:hi
+|2,0,1730097008,,"hi"
 :wq
-|2,0,1725174411,,"wq"
-:LspServer show status
-|2,0,1725172790,,"LspServer show status"
-:qa
-|2,0,1725085399,,"qa"
-:wqq
-|2,0,1725048312,,"wqq"
+|2,0,1730097002,,"wq"
+:nohls
+|2,0,1730096919,,"nohls"
+:w
+|2,0,1730095691,,"w"
+::nohls
+|2,0,1730095646,,":nohls"
+:q!
+|2,0,1730059923,,"q!"
+:AirlineToggle
+|2,0,1730057475,,"AirlineToggle"
+:AirlineTheme
+|2,0,1730057431,,"AirlineTheme"
+:AirlineRefresh!
+|2,0,1730057403,,"AirlineRefresh!"
+:redo
+|2,0,1730054417,,"redo"
+:hi airline_error
+|2,0,1730050897,,"hi airline_error"
+:h airline_hilight
+|2,0,1730050762,,"h airline_hilight"
+:h airline_error
+|2,0,1730050740,,"h airline_error"
+:h airline
+|2,0,1730050560,,"h airline"
+:h
+|2,0,1730050545,,"h"
+:ls
+|2,0,1730042211,,"ls"
+:u
+|2,0,1730039445,,"u"
+:airline
+|2,0,1730035909,,"airline"
+:wlllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+|2,0,1730034551,,"wlllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll"
+:/airline
+|2,0,1730033339,,"/airline"
+:h termwinsize
+|2,0,1730026602,,"h termwinsize"
+:help highlight-groups
+|2,0,1730024900,,"help highlight-groups"
+:colorscheme 
+|2,0,1730024711,,"colorscheme "
+:colorscheme
+|2,0,1730024548,,"colorscheme"
 :set paste
-|2,0,1725046829,,"set paste"
-:qa!
-|2,0,1725045068,,"qa!"
-:wqj
-|2,0,1725035036,,"wqj"
-:help paste
-|2,0,1725033797,,"help paste"
-:paste
-|2,0,1725033761,,"paste"
-::
-|2,0,1725033169,,":"
-:Paste
-|2,0,1725033095,,"Paste"
+|2,0,1730023462,,"set paste"
+:e!
+|2,0,1730023878,,"e!"
 :LspServer debug messages
-|2,0,1725022809,,"LspServer debug messages"
-:LspServer debug on
-|2,0,1725022779,,"LspServer debug on"
-:LspServer show 
-|2,0,1725022583,,"LspServer show "
-:CocDiagnostics
-|2,0,1725014710,,"CocDiagnostics"
+|2,0,1730022172,,"LspServer debug messages"
 :LspServer debug message
-|2,0,1725011176,,"LspServer debug message"
+|2,0,1730022144,,"LspServer debug message"
+:LspServer show status
+|2,0,1730022119,,"LspServer show status"
 :bd
-|2,0,1724950382,,"bd"
-:db
-|2,0,1724950376,,"db"
+|2,0,1730021535,,"bd"
 :PluginInstall
-|2,0,1724950366,,"PluginInstall"
-:coc
-|2,0,1724947559,,"coc"
-:LspDiag current
-|2,0,1724773730,,"LspDiag current"
-:LspCodeLens
-|2,0,1724773691,,"LspCodeLens"
-:LspDiag how
-|2,0,1724773449,,"LspDiag how"
-:kk
-|2,0,1724773396,,"kk"
-:LspShowSignature
-|2,0,1724767700,,"LspShowSignature"
-:LspOutline
-|2,0,1724767111,,"LspOutline"
-:LspServer show
-|2,0,1724735418,,"LspServer show"
+|2,0,1730021525,,"PluginInstall"
+:LspServer show initializeRequest
+|2,0,1729967346,,"LspServer show initializeRequest"
+:LspServer show initiallizeRequest
+|2,0,1729967320,,"LspServer show initiallizeRequest"
+:LspServer show messages
+|2,0,1729967287,,"LspServer show messages"
+:LspServer show capabilities
+|2,0,1729967204,,"LspServer show capabilities"
+:LspServer show capabilites
+|2,0,1729967160,,"LspServer show capabilites"
+:LspServer debug on
+|2,0,1729965103,,"LspServer debug on"
 :LspServer
-|2,0,1724734433,,"LspServer"
+|2,0,1729965065,,"LspServer"
 :LspShowAllServers
-|2,0,1724734134,,"LspShowAllServers"
-:q:
-|2,0,1724731661,,"q:"
-:ww
-|2,0,1724699452,,"ww"
-:w !sudo tee %
-|2,0,1724670502,,"w !sudo tee %"
+|2,0,1729964922,,"LspShowAllServers"
+:LspServer status
+|2,0,1729926173,,"LspServer status"
+:LspServer 
+|2,0,1729926152,,"LspServer "
+:LspServer show
+|2,0,1729926094,,"LspServer show"
+:qjjjjjjjjjjjjjjjjjjjj
+|2,0,1728799195,,"qjjjjjjjjjjjjjjjjjjjj"
+:qa
+|2,0,1728763641,,"qa"
+:;w
+|2,0,1728137418,,";w"
+:%s/dutycalculator/olutayo
+|2,0,1728144590,,"%s/dutycalculator/olutayo"
+:%s/dutycalculator.ng/olutayo.dev/g
+|2,0,1728144540,,"%s/dutycalculator.ng/olutayo.dev/g"
+:w ../../PortfolioApp/config/content-security-policy.js
+|2,0,1728127508,,"w ../../PortfolioApp/config/content-security-policy.js"
+:w ../../PortfolioApp/config/
+|2,0,1728127432,,"w ../../PortfolioApp/config/"
 
 # Search String History (newest to oldest):
-??q!
-|2,1,1725048527,63,"q!"
-?/bak
-|2,1,1724663374,47,"bak"
-?/:let
-|2,1,1724660967,47,":let"
-?/let
-|2,1,1724660715,47,"let"
-?/nohls
-|2,1,1724660377,47,"nohls"
-?/view
-|2,1,1673783208,47,"view"
-?/wild
-|2,1,1673780532,47,"wild"
-?/pun
-|2,1,1673779067,47,"pun"
-?/spell
-|2,1,1673617903,47,"spell"
-?/spel
-|2,1,1673613963,47,"spel"
-? Insert
-|2,1,1673175251,,"Insert"
-? \<Insert\>
-|2,1,1673174004,,"\\<Insert\\>"
-? \<call\>
-|2,1,1673106404,,"\\<call\\>"
-?/wildoptions
-|2,1,1672578260,47,"wildoptions"
-??yellow
-|2,1,1665949386,63,"yellow"
-?/yellow
-|2,1,1665948662,47,"yellow"
-?/postgre*
-|2,1,1661259545,47,"postgre*"
-?/descriptionjj
-|2,1,1659290680,47,"descriptionjj"
-?/description
-|2,1,1659290264,47,"description"
-??\<When\>
-|2,1,1659290115,63,"\\<When\\>"
-? looking
-|2,1,1659290082,,"looking"
-? When
-|2,1,1659290048,,"When"
-? \<When\>
-|2,1,1659289985,,"\\<When\\>"
-? export
-|2,1,1658862480,,"export"
-? mlet
-|2,1,1658862450,,"mlet"
-? {mlet}
-|2,1,1658862418,,"{mlet}"
-?/unique
-|2,1,1658240012,47,"unique"
-?/ontop
-|2,1,1658166112,47,"ontop"
-?/serene
-|2,1,1658165678,47,"serene"
-?/raven
-|2,1,1658165619,47,"raven"
-? unque
-|2,1,1658162621,,"unque"
+? airline
+|2,1,1730097005,,"airline"
+?/25
+|2,1,1730096759,47,"25"
 ?/airline
-|2,1,1658156150,47,"airline"
+|2,1,1730090726,47,"airline"
+?/set t_
+|2,1,1730058366,47,"set t_"
+?/termg
+|2,1,1730057977,47,"termg"
+?/termgu
+|2,1,1730057867,47,"termgu"
+?/air
+|2,1,1730036284,47,"air"
+?/airlin
+|2,1,1730036149,47,"airlin"
+?/airl
+|2,1,1730035683,47,"airl"
+?/cmdh
+|2,1,1730034972,47,"cmdh"
+?/cmd
+|2,1,1730034901,47,"cmd"
+?/status
+|2,1,1730034807,47,"status"
+?/stat
+|2,1,1730034594,47,"stat"
+?/statu
+|2,1,1730034589,47,"statu"
+?/statusline
+|2,1,1730034519,47,"statusline"
+?/airli
+|2,1,1730034501,47,"airli"
+?/nosho
+|2,1,1730034179,47,"nosho"
+?/nosh
+|2,1,1730034171,47,"nosh"
+?/now
+|2,1,1730032492,47,"now"
+?/termw
+|2,1,1730030095,47,"termw"
+?/const
+|2,1,1730029881,47,"const"
+?/let
+|2,1,1730029792,47,"let"
+?/win
+|2,1,1730027055,47,"win"
+?/term
+|2,1,1730026956,47,"term"
+?/line
+|2,1,1730026354,47,"line"
+?/colors
+|2,1,1730025731,47,"colors"
+?/background
+|2,1,1730025650,47,"background"
+?/colo
+|2,1,1730025405,47,"colo"
+? }
+|2,1,1730025355,,"}"
+?/color
+|2,1,1730024463,47,"color"
+?/fileM
+|2,1,1728572787,47,"fileM"
+?/soc
+|2,1,1728449728,47,"soc"
+?/eslin
+|2,1,1728459275,47,"eslin"
+?/gree
+|2,1,1728200741,47,"gree"
+?/ember-cli-deploy
+|2,1,1728219999,47,"ember-cli-deploy"
+?/ember-d
+|2,1,1728219967,47,"ember-d"
+?/ember-dep
+|2,1,1728149723,47,"ember-dep"
+?/ember-de
+|2,1,1728149543,47,"ember-de"
+?/q	
+|2,1,1728148116,47,"q	"
+? dutycalculator
+|2,1,1728144590,,"dutycalculator"
+? dutycalculator.ng
+|2,1,1728144540,,"dutycalculator.ng"
+?/project
+|2,1,1728058622,47,"project"
+?/project-h
+|2,1,1728058612,47,"project-h"
+?/menu
+|2,1,1728049594,47,"menu"
+?/social li ajjjjjjjjjjjjjjjjjjjjjj
+|2,1,1727976701,47,"social li ajjjjjjjjjjjjjjjjjjjjjj"
+?/.social li a
+|2,1,1727976684,47,".social li a"
+?/soci
+|2,1,1727976640,47,"soci"
+?/.projec
+|2,1,1727880682,47,".projec"
+?/project-
+|2,1,1727880664,47,"project-"
+?/projects
+|2,1,1727772239,47,"projects"
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@div>
+|2,3,1727370619,,"div>"
+@li>
+|2,3,1727262898,,"li>"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
 "0	LINE	0
-	    nnoremap <buffer> <LocalLeader>ds <Cmd>LspDiag show<CR>
-|3,0,0,1,1,0,1725190631,"    nnoremap <buffer> <LocalLeader>ds <Cmd>LspDiag show<CR>"
+	  hi airline_error term=reverse cterm=standout ctermfg=15 ctermbg=9 gui=bold guifg=white guibg=red
+|3,0,0,1,1,0,1730096507,"  hi airline_error term=reverse cterm=standout ctermfg=15 ctermbg=9 gui=bold guifg=white guibg=red"
 "1	LINE	0
-	    nnoremap <buffer> <LocalLeader>ds <Cmd>LspDiag show<CR>
-|3,0,1,1,1,0,1725188130,"    nnoremap <buffer> <LocalLeader>ds <Cmd>LspDiag show<CR>"
+	  hi airline_error term=reverse cterm=standout ctermfg=255 ctermbg=160 gui=bold guifg=white guibg=red
+|3,0,1,1,1,0,1730096976,"  hi airline_error term=reverse cterm=standout ctermfg=255 ctermbg=160 gui=bold guifg=white guibg=red"
 "2	LINE	0
-	    nnoremap <buffer> <LocalLeader>s <Cmd>LspDiag show<CR>
-|3,0,2,1,1,0,1725181931,"    nnoremap <buffer> <LocalLeader>s <Cmd>LspDiag show<CR>"
-"3	LINE	0
-	  diagVirtualTextAlign: 'above',
-|3,0,3,1,1,0,1725178326,"  diagVirtualTextAlign: 'above',"
-"4	LINE	0
-	    //   urls: [
-|3,0,4,1,1,0,1725174396,"    //   urls: ["
-"5	LINE	0
-	    // prember: {
-|3,0,5,1,1,0,1725174395,"    // prember: {"
-"6	LINE	0
-	    # path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-css-language-server',
-|3,0,6,1,1,0,1725100570,"    # path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-css-language-server',"
-"7	LINE	0
 	
-|3,0,7,1,1,0,1725048441,""
+|3,0,2,1,1,0,1730093683,""
+"3	LINE	0
+	# Set to 1 to enable cache for highlight
+	g:airline_highlighting_cache = 0
+|3,0,3,1,2,0,1730093672,"# Set to 1 to enable cache for highlight","g:airline_highlighting_cache = 0"
+"4	LINE	0
+	  # hi airline_error_inactive ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+	  # hi airline_error_inactive_bold ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+	  # hi airline_error_inactive_red ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+|3,0,4,1,3,0,1730093575,"  # hi airline_error_inactive ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red","  # hi airline_error_inactive_bold ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red","  # hi airline_error_inactive_red ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red"
+"5	LINE	0
+	  hi airline_error_red ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+|3,0,5,1,1,0,1730092331,"  hi airline_error_red ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red"
+"6	LINE	0
+	  hi airline_error_bold ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+|3,0,6,1,1,0,1730092328,"  hi airline_error_bold ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red"
+"7	LINE	0
+	#Check up other theme at https:/github.com/vim-airline/vim-airlin/wiki/Screenshots
+	g:airline_theme =  'dark' #'serene'
+	#
+|3,0,7,1,3,0,1730057601,"#Check up other theme at https:/github.com/vim-airline/vim-airlin/wiki/Screenshots","g:airline_theme =  'dark' #'serene'","#"
 "8	LINE	0
-	import http from '..'
-|3,0,8,1,1,0,1725048440,"import http from '..'"
+	autocmd User AirlineAfterInit call UpdateHighlights()
+|3,0,8,1,1,0,1730057364,"autocmd User AirlineAfterInit call UpdateHighlights()"
 "9	LINE	0
-		filterCompletionDuplicates: v:false,
-|3,0,9,1,1,0,1725048261,"	filterCompletionDuplicates: v:false,"
-"a	CHAR	0
-	d0j^w
-|3,0,10,0,1,0,1725047231,"d0j^w"
+	  hi airline_error ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+	  hi airline_error_bold ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+	  hi airline_error_red ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+|3,0,9,1,3,0,1730056536,"  hi airline_error ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red","  hi airline_error_bold ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red","  hi airline_error_red ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red"
+"a@	CHAR	0
+	biv:€ý5$j
+|3,2,10,0,1,0,1729959773,"biv:€ý5$j"
+"h	CHAR	0
+	€ý5
+|3,0,17,0,1,0,1730024718,"€ý5"
 "q	CHAR	0
-	€ýa
-|3,0,26,0,1,0,1657991174,"€ýa"
+	€ý5N
+|3,0,26,0,1,0,1730092661,"€ý5N"
 ""-	CHAR	0
-	show
-|3,1,36,0,1,0,1725190645,"show"
+	reverse
+|3,1,36,0,1,0,1730096997,"reverse"
 
 # File marks:
-'0  349  18  ~/.vim/vimrc
-|4,48,349,18,1725210562,"~/.vim/vimrc"
-'1  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,49,1,0,1725210537,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
-'2  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,50,1,0,1725190674,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
-'3  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,51,1,0,1725188161,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
-'4  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,52,1,0,1725188161,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
-'5  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,53,1,0,1725184137,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
-'6  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,54,1,0,1725184137,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
-'7  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,55,1,0,1725184137,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
-'8  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,56,1,0,1725184137,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
-'9  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,57,1,0,1725183847,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
+'0  51  0  ~/.vim/vimrc
+|4,48,51,0,1730097209,"~/.vim/vimrc"
+'1  243  31  ~/.vim/vimrc
+|4,49,243,31,1730097002,"~/.vim/vimrc"
+'2  243  31  ~/.vim/vimrc
+|4,50,243,31,1730097002,"~/.vim/vimrc"
+'3  181  0  ~/.vim/vimrc
+|4,51,181,0,1730096765,"~/.vim/vimrc"
+'4  181  0  ~/.vim/vimrc
+|4,52,181,0,1730096765,"~/.vim/vimrc"
+'5  181  0  ~/.vim/vimrc
+|4,53,181,0,1730096765,"~/.vim/vimrc"
+'6  181  0  ~/.vim/vimrc
+|4,54,181,0,1730096765,"~/.vim/vimrc"
+'7  242  69  ~/.vim/vimrc
+|4,55,242,69,1730096553,"~/.vim/vimrc"
+'8  242  69  ~/.vim/vimrc
+|4,56,242,69,1730096553,"~/.vim/vimrc"
+'9  242  69  ~/.vim/vimrc
+|4,57,242,69,1730096553,"~/.vim/vimrc"
 
 # Jumplist (newest first):
--'  349  18  ~/.vim/vimrc
-|4,39,349,18,1725210562,"~/.vim/vimrc"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725210537,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725190674,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  351  18  ~/.vim/vimrc
-|4,39,351,18,1725188937,"~/.vim/vimrc"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725188235,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725188235,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725188161,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  12  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,12,1725187999,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  2  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,2,0,1725187982,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  2  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,2,0,1725187982,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  2  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,2,0,1725187982,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  353  23  ~/.vim/vimrc
-|4,39,353,23,1725184775,"~/.vim/vimrc"
--'  322  21  ~/.vim/vimrc
-|4,39,322,21,1725184196,"~/.vim/vimrc"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725184137,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725183847,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  348  27  ~/.vim/vimrc
-|4,39,348,27,1725183832,"~/.vim/vimrc"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725183749,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  320  17  ~/.vim/vimrc
-|4,39,320,17,1725183713,"~/.vim/vimrc"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725183644,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725183386,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725183348,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725181800,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725181754,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  334  20  ~/.vim/vimrc
-|4,39,334,20,1725179936,"~/.vim/vimrc"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725179862,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725179805,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725179701,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  332  18  ~/.vim/vimrc
-|4,39,332,18,1725179658,"~/.vim/vimrc"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725179644,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725179421,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  331  23  ~/.vim/vimrc
-|4,39,331,23,1725179408,"~/.vim/vimrc"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725179384,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725178448,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725178417,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725178370,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  337  0  ~/.vim/vimrc
-|4,39,337,0,1725178327,"~/.vim/vimrc"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725178304,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725178195,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725178002,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725177962,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725177551,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725177498,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725177481,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  344  21  ~/.vim/vimrc
-|4,39,344,21,1725177201,"~/.vim/vimrc"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  3  17  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,3,17,1725177151,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725176970,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725176061,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  345  19  ~/.vim/vimrc
-|4,39,345,19,1725175313,"~/.vim/vimrc"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725175282,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725175194,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725175150,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725174411,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/ember-cli-build.js
-|4,39,1,0,1725174279,"~/lab/emberlab/dutycalculator/ember-cli-build.js"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
--'  1  0  ~/lab/emberlab/dutycalculator/dist/index.html
-|4,39,1,0,1725174245,"~/lab/emberlab/dutycalculator/dist/index.html"
+-'  51  0  ~/.vim/vimrc
+|4,39,51,0,1730097209,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1730097005,"~/.vim/vimrc"
+-'  243  31  ~/.vim/vimrc
+|4,39,243,31,1730097002,"~/.vim/vimrc"
+-'  243  31  ~/.vim/vimrc
+|4,39,243,31,1730097002,"~/.vim/vimrc"
+-'  251  22  ~/.vim/vimrc
+|4,39,251,22,1730096911,"~/.vim/vimrc"
+-'  248  8  ~/.vim/vimrc
+|4,39,248,8,1730096911,"~/.vim/vimrc"
+-'  242  5  ~/.vim/vimrc
+|4,39,242,5,1730096911,"~/.vim/vimrc"
+-'  241  7  ~/.vim/vimrc
+|4,39,241,7,1730096911,"~/.vim/vimrc"
+-'  240  5  ~/.vim/vimrc
+|4,39,240,5,1730096911,"~/.vim/vimrc"
+-'  239  5  ~/.vim/vimrc
+|4,39,239,5,1730096911,"~/.vim/vimrc"
+-'  238  5  ~/.vim/vimrc
+|4,39,238,5,1730096911,"~/.vim/vimrc"
+-'  235  2  ~/.vim/vimrc
+|4,39,235,2,1730096911,"~/.vim/vimrc"
+-'  232  2  ~/.vim/vimrc
+|4,39,232,2,1730096911,"~/.vim/vimrc"
+-'  231  47  ~/.vim/vimrc
+|4,39,231,47,1730096911,"~/.vim/vimrc"
+-'  226  4  ~/.vim/vimrc
+|4,39,226,4,1730096911,"~/.vim/vimrc"
+-'  223  2  ~/.vim/vimrc
+|4,39,223,2,1730096911,"~/.vim/vimrc"
+-'  222  2  ~/.vim/vimrc
+|4,39,222,2,1730096911,"~/.vim/vimrc"
+-'  220  2  ~/.vim/vimrc
+|4,39,220,2,1730096911,"~/.vim/vimrc"
+-'  219  2  ~/.vim/vimrc
+|4,39,219,2,1730096911,"~/.vim/vimrc"
+-'  251  22  ~/.vim/vimrc
+|4,39,251,22,1730096911,"~/.vim/vimrc"
+-'  248  8  ~/.vim/vimrc
+|4,39,248,8,1730096911,"~/.vim/vimrc"
+-'  242  5  ~/.vim/vimrc
+|4,39,242,5,1730096911,"~/.vim/vimrc"
+-'  241  7  ~/.vim/vimrc
+|4,39,241,7,1730096911,"~/.vim/vimrc"
+-'  240  5  ~/.vim/vimrc
+|4,39,240,5,1730096911,"~/.vim/vimrc"
+-'  239  5  ~/.vim/vimrc
+|4,39,239,5,1730096911,"~/.vim/vimrc"
+-'  238  5  ~/.vim/vimrc
+|4,39,238,5,1730096911,"~/.vim/vimrc"
+-'  235  2  ~/.vim/vimrc
+|4,39,235,2,1730096911,"~/.vim/vimrc"
+-'  232  2  ~/.vim/vimrc
+|4,39,232,2,1730096911,"~/.vim/vimrc"
+-'  231  47  ~/.vim/vimrc
+|4,39,231,47,1730096911,"~/.vim/vimrc"
+-'  226  4  ~/.vim/vimrc
+|4,39,226,4,1730096911,"~/.vim/vimrc"
+-'  223  2  ~/.vim/vimrc
+|4,39,223,2,1730096911,"~/.vim/vimrc"
+-'  222  2  ~/.vim/vimrc
+|4,39,222,2,1730096911,"~/.vim/vimrc"
+-'  220  2  ~/.vim/vimrc
+|4,39,220,2,1730096911,"~/.vim/vimrc"
+-'  219  2  ~/.vim/vimrc
+|4,39,219,2,1730096911,"~/.vim/vimrc"
+-'  218  2  ~/.vim/vimrc
+|4,39,218,2,1730096910,"~/.vim/vimrc"
+-'  217  50  ~/.vim/vimrc
+|4,39,217,50,1730096910,"~/.vim/vimrc"
+-'  216  2  ~/.vim/vimrc
+|4,39,216,2,1730096910,"~/.vim/vimrc"
+-'  215  62  ~/.vim/vimrc
+|4,39,215,62,1730096910,"~/.vim/vimrc"
+-'  218  2  ~/.vim/vimrc
+|4,39,218,2,1730096910,"~/.vim/vimrc"
+-'  217  50  ~/.vim/vimrc
+|4,39,217,50,1730096910,"~/.vim/vimrc"
+-'  216  2  ~/.vim/vimrc
+|4,39,216,2,1730096910,"~/.vim/vimrc"
+-'  215  62  ~/.vim/vimrc
+|4,39,215,62,1730096910,"~/.vim/vimrc"
+-'  35  24  ~/.vim/vimrc
+|4,39,35,24,1730096909,"~/.vim/vimrc"
+-'  34  24  ~/.vim/vimrc
+|4,39,34,24,1730096909,"~/.vim/vimrc"
+-'  35  24  ~/.vim/vimrc
+|4,39,35,24,1730096909,"~/.vim/vimrc"
+-'  34  24  ~/.vim/vimrc
+|4,39,34,24,1730096909,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1730096767,"~/.vim/vimrc"
+-'  181  0  ~/.vim/vimrc
+|4,39,181,0,1730096765,"~/.vim/vimrc"
+-'  181  0  ~/.vim/vimrc
+|4,39,181,0,1730096765,"~/.vim/vimrc"
+-'  181  0  ~/.vim/vimrc
+|4,39,181,0,1730096765,"~/.vim/vimrc"
+-'  34  0  ~/.vim/vimrc
+|4,39,34,0,1730096759,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1730096555,"~/.vim/vimrc"
+-'  242  69  ~/.vim/vimrc
+|4,39,242,69,1730096553,"~/.vim/vimrc"
+-'  242  69  ~/.vim/vimrc
+|4,39,242,69,1730096553,"~/.vim/vimrc"
+-'  239  2  ~/.vim/vimrc
+|4,39,239,2,1730096501,"~/.vim/vimrc"
+-'  239  2  ~/.vim/vimrc
+|4,39,239,2,1730096501,"~/.vim/vimrc"
+-'  238  14  ~/.vim/vimrc
+|4,39,238,14,1730096500,"~/.vim/vimrc"
+-'  238  14  ~/.vim/vimrc
+|4,39,238,14,1730096500,"~/.vim/vimrc"
+-'  252  22  ~/.vim/vimrc
+|4,39,252,22,1730096475,"~/.vim/vimrc"
+-'  249  8  ~/.vim/vimrc
+|4,39,249,8,1730096475,"~/.vim/vimrc"
+-'  244  5  ~/.vim/vimrc
+|4,39,244,5,1730096475,"~/.vim/vimrc"
+-'  252  22  ~/.vim/vimrc
+|4,39,252,22,1730096475,"~/.vim/vimrc"
+-'  249  8  ~/.vim/vimrc
+|4,39,249,8,1730096475,"~/.vim/vimrc"
+-'  244  5  ~/.vim/vimrc
+|4,39,244,5,1730096475,"~/.vim/vimrc"
+-'  243  5  ~/.vim/vimrc
+|4,39,243,5,1730096475,"~/.vim/vimrc"
+-'  241  5  ~/.vim/vimrc
+|4,39,241,5,1730096475,"~/.vim/vimrc"
+-'  240  5  ~/.vim/vimrc
+|4,39,240,5,1730096475,"~/.vim/vimrc"
+-'  235  2  ~/.vim/vimrc
+|4,39,235,2,1730096475,"~/.vim/vimrc"
+-'  232  2  ~/.vim/vimrc
+|4,39,232,2,1730096475,"~/.vim/vimrc"
+-'  231  47  ~/.vim/vimrc
+|4,39,231,47,1730096475,"~/.vim/vimrc"
+-'  252  22  ~/.vim/vimrc
+|4,39,252,22,1730096475,"~/.vim/vimrc"
+-'  249  8  ~/.vim/vimrc
+|4,39,249,8,1730096475,"~/.vim/vimrc"
+-'  244  5  ~/.vim/vimrc
+|4,39,244,5,1730096475,"~/.vim/vimrc"
+-'  243  5  ~/.vim/vimrc
+|4,39,243,5,1730096475,"~/.vim/vimrc"
+-'  241  5  ~/.vim/vimrc
+|4,39,241,5,1730096475,"~/.vim/vimrc"
+-'  240  5  ~/.vim/vimrc
+|4,39,240,5,1730096475,"~/.vim/vimrc"
+-'  235  2  ~/.vim/vimrc
+|4,39,235,2,1730096475,"~/.vim/vimrc"
+-'  232  2  ~/.vim/vimrc
+|4,39,232,2,1730096475,"~/.vim/vimrc"
+-'  231  47  ~/.vim/vimrc
+|4,39,231,47,1730096475,"~/.vim/vimrc"
+-'  226  4  ~/.vim/vimrc
+|4,39,226,4,1730096474,"~/.vim/vimrc"
+-'  223  2  ~/.vim/vimrc
+|4,39,223,2,1730096474,"~/.vim/vimrc"
+-'  222  2  ~/.vim/vimrc
+|4,39,222,2,1730096474,"~/.vim/vimrc"
+-'  220  2  ~/.vim/vimrc
+|4,39,220,2,1730096474,"~/.vim/vimrc"
+-'  219  2  ~/.vim/vimrc
+|4,39,219,2,1730096474,"~/.vim/vimrc"
+-'  218  2  ~/.vim/vimrc
+|4,39,218,2,1730096474,"~/.vim/vimrc"
+-'  217  50  ~/.vim/vimrc
+|4,39,217,50,1730096474,"~/.vim/vimrc"
+-'  216  2  ~/.vim/vimrc
+|4,39,216,2,1730096474,"~/.vim/vimrc"
+-'  215  62  ~/.vim/vimrc
+|4,39,215,62,1730096474,"~/.vim/vimrc"
+-'  226  4  ~/.vim/vimrc
+|4,39,226,4,1730096474,"~/.vim/vimrc"
+-'  223  2  ~/.vim/vimrc
+|4,39,223,2,1730096474,"~/.vim/vimrc"
+-'  222  2  ~/.vim/vimrc
+|4,39,222,2,1730096474,"~/.vim/vimrc"
+-'  220  2  ~/.vim/vimrc
+|4,39,220,2,1730096474,"~/.vim/vimrc"
+-'  219  2  ~/.vim/vimrc
+|4,39,219,2,1730096474,"~/.vim/vimrc"
+-'  218  2  ~/.vim/vimrc
+|4,39,218,2,1730096474,"~/.vim/vimrc"
+-'  217  50  ~/.vim/vimrc
+|4,39,217,50,1730096474,"~/.vim/vimrc"
+-'  216  2  ~/.vim/vimrc
+|4,39,216,2,1730096474,"~/.vim/vimrc"
+-'  215  62  ~/.vim/vimrc
+|4,39,215,62,1730096474,"~/.vim/vimrc"
+-'  35  24  ~/.vim/vimrc
+|4,39,35,24,1730096473,"~/.vim/vimrc"
+-'  35  24  ~/.vim/vimrc
+|4,39,35,24,1730096473,"~/.vim/vimrc"
+-'  34  24  ~/.vim/vimrc
+|4,39,34,24,1730096472,"~/.vim/vimrc"
 
 # Buffer list:
-%~/.vim/vimrc	349	18
+%~/.vim/vimrc	51	0
 
 # History of marks within files (newest to oldest):
 
 > ~/.vim/vimrc
-	*	1725210556	0
-	"	349	18
-	^	518	58
-	.	518	57
-	+	1	19
-	+	1	22
-	+	1	90
-	+	1	21
-	+	1	83
-	+	1	59
-	+	1	18
-	+	1	59
-	+	1	21
-	+	1	39
-	+	1	88
-	+	1	56
-	+	1	18
-	+	1	82
-	+	1	18
-	+	1	83
-	+	1	56
-	+	1	19
-	+	1	21
-	+	1	61
-	+	1	85
-	+	1	21
-	+	1	42
-	+	1	73
-	+	1	40
-	+	1	60
-	+	1	87
-	+	1	23
-	+	1	44
-	+	1	41
-	+	1	0
-	+	1	69
-	+	1	10
-	+	1	42
-	+	1	0
-	+	1	4
-	+	1	18
-	+	1	37
-	+	1	57
-	+	1	2
-	+	1	28
-	+	1	54
-	+	1	10
-	+	1	37
-	+	1	62
-	+	1	26
-	+	1	54
-	+	1	6
-	+	1	28
-	+	1	60
-	+	1	12
-	+	1	35
-	+	1	6
-	+	1	30
-	+	1	0
-	+	1	23
-	+	1	60
-	+	1	78
-	+	1	59
-	+	1	60
-	+	1	3
-	+	1	0
-	+	1	34
-	+	1	0
-	+	510	0
-	+	435	0
-	+	435	82
-	+	435	0
-	+	462	0
-	+	322	0
-	+	349	0
-	+	345	0
-	+	344	0
-	+	345	0
-	+	348	0
-	+	344	0
-	+	322	0
-	+	348	0
-	+	338	27
-	+	348	0
-	+	337	29
-	+	338	27
-	+	337	29
-	+	331	0
-	+	332	0
-	+	334	0
-	+	520	50
-	+	521	0
-	+	520	0
-	+	348	0
-	+	320	0
-	+	348	0
-	+	322	0
-	+	353	0
-	+	520	35
-	+	519	36
-	+	520	0
-	+	517	0
-	+	351	0
-	+	518	57
+	*	1730097174	0
+	"	51	0
+	^	243	32
+	.	243	31
+	+	246	22
+	+	198	0
+	+	256	0
+	+	246	90
+	+	246	0
+	+	247	37
+	+	247	0
+	+	246	0
+	+	246	31
+	+	246	0
+	+	246	36
+	+	246	35
+	+	246	0
+	+	246	19
+	+	246	0
+	+	224	0
+	+	223	0
+	+	222	0
+	+	223	0
+	+	246	0
+	+	247	0
+	+	246	0
+	+	251	0
+	+	256	19
+	+	228	0
+	+	246	29
+	+	251	0
+	+	246	29
+	+	251	124
+	+	246	31
+	+	246	4
+	+	246	0
+	+	244	0
+	+	246	0
+	+	244	0
+	+	237	0
+	+	245	36
+	+	246	0
+	+	245	56
+	+	246	0
+	+	245	57
+	+	244	0
+	+	245	36
+	+	237	3
+	+	244	5
+	+	237	4
+	+	245	36
+	+	237	10
+	+	245	42
+	+	244	26
+	+	244	0
+	+	244	31
+	+	244	30
+	+	244	18
+	+	244	0
+	+	244	18
+	+	244	0
+	+	241	0
+	+	246	31
+	+	246	0
+	+	246	39
+	+	245	0
+	+	256	0
+	+	231	0
+	+	185	0
+	+	181	0
+	+	251	122
+	+	241	51
+	+	242	0
+	+	243	0
+	+	242	22
+	+	243	21
+	+	244	0
+	+	241	32
+	+	242	37
+	+	243	36
+	+	241	31
+	+	242	36
+	+	243	35
+	+	244	0
+	+	238	0
+	+	240	0
+	+	246	0
+	+	234	0
+	+	236	0
+	+	246	0
+	+	237	5
+	+	245	35
+	+	237	4
+	+	245	36
+	+	237	22
+	+	239	0
+	+	242	0
+	+	241	0
+	+	242	69
+	+	181	0
+	+	242	0
+	+	241	28
+	+	242	32
+	+	243	31
 
-> ~/lab/emberlab/dutycalculator/ember-cli-build.js
-	*	1725207896	0
+> ~/lab/jslab/dnalab.js
+	*	1730096465	0
 	"	1	0
-	^	1	1
-	.	3	0
-	+	8	17
-	+	8	0
-	+	8	13
-	+	8	9
-	+	8	0
+	.	18	0
+	+	2	0
 	+	5	0
-	+	1	0
-	+	3	0
+	+	6	0
+	+	7	0
+	+	10	0
+	+	13	0
+	+	16	0
+	+	30	0
+	+	2	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	10	0
+	+	13	0
+	+	16	0
+	+	30	0
+	+	16	0
+	+	17	0
+	+	30	0
+	+	29	0
+	+	28	0
+	+	26	0
+	+	25	11
+	+	25	0
+	+	24	11
+	+	24	0
+	+	23	0
+	+	20	0
+	+	17	0
+	+	19	11
+	+	18	11
+	+	22	0
+	+	24	0
+	+	25	0
+	+	9	6
+	+	18	0
 
-> ~/lab/emberlab/dutycalculator/LspHover
-	*	1725179617	0
+> ~/lab/emberlab/PortfolioApp/app/components/project.gjs
+	*	1730090310	0
 	"	1	0
+	^	2	0
 	.	2	0
+	+	32	30
+	+	32	14
+	+	32	24
+	+	32	0
+	+	31	0
+	+	32	0
+	+	32	16
+	+	17	0
+	+	31	0
+	+	17	25
+	+	32	0
+	+	32	21
+	+	32	0
+	+	32	15
+	+	32	21
+	+	32	27
+	+	32	21
+	+	32	27
+	+	32	20
+	+	32	19
+	+	32	60
+	+	32	0
+	+	32	21
+	+	32	0
+	+	32	15
+	+	32	0
+	+	32	12
+	+	32	35
+	+	32	18
+	+	32	0
+	+	10	0
+	+	32	0
+	+	32	19
+	+	32	24
+	+	32	39
+	+	32	37
+	+	32	0
+	+	32	25
+	+	32	0
+	+	10	62
+	+	32	15
+	+	32	37
+	+	32	16
+	+	32	0
+	+	32	9
+	+	24	47
+	+	20	23
+	+	22	5
+	+	20	0
+	+	21	0
+	+	25	22
+	+	27	0
+	+	25	0
+	+	26	39
+	+	20	50
+	+	32	0
+	+	32	38
+	+	32	13
+	+	32	0
+	+	25	28
+	+	32	0
+	+	17	26
+	+	3	0
 	+	2	0
 
-> ~/lab/emberlab/dutycalculator/dist/index.html
-	*	1725174243	0
-	"	1	0
-
-> ~/lab/emberlab/dutycalculator/app/styles/app.css
-	*	1725100548	0
-	"	1	0
-	^	30	4
-	.	30	3
-	+	46	0
-	+	30	3
-
-> ~/lab/emberlab/dutycalculator/.git/COMMIT_EDITMSG
-	*	1725096603	0
-	"	1	63
-	^	1	64
-	.	1	63
-	+	2	25
-	+	1	34
-	+	4	72
-	+	7	62
-	+	7	29
-	+	8	0
-	+	1	63
-
-> /tmp/error.dump.69a31af0e93aef44a4f8fb27c21dcdd9.log
-	*	1725095015	0
-	"	1	0
-
-> ~/lab/emberlab/dutycalculator/app/templates/index.hbs
-	*	1725085521	0
-	"	8	0
-
-> ~/lab/emberlab/dutycalculator/app/templates/form.hbs
-	*	1725085462	0
-	"	1	0
-
-> ~/lab/emberlab/dutycalculator/app/templates/duty.hbs
-	*	1725085460	0
-	"	1	0
-	^	9	2
-	.	9	1
-	+	9	1
-
-> ~/lab/emberlab/dutycalculator/app/templates/application.hbs
-	*	1725085420	0
-	"	1	0
-	.	10	0
-	+	10	0
-
-> ~/lab/emberlab/dutycalculator/app/templates/not-found.hbs
-	*	1725085420	0
-	"	1	0
-
-> ~/lab/emberlab/dutycalculator/app/templates/search-result.hbs
-	*	1725085420	0
-	"	1	0
-
-> ~/lab/htmllab/test.html
-	*	1725048527	0
-	"	1	0
-	^	1	2
-	.	1	1
-	+	1	1
-
-> ~/lab/typelab/app.js
-	*	1725048442	0
-	"	1	0
-	.	3	0
-	+	4	8
-	+	3	0
-
-> ~/lab/emberlab/dutycalculator/app/components/currency.gjs
-	*	1725048342	0
-	"	1	0
-	^	3	4
-	.	3	3
-	+	4	0
-	+	10	0
-	+	4	0
-	+	3	3
-
-> ~/lab/typelab/hello.ts
-	*	1725045179	0
-	"	1	0
-	.	3	0
-	+	3	0
-
-> ~/lab/jslab/fact.js
-	*	1725045055	0
-	"	1	0
-	^	11	11
-	.	11	10
-	+	13	13
-	+	11	10
-
 > ~/lab/NERD_tree_1
-	*	1725044962	0
-	"	11	1
+	*	1730059885	0
+	"	6	0
 	.	1	0
 	+	1	0
 
-> ~/lab/htmllab/html_skeleton.html
-	*	1725044859	0
-	"	1	0
-	^	16	8
-	.	16	7
-	+	23	0
-	+	17	7
-	+	16	7
+> ~/.vim/bundle/vim-airline/doc/airline.txt
+	*	1730050577	0
+	"	2	0
 
-> ~/lab/bashlab/login.sh
-	*	1725044811	0
+> ~/lab/jslab/simple.js
+	*	1730044708	0
 	"	1	0
-	.	6	0
-	+	3	23
-	+	7	0
+
+> /airline
+	*	1730036246	0
+	"	1	0
+
+> /usr/local/share/vim/vim91/doc/options.txt
+	*	1730026756	0
+	"	8446	38
+
+> /usr/local/share/vim/vim91/doc/syntax.txt
+	*	1730024971	0
+	"	5713	5
+
+> ~/lab/jslab/fact.js
+	*	1730024098	0
+	"	1	0
+
+> ~/lab/json.html
+	*	1730023060	0
+	"	1	0
+
+> ~/lab/emberlab/PortfolioApp/app/components/social.gjs
+	*	1729967470	0
+	"	1	0
+	.	22	0
 	+	6	0
+	+	7	0
+	+	4	15
+	+	6	10
+	+	6	126
+	+	6	578
+	+	6	0
+	+	6	120
+	+	6	3
+	+	6	0
+	+	6	119
+	+	6	38
+	+	1	23
+	+	1	0
+	+	1	7
+	+	4	0
+	+	1	0
+	+	4	0
+	+	1	0
+	+	6	15
+	+	1	0
+	+	6	0
+	+	7	0
+	+	6	10
+	+	7	33
+	+	1	23
+	+	1	0
+	+	7	34
+	+	1	0
+	+	8	6
+	+	9	0
+	+	5	6
+	+	6	23
+	+	3	2
+	+	2	3
+	+	3	0
+	+	22	0
 
-> ~/lab/emberlab/dutycalculator/app/components/disclaimer.gjs
-	*	1725044054	0
+> /tmp/lsp-glint.log
+	*	1729966847	0
+	"	1	0
+
+> /tmp/lsp-glint.err
+	*	1729965201	0
 	"	1	0
 
 > ~/.vim/coc-settings.json
-	*	1725042885	0
+	*	1729964334	0
 	"	1	0
-	^	2	26
-	.	2	25
-	+	1	1
-	+	36	27
-	+	36	0
-	+	1	0
-	+	36	0
-	+	6	28
-	+	36	0
-	+	6	27
-	+	35	27
-	+	6	21
-	+	6	24
-	+	6	0
-	+	6	27
-	+	6	0
-	+	6	33
-	+	6	34
-	+	6	40
-	+	6	54
-	+	6	52
-	+	6	66
-	+	6	48
-	+	6	9
-	+	6	0
-	+	6	28
-	+	6	37
-	+	6	39
-	+	6	47
-	+	6	48
-	+	27	36
-	+	29	9
-	+	30	87
-	+	31	33
-	+	32	16
-	+	33	2
-	+	6	0
-	+	6	27
-	+	6	21
-	+	6	0
-	+	6	27
-	+	6	7
-	+	6	0
-	+	3	0
-	+	5	19
-	+	6	4
-	+	7	6
-	+	8	6
-	+	10	6
-	+	12	6
+
+> ~/.vim/vim-coc
+	*	1729964306	0
+	"	484	0
+
+> ~/lab/emberlab/PortfolioApp/app/styles/app.css
+	*	1729962760	0
+	"	1	0
+	.	11	0
+	+	387	13
+	+	371	20
+	+	372	11
+	+	373	13
+	+	389	0
+	+	390	15
+	+	406	0
+	+	408	14
+	+	390	1
+	+	487	0
+	+	482	0
+	+	487	0
+	+	489	0
+	+	488	18
+	+	483	22
+	+	486	0
+	+	484	13
+	+	411	0
+	+	412	0
+	+	361	0
+	+	362	11
+	+	363	14
+	+	364	11
+	+	365	15
+	+	386	16
+	+	387	15
+	+	382	0
+	+	383	0
+	+	382	17
+	+	383	0
+	+	19	0
 	+	12	26
-	+	14	4
-	+	15	4
-	+	16	4
-	+	17	4
-	+	18	4
-	+	19	4
-	+	20	18
-	+	15	0
-	+	22	15
-	+	23	13
-	+	26	3
-	+	22	0
-	+	23	13
-	+	24	0
-	+	25	0
-	+	26	3
-	+	28	0
-	+	27	0
-	+	26	0
-	+	27	2
-	+	25	0
-	+	26	3
-	+	27	2
-	+	25	0
-	+	27	0
-	+	26	3
-	+	25	0
-	+	24	12
-	+	28	0
-	+	24	0
-	+	15	0
-	+	10	0
-	+	9	0
-	+	2	25
-
-> /usr/local/share/vim/vim91/doc/options.txt
-	*	1725034030	0
-	"	5985	27
-
-> ~/.vim/vim-lsp
-	*	1725028308	0
-	"	68	60
-	^	68	61
-	.	68	60
-	+	67	0
-	+	70	35
-	+	69	27
-	+	68	60
-
-> ~/lab/emberlab/dutycalculator/app/app.js
-	*	1725023157	0
-	"	1	0
-	.	12	0
-	+	5	0
+	+	19	0
+	+	18	0
 	+	12	0
-	+	13	0
-	+	13	20
-	+	13	0
+	+	18	0
 	+	12	0
+	+	16	16
+	+	12	0
+	+	80	0
+	+	79	20
+	+	80	0
+	+	2	0
+	+	386	0
+	+	391	0
+	+	393	0
+	+	394	21
+	+	395	15
+	+	396	0
+	+	392	0
+	+	391	0
+	+	392	14
+	+	391	0
+	+	392	0
+	+	395	14
+	+	392	0
+	+	527	0
+	+	155	14
+	+	165	18
+	+	496	0
+	+	496	34
+	+	466	0
+	+	466	35
+	+	496	34
+	+	509	0
+	+	508	0
+	+	416	0
+	+	415	0
+	+	431	0
+	+	435	0
+	+	440	0
+	+	444	0
+	+	449	0
+	+	453	0
+	+	459	0
+	+	466	0
+	+	464	0
+	+	496	0
+	+	391	35
+	+	434	0
+	+	384	14
+	+	457	0
+	+	456	15
+	+	457	0
+	+	523	19
+	+	524	22
+	+	523	13
+	+	522	0
+	+	510	0
+	+	463	0
+	+	460	12
+	+	523	11
+	+	450	15
+	+	451	21
+	+	12	0
+	+	11	3
+	+	11	0
 
-> ~/lab/typelab/enumMonth.ts
-	*	1725014879	0
+> ~/lab/emberlab/xplore/app/index.html
+	*	1729939530	0
 	"	1	0
-	.	15	0
-	+	15	0
+	.	23	0
+	+	23	0
 
-> ~/lab/sqllab/earthquake.sql
-	*	1725014734	0
+> ~/lab/emberlab/xplore/tsconfig.json
+	*	1729935630	0
 	"	1	0
+	^	5	33
+	.	5	32
+	+	5	32
 
-> /tmp/lsp-@glint/core.log
-	*	1725005789	0
+> ~/lab/emberlab/xplore/app/app.ts
+	*	1729935485	0
 	"	1	0
+	^	2	15
+	.	2	14
+	+	3	0
+	+	2	14
 
-> /tmp/lsp-@glint/core.err
-	*	1725005777	0
-	"	1	0
-
-> ~/lab/typelab/enumMonth.js
-	*	1724950472	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/lab/emberlab/dutycalculator/app/components/form.gjs
-	*	1724950443	0
-	"	1	0
-	^	6	2
-	.	6	1
-	+	7	0
+> ~/Documents/Bitstream/artfacts/color-blue-token
+	*	1729328963	0
+	"	63	2
+	^	63	3
+	.	63	2
+	+	1	1
+	+	2	0
+	+	3	23
+	+	4	40
+	+	5	34
+	+	6	19
+	+	7	2
 	+	8	0
-	+	7	0
-	+	6	1
+	+	9	23
+	+	10	38
+	+	11	33
+	+	12	17
+	+	13	2
+	+	14	0
+	+	15	23
+	+	16	38
+	+	17	33
+	+	18	17
+	+	19	2
+	+	20	0
+	+	21	23
+	+	22	36
+	+	23	33
+	+	24	17
+	+	25	2
+	+	26	0
+	+	27	23
+	+	28	36
+	+	29	33
+	+	30	17
+	+	31	2
+	+	32	0
+	+	33	23
+	+	34	34
+	+	35	33
+	+	36	17
+	+	37	2
+	+	38	0
+	+	39	23
+	+	40	34
+	+	41	33
+	+	42	17
+	+	43	2
+	+	44	0
+	+	45	23
+	+	46	34
+	+	47	33
+	+	48	17
+	+	49	2
+	+	50	0
+	+	51	23
+	+	52	34
+	+	53	33
+	+	54	17
+	+	55	2
+	+	56	0
+	+	57	23
+	+	58	34
+	+	59	33
+	+	60	17
+	+	61	1
+	+	63	2
 
-> ~/.vim/old/vimrc
-	*	1724948834	0
-	"	412	0
-
-> ~/vimOld/vimrc
-	*	1724947455	0
+> ~/lab/eslint-plugin-ember/tests/lib/rules/template-no-let-reference.js
+	*	1728845754	0
 	"	1	0
-	.	316	0
-	+	316	0
+	^	46	58
+	.	57	0
+	+	65	59
+	+	67	0
+	+	49	0
+	+	47	0
+	+	55	62
+	+	55	0
+	+	55	18
+	+	56	0
+	+	59	8
+	+	64	18
+	+	46	57
+	+	55	0
+	+	48	0
+	+	64	0
+	+	57	0
 
-> ~/lab/typelab/test.html
-	*	1724943954	0
+> ~/lab/eslint-plugin-ember/.git/COMMIT_EDITMSG
+	*	1728841726	0
+	"	3	25
+	^	3	26
+	.	3	25
+	+	1	47
+	+	7	40
+	+	1	31
+	+	2	0
+	+	4	15
+	+	3	25
+
+> ~/lab/eslint-plugin-ember/package.json
+	*	1728839178	0
 	"	1	0
-	.	1	0
-	+	1	0
 
-> ~/vimOld/vimrc_old
-	*	1724942791	0
+> ~/lab/eslint-plugin-ember/tests/helpers/babel-eslint-parser.js
+	*	1728805156	0
 	"	1	0
 
-> ~/lab/typelab/enumStatusV.ts
-	*	1724940424	0
+> ~/lab/eslint-plugin-ember/tests/helpers/test-case.js
+	*	1728805022	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/tests/helpers/faux-context.js
+	*	1728803099	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/lib/index.js
+	*	1728802599	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/lib/config/base.js
+	*	1728802497	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/lib/config/recommended-gts.js
+	*	1728802367	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/lib/config/recommended.js
+	*	1728802312	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/docs/rules/template-no-let-reference.md
+	*	1728802199	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/eslint.config.js
+	*	1728801663	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/eslint-remote-tester.config.js
+	*	1728801629	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/tests/recommended.js
+	*	1728799376	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/lib/utils/import.js
+	*	1728799329	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/lib/recommended-rules.js
+	*	1728799271	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/scripts/update-rules.js
+	*	1728799201	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/tests/plugin-exports.js
+	*	1728798841	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/tests/rule-setup.js
+	*	1728798648	0
+	"	1	0
+
+> ~/lab/eslint-plugin-ember/lib/rules/template-no-let-reference.js
+	*	1728758667	0
+	"	1	0
+	^	26	15
+	.	26	14
+	+	21	45
+	+	24	51
+	+	25	43
+	+	26	14
+
+> ~/lab/eslint-plugin-ember/README.md
+	*	1728755214	0
+	"	1	0
+
+> ~/lab/emberlab/PortfolioApp/tests/integration/components/social-test.gjs
+	*	1728746980	0
+	"	1	0
+	^	19	35
+	.	22	34
+	+	22	40
+	+	5	0
+	+	22	35
+	+	22	0
+	+	6	0
+	+	22	0
+	+	13	0
+	+	15	36
+	+	13	33
+	+	6	10
+	+	13	25
+	+	15	0
+	+	13	19
+	+	6	0
+	+	15	35
+	+	22	0
+	+	22	23
+	+	13	0
+	+	16	0
+	+	13	0
+	+	16	69
+	+	17	55
+	+	18	64
+	+	19	62
+	+	21	83
+	+	20	52
+	+	21	34
+	+	20	33
+	+	21	33
+	+	20	35
+	+	16	0
+	+	17	24
+	+	18	24
+	+	19	24
+	+	20	24
+	+	21	24
+	+	22	36
+	+	23	72
+	+	22	58
+	+	9	10
+	+	23	0
+	+	9	6
+	+	18	21
+	+	4	25
+	+	18	0
+	+	4	0
+	+	18	0
+	+	13	32
+	+	18	0
+	+	14	0
+	+	15	35
+	+	16	0
+	+	14	0
+	+	16	34
+	+	14	0
+	+	17	16
+	+	18	16
+	+	19	16
+	+	20	16
+	+	21	16
+	+	22	16
+	+	23	34
+	+	22	34
+	+	17	34
+	+	18	34
+	+	19	34
+	+	20	34
+	+	21	34
+	+	22	34
+
+> ~/lab/emberlab/PortfolioApp/app/components/contact.gjs
+	*	1728745597	0
+	"	1	0
+	^	14	123
+	.	14	122
+	+	12	0
+	+	12	14
+	+	3	19
+	+	1	22
+	+	21	0
+	+	26	0
+	+	21	110
+	+	12	19
+	+	12	17
+	+	2	25
+	+	12	0
+	+	12	21
+	+	12	36
+	+	12	41
+	+	12	28
+	+	12	43
+	+	12	0
+	+	21	38
+	+	21	0
+	+	25	0
+	+	21	0
+	+	25	0
+	+	12	39
+	+	14	37
+	+	21	54
+	+	14	0
+	+	12	0
+	+	21	82
+	+	14	32
+	+	12	37
+	+	14	52
+	+	14	0
+	+	2	38
+	+	12	8
+	+	14	23
+	+	14	0
+	+	12	0
+	+	12	19
+	+	14	52
+	+	12	0
+	+	12	11
+	+	21	81
+	+	12	15
+	+	12	0
+	+	16	77
+	+	18	80
+	+	20	76
+	+	22	69
+	+	25	0
+	+	23	0
+	+	12	0
+	+	14	0
+	+	12	0
+	+	2	0
+	+	12	0
+	+	6	2
+	+	6	25
+	+	6	27
+	+	6	54
+	+	7	41
+	+	8	28
+	+	11	0
+	+	10	3
+	+	6	0
+	+	8	0
+	+	10	0
+	+	2	0
+	+	12	0
+	+	2	23
+	+	6	47
+	+	6	0
+	+	6	48
+	+	6	31
+	+	6	14
+	+	6	18
+	+	6	11
+	+	6	23
+	+	6	22
+	+	6	5
+	+	6	4
+	+	6	0
+	+	2	0
+	+	14	103
+	+	2	0
+	+	6	0
+	+	4	0
+	+	8	0
+	+	10	0
+	+	9	18
+	+	18	145
+	+	14	122
+
+> ~/lab/emberlab/PortfolioApp/eslint.config.js
+	*	1728722099	0
+	"	1	0
+	^	14	22
+	.	14	21
+	+	7	21
+	+	9	11
+	+	10	38
+	+	7	4
+	+	15	4
+	+	8	0
+	+	9	0
+	+	10	0
+	+	15	0
+	+	8	24
+	+	10	43
+	+	11	34
+	+	10	13
+	+	11	13
+	+	12	8
+	+	13	0
+	+	14	0
+	+	13	15
+	+	14	21
+
+> ~/lab/emberlab/PortfolioApp/.eslintrc.js
+	*	1728720860	0
+	"	1	0
+	^	57	34
+	.	57	33
+	+	55	5
+	+	56	18
+	+	56	9
+	+	56	51
+	+	57	18
+	+	57	42
+	+	57	45
+	+	58	9
+	+	58	7
+	+	58	5
+	+	56	0
+	+	58	0
+	+	57	43
+	+	58	0
+	+	57	18
+	+	56	0
+	+	57	33
+
+> ~/lab/emberlab/PortfolioApp/.eslint.config.js
+	*	1728720836	0
 	"	1	0
 	^	8	5
-	.	8	4
+	.	8	0
+	+	1	33
+	+	3	54
+	+	5	21
+	+	6	37
 	+	8	4
+	+	8	0
 
-> ~/lab/emberlab/dutycalculator/app/router.js
-	*	1724935608	0
+> ~/lab/emberlab/PortfolioApp/ember-cli-build.js
+	*	1728710290	0
 	"	1	0
-	.	3	0
+	^	12	2
+	.	12	1
+	+	39	0
+	+	24	26
+	+	24	18
+	+	24	24
+	+	24	9
+	+	24	7
+	+	24	5
+	+	2	0
 	+	3	0
+	+	24	0
+	+	2	0
+	+	12	0
+	+	10	0
+	+	11	0
+	+	10	0
+	+	11	0
+	+	12	1
 
-> ~/lab/nginx/nginx-for-emberjs/dutycalculator.ng
-	*	1724872922	0
-	"	1	0
-	^	26	28
-	.	26	28
-	+	26	28
-
-> ~/lab/emberlab/dutycalculator/README.md
-	*	1724872501	0
-	"	1	0
-
-> ~/.ssh/config
-	*	1724866908	0
-	"	1	33
-	^	1	38
-	.	1	34
-	+	1	34
-
-> ~/.ssh/known_hosts.old
-	*	1724852935	0
+> ~/lab/emberlab/PortfolioApp/config/environment.js
+	*	1728672466	0
 	"	1	0
 
-> ~/.ssh/known_hosts
-	*	1724852921	0
+> ~/lab/emberlab/xplore/app/foo/controller.ts
+	*	1728664564	0
 	"	1	0
-
-> ~/.npm/_logs/2024-08-28T12_01_17_448Z-debug-0.log
-	*	1724846528	0
-	"	1	0
-
-> ~/lab/emberlab/quickstart/app/router.js
-	*	1724773915	0
-	"	1	0
-	.	3	0
-	+	3	0
-
-> ~/lab/typelab/LSP-Outline
-	*	1724767120	0
-	"	1	0
-	.	3	0
-	+	1	0
-	+	3	0
-
-> ~/.npm/_logs/2024-08-27T07_22_45_681Z-debug-0.log
-	*	1724743473	0
-	"	1	0
-
-> ~/lab/sqllab/chitter.sql
-	*	1724741512	0
-	"	1	0
-	.	22	0
-	+	24	1
-	+	22	0
-	+	1	32
-	+	8	25
-	+	16	0
-	+	13	20
-	+	22	0
-
-> /opt/displaylink/displaylink-installer.sh
-	*	1724739458	0
-	"	1	0
-
-> /opt/displaylink/LICENSE
-	*	1724739383	0
-	"	231	0

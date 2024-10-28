@@ -56,6 +56,16 @@ Plugin 'gerazov/vim-toggle-bool'
 # LSP
 Plugin 'yegappan/lsp'
 
+# VimComplete
+Plugin 'girishji/vimcomplete'
+
+# Vim-vsnip
+Plugin 'hrsh7th/vim-vsnip'
+Plugin 'hrsh7th/vim-vsnip-integ'
+
+# friendly-snippets
+Plugin 'rafamadriz/friendly-snippets'
+
 # All of your Plugins must be added before the following line
 # required
 call vundle#end()
@@ -107,6 +117,9 @@ map <C-n> :NERDTreeToggle<CR>
 # VIM specific
 # enable syntax highlighting
 syntax enable
+
+# Setting termwinsize option row*columns
+# set termwinsize=0x900
 
 # show line numbers
 set number relativenumber
@@ -168,7 +181,7 @@ set textwidth=79
 set t_Co=256
 syntax on
 set background=dark
-colorscheme distinguished
+colorscheme  gruvbox # distinguished
 set termguicolors
 
 # Spellcheck
@@ -182,9 +195,9 @@ set spellfile=~/.vim/spell/en.utf-8.add
 
 # To auto enable spell on txt file
 augroup txtSpellCheck
-    autocmd!
-    autocmd FileType txt setlocal spell
-    autocmd BufRead,BufNewFile *.txt setlocal spell
+  autocmd!
+  autocmd FileType txt setlocal spell
+  autocmd BufRead,BufNewFile *.txt setlocal spell
 augroup END
 
 #To enable auto insertion of skeleton on creation of .html file
@@ -200,20 +213,45 @@ set clipboard=unnamed
 set hidden
 #
 # airline formatters  see https://github.com//vim-airline/vim-airline
-g:airline#extensions#tabline#enabled = 1  # enable airline tabline
+g:airline_experimental = 1
+g:airline#extensions#tabline#enabled = 1 # enable airline tabline
 g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+g:airline_inactive_collapse = 1
+g:airline_inactive_alt_sep = 1
+
+g:airline#extensions#tabline#left_sep = ' '
+g:airline#extensions#tabline#left_alt_sep = '|'
+
+# Adjust the truncation if error messages are being truncated
+# g:airline#extensions#default#section_truncate_width = { 'error': 80, 'warning': 80, }
+
+highlight ErrorMsg ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+highlight Error ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+
+#Check up other theme at https:/github.com/vim-airline/vim-airlin/wiki/Screenshots
+g:airline_theme =  'dark' #'serene'
+#
+# Set to 1 to enable cache for highlight
+g:airline_highlighting_cache = 0
+
+def UpdateHighlights()
+  hi airline_error_inactive ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+  hi airline_error_inactive_bold ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+  hi airline_error_inactive_red ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+  hi airline_error term=bold cterm=standout ctermfg=15 ctermbg=9 gui=bold guifg=white guibg=red
+  hi airline_error_bold term=bold cterm=standout ctermfg=15 ctermbg=9 gui=bold guifg=white guibg=red
+  hi airline_error_red term=bold cterm=standout ctermfg=15 ctermbg=9 gui=bold guifg=white guibg=red
+enddef
+autocmd User AirlineAfterTheme call UpdateHighlights()
 
 # To put the statusline on the top of screen
 # let g:airline_statusline_ontop = 1
 
 # simplifying z section of tabline, a mimimal tabline
-g:airline_section_z = airline#section#create('%3p%% %#__accent_bold#%4l%#__restore__#%#__accent_bold#/%L%#__restore__# %3v')
+g:airline_section_z = airline#section#create('%2p%% %#__accent_bold#ln %l%#__restore__#%#__accent_bold#:%L%#__restore__# cl %1v')
 
 #Required powerline fonts, it can be installed via sudo apt install powerline and sudo apt-get install fonts-powerline
 g:airline_powerline_fonts = 1
-#
-#Check up other theme at https:/github.com/vim-airline/vim-airlin/wiki/Screenshots
-g:airline_theme = 'serene'
 #
 #jiangmiao/auto-pairs
 g:AutoPairsFlyMode = 1
@@ -289,8 +327,8 @@ set timeout ttimeoutlen=50
 # TextEdit might fail if hidden is not set.
 set hidden
 #
-# Give more space for displaying messages.
-set cmdheight=4
+# Space for displaying messages or command.
+set cmdheight=1
 
 # Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 # delays and poor user experience.
@@ -312,52 +350,60 @@ set signcolumn=yes
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-# LSP
+# Customise Highlight Groups
+# highlight Pmenu ctermfg=white ctermbg=blue
+# highlight PmenuSel ctermfg=black ctermbg=yellow
+# highlight PmenuSbar ctermfg=white ctermbg=darkgrey
+# highlight PmenuThumb ctermfg=white ctermbg=grey
 
+# colorscheme gruvbox  " Replace 'gruvbox' with your preferred color scheme
+
+
+# LSP
 var lspOpts = {
-  aleSupport: false,
-  autoComplete: true,
-  autoHighlight: true,
-  autoHighlightDiags: true,
-  autoPopulateDiags: false,
+  aleSupport: v:false,
+  autoComplete: v:true,
+  autoHighlight: v:true,
+  autoHighlightDiags: v:true,
+  autoPopulateDiags: v:false,
   completionMatcher: 'case',
   completionMatcherValue: 1,
   diagSignErrorText: 'E>',
   diagSignHintText: 'H>',
   diagSignInfoText: 'I>',
   diagSignWarningText: 'W>',
-  echoSignature: false,
-  hideDisabledCodeActions: false,
-  highlightDiagInline: true,
-  hoverInPreview: false,
-  ignoreMissingServer: false,
-  keepFocusInDiags: true,
-  keepFocusInReferences: true,
-  completionTextEdit: false,
+  echoSignature: v:false,
+  hideDisabledCodeActions: v:false,
+  highlightDiagInline: v:true,
+  hoverInPreview: v:false,
+  ignoreMissingServer: v:false,
+  keepFocusInDiags: v:true,
+  keepFocusInReferences: v:true,
+  completionTextEdit: v:false,
   diagVirtualTextAlign: 'above',
   diagVirtualTextWrap: 'wrap',
-  noNewlineInCompletion: false,
-  omniComplete: null,
-  outlineOnRight: false,
+  noNewlineInCompletion: v:false,
+  omniComplete: v:true,
+  outlineOnRight: v:false,
   outlineWinSize: 30,
-  semanticHighlight: true,
-  showDiagInBalloon: true,
-  showDiagInPopup: true,
-  showDiagOnStatusLine: false,
-  showDiagWithSign: true,
-  showDiagWithVirtualText: true,
-  showInlayHints: true,
-  showSignature: true,
-  snippetSupport: false,
-  ultisnipsSupport: false,
-  useBufferCompletion: true,
-  usePopupInCodeAction: true,
-  useQuickfixForLocations: false,
-  vsnipSupport: false,
+  semanticHighlight: v:true,
+  showDiagInBalloon: v:true,
+  showDiagInPopup: v:true,
+  showDiagOnStatusLine: v:false,
+  showDiagWithSign: v:true,
+  showDiagWithVirtualText: v:true,
+  showInlayHints: v:true,
+  showSignature: v:true,
+  snippetSupport: v:false,
+  ultisnipsSupport: v:false,
+  useBufferCompletion: v:true,
+  usePopupInCodeAction: v:true,
+  useQuickfixForLocations: v:false,
+  vsnipSupport: v:false,
   bufferCompletionTimeout: 100,
-  customCompletionKinds: false,
+  customCompletionKinds: v:false,
   completionKinds: {},
-  filterCompletionDuplicates: false,
+  filterCompletionDuplicates: v:false,
 }
 
 var lspServers = [
@@ -421,20 +467,20 @@ var lspServers = [
   },
 
  # # vscode-html-language-server
- #  {
- #    name: 'vscode-html-language-server',
- #    filetype: ['html'],
- #    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-html-language-server',
- #    args: ['--stdio'],
- #  },
+  {
+    name: 'vscode-html-language-server',
+    filetype: ['html'],
+    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-html-language-server',
+    args: ['--stdio'],
+  },
 
- # # vscode-css-language-server
- #  {
- #    name: 'vscode-css-language-servers',
- #    filetype: ['css'],
- #    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-css-language-server',
- #    args: ['--stdio'],
- #  },
+ # # css-language-server
+  {
+    name: 'css-language-servers',
+    filetype: ['css'],
+    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-css-language-server',
+    args: ['--stdio'],
+  },
 
  # # vscode-json-language-server
  #  {
@@ -462,23 +508,24 @@ var lspServers = [
 
  # Glint language server
   {
-    name: '@glint/core',
+    name: 'glint',
     filetype: [
-      'html.handlebars',
-      'handlebars',
-      'typescript',
-      'typescript.glimmer',
-      'javascript',
-      'javascript.glimmer',
+    'html',
+    'html.handlebars',
+    'handlebars',
+    'typescript',
+    'typescript.glimmer',
+    'javascript',
+    'javascript.glimmer',
     ],
-    rootSearch: [
-    '.glintrc.yml',
-    '.glintrc',
-    '.glintrc.json',
-    '.glintrc.js',
-    'glint.config.js',
-    'package.json',
-    ],
+  "rootSearch": [
+    ".glintrc.yml",
+    ".glintrc",
+    ".glintrc.json",
+    ".glintrc.js",
+    "glint.config.js",
+    "package.json"
+  ],
     path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/glint-language-server',
     args: ['--stdio'],
   },
@@ -499,8 +546,8 @@ var lspServers = [
     args: ['--stdio'],
   },
 ]
-#lsp#lsp#AddServer(lspServers)
 
+#lsp#lsp#AddServer(lspServers)
 augroup Lsp
   au!
   autocmd User LspSetup call LspOptionsSet(lspOpts)

@@ -34,3 +34,11 @@ showDiagInBalloon	|Boolean| option.  When the mouse is over a range of
 			'mouse' option should be set to enable mouse.
 			If this option is set to true, then the 'ballooneval'
 			and 'balloonevalterm' options are set.
+			
+			
+
+
+
+
+coc-jls is created. Now "set runtimepath^=/home/olutayo/.vim/coc-jls" in vimrc/init.vim, open vim and you will see "[coc.nvim] coc-jls works!" in vim messages.
+

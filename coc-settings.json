@@ -1,9 +1,14 @@
 {
   "tsserver.enable": false,
-  "suggest.noselect": false,
+  "suggest.noselect": true,
+  "html.filetypes": ["html", "handlebars", "javascript.glimmer", "typescript.glimmer"],
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": true,
+  "html.format.templating": true,
   "languageserver": {
     "glint/core": {
-    "filetype": [
+    "filetypes": [
+      "html",
       "html.handlebars",
       "handlebars",
       "typescript",
@@ -11,7 +16,7 @@
       "javascript",
       "javascript.glimmer"
     ],
-    "rootSearch": [
+    "rootPatterns": [
       ".glintrc.yml",
       ".glintrc",
       ".glintrc.json",
@@ -20,9 +25,7 @@
       "package.json"
     ],
     "command": "/home/olutayo/.nvm/versions/node/v20.14.0/bin/glint-language-server",
-    "args": [
-      "--stdio"
-    ]
+    "args": [ "--node-ipc" ]
     }
   }
 }

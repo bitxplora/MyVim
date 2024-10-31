@@ -24,7 +24,9 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'nvie/vim-flake8'                    #PEP8 style checker
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'tmhedberg/SimpylFold'
+# Plugin 'LunarWatcher/auto-pairs'
+# Plugin 'tpope/vim-ragtag'
+# Plugin 'tmhedberg/SimpylFold'
 Plugin 'tpope/vim-surround'                 #The plugin provides mappings to easily delete, change and add such surroundings in pairs.
 Plugin 'tpope/vim-commentary'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'  #To toggle between absolute and relative number
@@ -66,6 +68,9 @@ Plugin 'hrsh7th/vim-vsnip-integ'
 # friendly-snippets
 Plugin 'rafamadriz/friendly-snippets'
 
+# ngram complete
+Plugin 'girishji/ngram-complete.vim'
+
 # All of your Plugins must be added before the following line
 # required
 call vundle#end()
@@ -105,7 +110,6 @@ set backupext=.bak
 
 # Meaningfull backup name, ex: filename@2024-03-05T11:23.bak
 autocmd BufWritePre * &bex = '@' .. strftime('%FT%H:%M') .. '.bak'
-
 
 # Swapfile location
 set directory=/var/tmp//
@@ -206,6 +210,9 @@ augroup END
 #     autocmd BufNewFile *.html 0r ~/.vim/skeletons/html
 # augroup END
 
+autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
+# inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n" : "\<C-x>\<C-o>"
+
 # use system clipboard
 set clipboard=unnamed
 
@@ -221,6 +228,15 @@ g:airline_inactive_alt_sep = 1
 
 g:airline#extensions#tabline#left_sep = ' '
 g:airline#extensions#tabline#left_alt_sep = '|'
+#
+# To put the statusline on the top of screen
+# g:closetag_close_shortcut = '<leader>>'irline_statusline_ontop = 1
+#
+# simplifying z section of tabline, a mimimal tabline
+g:airline_section_z = airline#section#create('%2p%% %#__accent_bold#ln %l%#__restore__#%#__accent_bold#:%L%#__restore__# cl %1v')
+
+#Required powerline fonts, it can be installed via sudo apt install powerline and sudo apt-get install fonts-powerline
+g:airline_powerline_fonts = 1
 
 # Adjust the truncation if error messages are being truncated
 # g:airline#extensions#default#section_truncate_width = { 'error': 80, 'warning': 80, }
@@ -234,28 +250,52 @@ g:airline_theme =  'dark' #'serene'
 # Set to 1 to enable cache for highlight
 g:airline_highlighting_cache = 0
 
+# Update airline warning and error highlight for good contrast.
 def UpdateHighlights()
-  hi airline_error_inactive ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
-  hi airline_error_inactive_bold ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
-  hi airline_error_inactive_red ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
   hi airline_error term=bold cterm=standout ctermfg=15 ctermbg=9 gui=bold guifg=white guibg=red
   hi airline_error_bold term=bold cterm=standout ctermfg=15 ctermbg=9 gui=bold guifg=white guibg=red
   hi airline_error_red term=bold cterm=standout ctermfg=15 ctermbg=9 gui=bold guifg=white guibg=red
+  hi airline_error_inactive ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+  hi airline_error_inactive_bold ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+  hi airline_error_inactive_red ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+  hi airline_warning_inactive ctermfg=255 ctermbg=166 guifg=#ffffff guibg=#df5f00
+  hi airline_warning_inactive_bold term=bold cterm=bold ctermbg=166 ctermfg=255 gui=bold guifg=#ffffff guibg=#df5f00
+  hi airline_warning_inactive_red ctermfg=255 ctermbg=166 guifg=#ffffff guibg=#df5f00
+  hi airline_warning_red term=bold cterm=bold ctermfg=255 ctermbg=166 guifg=#ff0000 guibg=#df5f00
+  hi airline_warning_to_airline_error term=bold cterm=bold ctermfg=255 ctermbg=166 guifg=#990000 guibg=#df5f00
 enddef
 autocmd User AirlineAfterTheme call UpdateHighlights()
 
-# To put the statusline on the top of screen
-# let g:airline_statusline_ontop = 1
+# NOTE: You can use other key to expand snippet.
+# Expand
+imap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
+smap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
 
-# simplifying z section of tabline, a mimimal tabline
-g:airline_section_z = airline#section#create('%2p%% %#__accent_bold#ln %l%#__restore__#%#__accent_bold#:%L%#__restore__# cl %1v')
+# Expand or jump
+imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
 
-#Required powerline fonts, it can be installed via sudo apt install powerline and sudo apt-get install fonts-powerline
-g:airline_powerline_fonts = 1
+# Jump forward or backward
+imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+
+# Select or cut text to use as $TM_SELECTED_TEXT in the next snippet.
+# See https://github.com/hrsh7th/vim-vsnip/pull/50
+nmap        s   <Plug>(vsnip-select-text)
+xmap        s   <Plug>(vsnip-select-text)
+nmap        S   <Plug>(vsnip-cut-text)
+xmap        S   <Plug>(vsnip-cut-text)
 #
 #jiangmiao/auto-pairs
 g:AutoPairsFlyMode = 1
 g:AutoPairsShortcutBackInsert = '<M-b>'
+# shorcuts:
+# <M-p> : Toggle Autopairs (g:AutoPairsShortcutToggle)
+# <M-e> : Fast Wrap (g:AutoPairsShortcutFastWrap)
+# <M-n> : Jump to next closed pair (g:AutoPairsShortcutJump)
+# <M-b> : BackInsert (g:AutoPairsShortcutBackInsert)
 #
 #indent-guides settings
 #The default mapping to toggle the plugin is <Leader>ig.
@@ -356,7 +396,22 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 # highlight PmenuSbar ctermfg=white ctermbg=darkgrey
 # highlight PmenuThumb ctermfg=white ctermbg=grey
 
-# colorscheme gruvbox  " Replace 'gruvbox' with your preferred color scheme
+# VimComplete
+var options = {
+  completor: { shuffleEqualPriority: true },
+  buffer: { enable: true, priority: 16, urlComplete: true, envComplete: true },
+  abbrev: { enable: true, priority: 10 },
+  lsp: { enable: true, priority: 20, maxCount: 5 },
+  omnifunc: { enable: false, priority: 8, filetypes: ['*'] },
+  vsnip: { enable: true, priority: 10 },
+  vimscript: { enable: true, priority: 10 },
+  path: { enable: true },
+  abbreviations: { enable: true },
+  tag: { enable: true },
+  ngram: { enable: true, priority: 10, bigram: false, filetypes: ['text', 'help', 'markdown'], filetypesComments: [] },
+}
+autocmd VimEnter * g:VimCompleteOptionsSet(options)
+
 
 
 # LSP
@@ -365,23 +420,23 @@ var lspOpts = {
   autoComplete: v:true,
   autoHighlight: v:true,
   autoHighlightDiags: v:true,
-  autoPopulateDiags: v:false,
+  autoPopulateDiags: v:true,
   completionMatcher: 'case',
   completionMatcherValue: 1,
   diagSignErrorText: 'E>',
   diagSignHintText: 'H>',
   diagSignInfoText: 'I>',
   diagSignWarningText: 'W>',
-  echoSignature: v:false,
+  echoSignature: v:true,
   hideDisabledCodeActions: v:false,
   highlightDiagInline: v:true,
   hoverInPreview: v:false,
   ignoreMissingServer: v:false,
   keepFocusInDiags: v:true,
   keepFocusInReferences: v:true,
-  completionTextEdit: v:false,
-  diagVirtualTextAlign: 'above',
-  diagVirtualTextWrap: 'wrap',
+  completionTextEdit: v:true,
+  diagVirtualTextAlign: 'after',
+  diagVirtualTextWrap: 'truncate',
   noNewlineInCompletion: v:false,
   omniComplete: v:true,
   outlineOnRight: v:false,
@@ -394,12 +449,12 @@ var lspOpts = {
   showDiagWithVirtualText: v:true,
   showInlayHints: v:true,
   showSignature: v:true,
-  snippetSupport: v:false,
+  snippetSupport: v:true,
   ultisnipsSupport: v:false,
   useBufferCompletion: v:true,
   usePopupInCodeAction: v:true,
   useQuickfixForLocations: v:false,
-  vsnipSupport: v:false,
+  vsnipSupport: v:true,
   bufferCompletionTimeout: 100,
   customCompletionKinds: v:false,
   completionKinds: {},
@@ -469,7 +524,7 @@ var lspServers = [
  # # vscode-html-language-server
   {
     name: 'vscode-html-language-server',
-    filetype: ['html'],
+    filetype: ['html', 'handlebars', 'html.handlebars', 'typescript.glimmer', 'tpescript.glimmer'],
     path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-html-language-server',
     args: ['--stdio'],
   },
@@ -482,33 +537,33 @@ var lspServers = [
     args: ['--stdio'],
   },
 
- # # vscode-json-language-server
- #  {
- #    name: 'vscode-json-language-servers',
- #    filetype: ['json'],
- #    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-json-language-server',
- #    args: ['--stdio'],
- #  },
+ # vscode-json-language-server
+  {
+    name: 'vscode-json-language-servers',
+    filetype: ['json'],
+    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-json-language-server',
+    args: ['--stdio'],
+  },
 
- # # vscode-eslint-language-server
- #  {
- #    name: 'vscode-eslint-language-servers',
- #    filetype: ['eslint'],
- #    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-eslint-language-server',
- #    args: ['--stdio'],
- #  },
+ # vscode-eslint-language-server
+  {
+    name: 'vscode-eslint-language-servers',
+    filetype: ['eslint'],
+    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-eslint-language-server',
+    args: ['--stdio'],
+  },
 
- # # vscode-markdown-language-server
- #  {
- #    name: 'vscode-markdown-language-servers',
- #    filetype: ['markdown'],
- #    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-markdown-language-server',
- #    args: ['--stdio'],
- #  },
+ # vscode-markdown-language-server
+  {
+    name: 'vscode-markdown-language-servers',
+    filetype: ['markdown'],
+    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-markdown-language-server',
+    args: ['--stdio'],
+  },
 
  # Glint language server
   {
-    name: 'glint',
+    name: 'glintls',
     filetype: [
     'html',
     'html.handlebars',
@@ -527,7 +582,8 @@ var lspServers = [
     "package.json"
   ],
     path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/glint-language-server',
-    args: ['--stdio'],
+    args: [],
+    syncInit: v:true,
   },
 
  # Ember language server
@@ -564,6 +620,7 @@ augroup Lsp
     nnoremap <buffer> <LocalLeader>ds <Cmd>LspDiag show<CR>
     nnoremap <buffer> <LocalLeader>dc <Cmd>LspDiag current<CR>
     nnoremap <buffer> <LocalLeader>df <Cmd>LspDiag first<CR>
+    nnoremap <buffer> <LocalLeader>dht <Cmd>LspDiag highlight toggle<CR>
     nnoremap <buffer> <LocalLeader>h <Cmd>LspHover<CR>
     nnoremap <buffer> [d <Cmd>LspDiag next<CR>
     nnoremap <buffer> ]d <Cmd>LspDiag prev<CR>

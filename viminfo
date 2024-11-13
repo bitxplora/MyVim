@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/auto-pa
+~MSle0~/auto-pairs
 
 # Last Substitute Search Pattern:
 ~MSle0&dutycalculator
@@ -20,10 +20,56 @@
 $true
 
 # Command Line History (newest to oldest):
+:w
+|2,0,1731173133,,"w"
 :q
-|2,0,1730391620,,"q"
+|2,0,1731172925,,"q"
 :wq
-|2,0,1730391614,,"wq"
+|2,0,1731183896,,"wq"
+:help =
+|2,0,1731169951,,"help ="
+:set indent?
+|2,0,1731170121,,"set indent?"
+:redo
+|2,0,1731168260,,"redo"
+:set nopaste
+|2,0,1731168118,,"set nopaste"
+:set paste
+|2,0,1731165298,,"set paste"
+:bd
+|2,0,1731160844,,"bd"
+:PluginInstall
+|2,0,1731160839,,"PluginInstall"
+:q!
+|2,0,1731161242,,"q!"
+:PluginClean
+|2,0,1731150562,,"PluginClean"
+:qa
+|2,0,1731145831,,"qa"
+:PluginUpdate
+|2,0,1731083530,,"PluginUpdate"
+:set AutoPairsFlyMode=0
+|2,0,1730830901,,"set AutoPairsFlyMode=0"
+:pwd
+|2,0,1730635263,,"pwd"
+:closeall
+|2,0,1730657062,,"closeall"
+:cloa
+|2,0,1730657054,,"cloa"
+:close
+|2,0,1730657042,,"close"
+:vertical resize +5
+|2,0,1730640593,,"vertical resize +5"
+:resize +5
+|2,0,1730637312,,"resize +5"
+:vsp App.js
+|2,0,1730636356,,"vsp App.js"
+:e App.css
+|2,0,1730636319,,"e App.css"
+:LspServer show status
+|2,0,1730549610,,"LspServer show status"
+:e!
+|2,0,1730521443,,"e!"
 : BackInsert (g:AutoPairsShortcutBackInsert)
 |2,0,1730364519,," BackInsert (g:AutoPairsShortcutBackInsert)"
 : Jump to next closed pair (g:AutoPairsShortcutJump)
@@ -32,20 +78,6 @@ $true
 |2,0,1730364513,," Fast Wrap (g:AutoPairsShortcutFastWrap)"
 : Toggle Autopairs (g:AutoPairsShortcutToggle)
 |2,0,1730364513,," Toggle Autopairs (g:AutoPairsShortcutToggle)"
-:set paste
-|2,0,1730364505,,"set paste"
-:e!
-|2,0,1730364460,,"e!"
-:bd
-|2,0,1730364106,,"bd"
-:PluginUpdate
-|2,0,1730363912,,"PluginUpdate"
-:w
-|2,0,1730363903,,"w"
-:q!
-|2,0,1730385024,,"q!"
-:PluginInstall
-|2,0,1730363722,,"PluginInstall"
 :source %
 |2,0,1730363696,,"source %"
 :qa!
@@ -60,16 +92,8 @@ $true
 |2,0,1730267886,,"hi"
 :w!
 |2,0,1730267739,,"w!"
-:redo
-|2,0,1730267220,,"redo"
-:qa
-|2,0,1730230628,,"qa"
-:pwd
-|2,0,1730203032,,"pwd"
 :tabe app/routes/
 |2,0,1730203002,,"tabe app/routes/"
-:LspServer show status
-|2,0,1730224152,,"LspServer show status"
 :VimCompleteCompletors
 |2,0,1730224000,,"VimCompleteCompletors"
 :VimcompleteCompletors
@@ -96,32 +120,28 @@ $true
 |2,0,1730204029,,"LspCodeLens"
 :Ls
 |2,0,1730204015,,"Ls"
-:j
-|2,0,1730203542,,"j"
-:LspGotoDefinition
-|2,0,1730201479,,"LspGotoDefinition"
-:LspShowSignature
-|2,0,1730201405,,"LspShowSignature"
-:LspCodeAction
-|2,0,1730199134,,"LspCodeAction"
-:LspInfo
-|2,0,1730198248,,"LspInfo"
-:LspServer debug on
-|2,0,1730190853,,"LspServer debug on"
-:/paste
-|2,0,1730145577,,"/paste"
-:PluginClean!
-|2,0,1730145308,,"PluginClean!"
-:LspServer show capabilities
-|2,0,1730137098,,"LspServer show capabilities"
-:LspHover
-|2,0,1730143694,,"LspHover"
-:AirlineExtensions
-|2,0,1730097478,,"AirlineExtensions"
-:AirlineRefresh
-|2,0,1730097431,,"AirlineRefresh"
 
 # Search String History (newest to oldest):
+?/shi
+|2,1,1731170631,47,"shi"
+?/auto-pairs
+|2,1,1730830757,47,"auto-pairs"
+?/stric:
+|2,1,1730471450,47,"stric:"
+?/sourceMa
+|2,1,1730466054,47,"sourceMa"
+?/inlineSources
+|2,1,1730456272,47,"inlineSources"
+?/sourceM
+|2,1,1730456230,47,"sourceM"
+?/inlineS
+|2,1,1730456082,47,"inlineS"
+?/noEm
+|2,1,1730450005,47,"noEm"
+?/noE
+|2,1,1730449858,47,"noE"
+?/outD
+|2,1,1730398633,47,"outD"
 ?/auto-pa
 |2,1,1730364222,47,"auto-pa"
 ?/auto-p
@@ -202,30 +222,12 @@ $true
 |2,1,1728200741,47,"gree"
 ?/ember-cli-deploy
 |2,1,1728219999,47,"ember-cli-deploy"
-?/ember-d
-|2,1,1728219967,47,"ember-d"
-?/ember-dep
-|2,1,1728149723,47,"ember-dep"
-?/ember-de
-|2,1,1728149543,47,"ember-de"
-?/q	
-|2,1,1728148116,47,"q	"
-? dutycalculator
-|2,1,1728144590,,"dutycalculator"
-? dutycalculator.ng
-|2,1,1728144540,,"dutycalculator.ng"
-?/project
-|2,1,1728058622,47,"project"
-?/project-h
-|2,1,1728058612,47,"project-h"
-?/menu
-|2,1,1728049594,47,"menu"
-?/social li ajjjjjjjjjjjjjjjjjjjjjj
-|2,1,1727976701,47,"social li ajjjjjjjjjjjjjjjjjjjjjj"
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@Y
+|2,3,1731150825,,"Y"
 @div>
 |2,3,1727370619,,"div>"
 @li>
@@ -235,35 +237,61 @@ $true
 
 # Registers:
 "0	CHAR	0
-	g
-|3,0,0,0,1,0,1730317220,"g"
+	= 
+|3,0,0,0,1,0,1731172723,"= "
 ""1	LINE	0
+	#indent when moving to the next line while writing code
+	set autoindent
+	set smartindent
+	set cindent
 	
-|3,1,1,1,1,0,1730364596,""
+|3,1,1,1,5,0,1731171271,"#indent when moving to the next line while writing code","set autoindent","set smartindent","set cindent",""
 "2	LINE	0
-	Plugin 'docunext/closetag.vim'
-|3,0,2,1,1,0,1730363899,"Plugin 'docunext/closetag.vim'"
+	# Width of tab characters
+	set tabstop=2
+	
+|3,0,2,1,3,0,1731171229,"# Width of tab characters","set tabstop=2",""
 "3	LINE	0
-	<!DOCTYPE html>
-|3,0,3,1,1,0,1730359698,"<!DOCTYPE html>"
+	}
+|3,0,3,1,1,0,1731165561,"}"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1730359572,""
+	{
+	  tailwindCSS = {
+	    classAttributes = { "class", "className", "class:list", "classList", "ngClass" },
+	    includeLanguages = {
+	      eelixir = "html-eex",
+	      eruby = "erb",
+	      htmlangular = "html",
+	      templ = "html"
+	    },
+	    lint = {
+	      cssConflict = "warning",
+	      invalidApply = "error",
+	      invalidConfigPath = "error",
+	      invalidScreen = "error",
+	      invalidTailwindDirective = "error",
+	      invalidVariant = "error",
+	      recommendedVariantOrder = "warning"
+	    },
+	    validate = true
+	  }
+|3,0,4,1,20,0,1731165558,"{","  tailwindCSS = {","    classAttributes = { \"class\", \"className\", \"class:list\", \"classList\", \"ngClass\" },","    includeLanguages = {","      eelixir = \"html-eex\",","      eruby = \"erb\",","      htmlangular = \"html\",","      templ = \"html\"","    },","    lint = {","      cssConflict = \"warning\",","      invalidApply = \"error\",","      invalidConfigPath = \"error\",","      invalidScreen = \"error\",",>45
+|<"      invalidTailwindDirective = \"error\",","      invalidVariant = \"error\",","      recommendedVariantOrder = \"warning\"","    },","    validate = true","  }"
 "5	LINE	0
-	g:ragtag_filetypes = 'html, hbs'
-|3,0,5,1,1,0,1730359570,"g:ragtag_filetypes = 'html, hbs'"
+			} 
+|3,0,5,1,1,0,1731165535,"		} "
 "6	LINE	0
-	# Reagtag
-|3,0,6,1,1,0,1730359569,"# Reagtag"
+			{
+|3,0,6,1,1,0,1731165529,"		{"
 "7	LINE	0
-	autocmd FileType html setloa omnifunc=htmlcomplete#CompleteTags
-|3,0,7,1,1,0,1730358415,"autocmd FileType html setloa omnifunc=htmlcomplete#CompleteTags"
-"8	LINE	0
 	
-|3,0,8,1,1,0,1730358148,""
+|3,0,7,1,1,0,1731165452,""
+"8	LINE	0
+	  #
+|3,0,8,1,1,0,1731164287,"  #"
 "9	LINE	0
-	!
-|3,0,9,1,1,0,1730356357,"!"
+	<!DOCTYPE html>
+|3,0,9,1,1,0,1731151038,"<!DOCTYPE html>"
 "a@	CHAR	0
 	f{€ý5a€ý5>>f}€ý5i€ý5j
 |3,2,10,0,1,0,1730223396,"f{€ý5a€ý5>>f}€ý5i€ý5j"
@@ -274,413 +302,441 @@ $true
 	af€ý5u€ý5
 |3,0,26,0,1,0,1730223340,"af€ý5u€ý5"
 "-	CHAR	0
-	)
-|3,0,36,0,1,0,1730365604,")"
+	{}
+|3,0,36,0,1,0,1731172723,"{}"
 
 # File marks:
-'0  1  0  ~/.vim/vimrc
-|4,48,1,0,1730391620,"~/.vim/vimrc"
-'1  294  0  ~/.vim/vimrc
-|4,49,294,0,1730391614,"~/.vim/vimrc"
-'2  294  0  ~/.vim/vimrc
-|4,50,294,0,1730391614,"~/.vim/vimrc"
-'3  1  0  ~/lab/jslab/fact.js
-|4,51,1,0,1730385024,"~/lab/jslab/fact.js"
-'4  1  0  ~/lab/jslab/fact.js
-|4,52,1,0,1730365611,"~/lab/jslab/fact.js"
-'5  1  0  ~/lab/htmllab/test.html
-|4,53,1,0,1730365569,"~/lab/htmllab/test.html"
-'6  1  0  ~/lab/htmllab/test.html
-|4,54,1,0,1730363876,"~/lab/htmllab/test.html"
-'7  1  0  ~/lab/htmllab/test.html
-|4,55,1,0,1730363748,"~/lab/htmllab/test.html"
-'8  1  0  ~/lab/htmllab/test.html
-|4,56,1,0,1730363748,"~/lab/htmllab/test.html"
-'9  66  29  ~/.vim/vimrc
-|4,57,66,29,1730363734,"~/.vim/vimrc"
+'0  1  0  ~/lab/tailwindlab/lessionone/build/index.html
+|4,48,1,0,1731183959,"~/lab/tailwindlab/lessionone/build/index.html"
+'1  1  0  ~/.vim/vimrc
+|4,49,1,0,1731183903,"~/.vim/vimrc"
+'2  1  0  ~/lab/tailwindlab/lessionone/tailwind.config.js
+|4,50,1,0,1731183896,"~/lab/tailwindlab/lessionone/tailwind.config.js"
+'3  1  0  ~/lab/tailwindlab/lessionone/src/imput.css
+|4,51,1,0,1731183888,"~/lab/tailwindlab/lessionone/src/imput.css"
+'4  444  18  ~/.vim/vimrc
+|4,52,444,18,1731183607,"~/.vim/vimrc"
+'5  444  18  ~/.vim/vimrc
+|4,53,444,18,1731183607,"~/.vim/vimrc"
+'6  1  0  ~/lab/tailwindlab/lessionone/build/index.html
+|4,54,1,0,1731172907,"~/lab/tailwindlab/lessionone/build/index.html"
+'7  1  0  ~/lab/tailwindlab/lessionone/build/css/style.css
+|4,55,1,0,1731172808,"~/lab/tailwindlab/lessionone/build/css/style.css"
+'8  1  0  ~/lab/tailwindlab/lessionone/build/css/style.css
+|4,56,1,0,1731172808,"~/lab/tailwindlab/lessionone/build/css/style.css"
+'9  549  25  ~/.vim/vimrc
+|4,57,549,25,1731172739,"~/.vim/vimrc"
 
 # Jumplist (newest first):
+-'  1  0  ~/lab/tailwindlab/lessionone/build/index.html
+|4,39,1,0,1731183959,"~/lab/tailwindlab/lessionone/build/index.html"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730391620,"~/.vim/vimrc"
--'  294  0  ~/.vim/vimrc
-|4,39,294,0,1730391614,"~/.vim/vimrc"
--'  294  0  ~/.vim/vimrc
-|4,39,294,0,1730391614,"~/.vim/vimrc"
--'  1  0  ~/lab/jslab/fact.js
-|4,39,1,0,1730385024,"~/lab/jslab/fact.js"
--'  1  0  ~/lab/jslab/fact.js
-|4,39,1,0,1730385024,"~/lab/jslab/fact.js"
--'  11  9  ~/lab/jslab/fact.js
-|4,39,11,9,1730385014,"~/lab/jslab/fact.js"
--'  11  9  ~/lab/jslab/fact.js
-|4,39,11,9,1730385014,"~/lab/jslab/fact.js"
--'  1  0  ~/lab/jslab/fact.js
-|4,39,1,0,1730365611,"~/lab/jslab/fact.js"
--'  1  0  ~/lab/jslab/fact.js
-|4,39,1,0,1730365611,"~/lab/jslab/fact.js"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730365569,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730365569,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730365569,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730365569,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730365569,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730365569,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730365569,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730365569,"~/lab/htmllab/test.html"
--'  300  0  ~/.vim/vimrc
-|4,39,300,0,1730364583,"~/.vim/vimrc"
--'  298  1  ~/.vim/vimrc
-|4,39,298,1,1730364583,"~/.vim/vimrc"
--'  300  0  ~/.vim/vimrc
-|4,39,300,0,1730364583,"~/.vim/vimrc"
--'  298  1  ~/.vim/vimrc
-|4,39,298,1,1730364583,"~/.vim/vimrc"
--'  293  1  ~/.vim/vimrc
-|4,39,293,1,1730364547,"~/.vim/vimrc"
--'  293  1  ~/.vim/vimrc
-|4,39,293,1,1730364547,"~/.vim/vimrc"
--'  292  1  ~/.vim/vimrc
-|4,39,292,1,1730364545,"~/.vim/vimrc"
--'  292  1  ~/.vim/vimrc
-|4,39,292,1,1730364545,"~/.vim/vimrc"
--'  291  11  ~/.vim/vimrc
-|4,39,291,11,1730364543,"~/.vim/vimrc"
--'  291  11  ~/.vim/vimrc
-|4,39,291,11,1730364543,"~/.vim/vimrc"
--'  289  37  ~/.vim/vimrc
-|4,39,289,37,1730364541,"~/.vim/vimrc"
--'  289  37  ~/.vim/vimrc
-|4,39,289,37,1730364541,"~/.vim/vimrc"
--'  295  0  ~/.vim/vimrc
-|4,39,295,0,1730364513,"~/.vim/vimrc"
--'  295  0  ~/.vim/vimrc
-|4,39,295,0,1730364513,"~/.vim/vimrc"
--'  338  45  ~/.vim/vimrc
-|4,39,338,45,1730364460,"~/.vim/vimrc"
--'  338  45  ~/.vim/vimrc
-|4,39,338,45,1730364460,"~/.vim/vimrc"
--'  361  0  ~/.vim/vimrc
-|4,39,361,0,1730364439,"~/.vim/vimrc"
--'  361  0  ~/.vim/vimrc
-|4,39,361,0,1730364439,"~/.vim/vimrc"
--'  30  0  ~/.vim/vimrc
-|4,39,30,0,1730364222,"~/.vim/vimrc"
--'  30  0  ~/.vim/vimrc
-|4,39,30,0,1730364222,"~/.vim/vimrc"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363876,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363876,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363876,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363876,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363876,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363876,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363876,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363876,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363748,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363748,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363748,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363748,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363748,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363748,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363748,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1730363748,"~/lab/htmllab/test.html"
+|4,39,1,0,1731183903,"~/.vim/vimrc"
+-'  1  0  ~/lab/tailwindlab/lessionone/tailwind.config.js
+|4,39,1,0,1731183896,"~/lab/tailwindlab/lessionone/tailwind.config.js"
+-'  1  0  ~/lab/tailwindlab/lessionone/src/imput.css
+|4,39,1,0,1731183888,"~/lab/tailwindlab/lessionone/src/imput.css"
+-'  444  18  ~/.vim/vimrc
+|4,39,444,18,1731183607,"~/.vim/vimrc"
+-'  444  18  ~/.vim/vimrc
+|4,39,444,18,1731183607,"~/.vim/vimrc"
+-'  555  0  ~/.vim/vimrc
+|4,39,555,0,1731176056,"~/.vim/vimrc"
+-'  555  0  ~/.vim/vimrc
+|4,39,555,0,1731176056,"~/.vim/vimrc"
+-'  2  0  ~/lab/tailwindlab/lessionone/build/css/style.css
+|4,39,2,0,1731172934,"~/lab/tailwindlab/lessionone/build/css/style.css"
+-'  1  0  ~/lab/tailwindlab/lessionone/build/index.html
+|4,39,1,0,1731172907,"~/lab/tailwindlab/lessionone/build/index.html"
+-'  1  0  ~/lab/tailwindlab/lessionone/build/index.html
+|4,39,1,0,1731172907,"~/lab/tailwindlab/lessionone/build/index.html"
+-'  1  14  ~/lab/tailwindlab/lessionone/NERD_tree_win_1
+|4,39,1,14,1731172863,"~/lab/tailwindlab/lessionone/NERD_tree_win_1"
+-'  1  0  ~/lab/tailwindlab/lessionone/build/css/style.css
+|4,39,1,0,1731172808,"~/lab/tailwindlab/lessionone/build/css/style.css"
+-'  1  0  ~/lab/tailwindlab/lessionone/build/css/style.css
+|4,39,1,0,1731172808,"~/lab/tailwindlab/lessionone/build/css/style.css"
+-'  1  0  ~/lab/tailwindlab/lessionone/build/css/style.css
+|4,39,1,0,1731172808,"~/lab/tailwindlab/lessionone/build/css/style.css"
+-'  6  0  ~/lab/tailwindlab/lessionone/NERD_tree_win_1
+|4,39,6,0,1731172762,"~/lab/tailwindlab/lessionone/NERD_tree_win_1"
+-'  6  0  ~/lab/tailwindlab/lessionone/NERD_tree_win_1
+|4,39,6,0,1731172762,"~/lab/tailwindlab/lessionone/NERD_tree_win_1"
+-'  7  2  ~/lab/tailwindlab/lessionone/NERD_tree_win_1
+|4,39,7,2,1731172759,"~/lab/tailwindlab/lessionone/NERD_tree_win_1"
+-'  1  0  ~/lab/tailwindlab/lessionone/NERD_tree_win_1
+|4,39,1,0,1731172759,"~/lab/tailwindlab/lessionone/NERD_tree_win_1"
+-'  7  2  ~/lab/tailwindlab/lessionone/NERD_tree_win_1
+|4,39,7,2,1731172759,"~/lab/tailwindlab/lessionone/NERD_tree_win_1"
+-'  1  0  ~/lab/tailwindlab/lessionone/NERD_tree_win_1
+|4,39,1,0,1731172759,"~/lab/tailwindlab/lessionone/NERD_tree_win_1"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363736,"~/.vim/vimrc"
--'  66  29  ~/.vim/vimrc
-|4,39,66,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  66  29  ~/.vim/vimrc
-|4,39,66,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
--'  67  29  ~/.vim/vimrc
-|4,39,67,29,1730363734,"~/.vim/vimrc"
+|4,39,1,0,1731172740,"~/.vim/vimrc"
+-'  549  25  ~/.vim/vimrc
+|4,39,549,25,1731172739,"~/.vim/vimrc"
+-'  549  25  ~/.vim/vimrc
+|4,39,549,25,1731172739,"~/.vim/vimrc"
+-'  549  25  ~/.vim/vimrc
+|4,39,549,25,1731172739,"~/.vim/vimrc"
+-'  549  25  ~/.vim/vimrc
+|4,39,549,25,1731172739,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
+|4,39,1,0,1731172650,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
+|4,39,1,0,1731172650,"~/.vim/vimrc"
+-'  549  8  ~/.vim/vimrc
+|4,39,549,8,1731172632,"~/.vim/vimrc"
+-'  549  8  ~/.vim/vimrc
+|4,39,549,8,1731172632,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
+|4,39,1,0,1731172517,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
+|4,39,1,0,1731172517,"~/.vim/vimrc"
+-'  558  24  ~/.vim/vimrc
+|4,39,558,24,1731172485,"~/.vim/vimrc"
+-'  558  24  ~/.vim/vimrc
+|4,39,558,24,1731172485,"~/.vim/vimrc"
+-'  558  24  ~/.vim/vimrc
+|4,39,558,24,1731172485,"~/.vim/vimrc"
+-'  558  24  ~/.vim/vimrc
+|4,39,558,24,1731172485,"~/.vim/vimrc"
+-'  558  24  ~/.vim/vimrc
+|4,39,558,24,1731172485,"~/.vim/vimrc"
+-'  558  24  ~/.vim/vimrc
+|4,39,558,24,1731172485,"~/.vim/vimrc"
+-'  558  24  ~/.vim/vimrc
+|4,39,558,24,1731172485,"~/.vim/vimrc"
+-'  558  24  ~/.vim/vimrc
+|4,39,558,24,1731172485,"~/.vim/vimrc"
+-'  557  10  ~/.vim/vimrc
+|4,39,557,10,1731171818,"~/.vim/vimrc"
+-'  557  10  ~/.vim/vimrc
+|4,39,557,10,1731171818,"~/.vim/vimrc"
+-'  557  10  ~/.vim/vimrc
+|4,39,557,10,1731171818,"~/.vim/vimrc"
+-'  557  10  ~/.vim/vimrc
+|4,39,557,10,1731171818,"~/.vim/vimrc"
+-'  557  10  ~/.vim/vimrc
+|4,39,557,10,1731171818,"~/.vim/vimrc"
+-'  557  10  ~/.vim/vimrc
+|4,39,557,10,1731171818,"~/.vim/vimrc"
+-'  557  10  ~/.vim/vimrc
+|4,39,557,10,1731171818,"~/.vim/vimrc"
+-'  557  10  ~/.vim/vimrc
+|4,39,557,10,1731171818,"~/.vim/vimrc"
+-'  551  6  ~/.vim/vimrc
+|4,39,551,6,1731171785,"~/.vim/vimrc"
+-'  551  6  ~/.vim/vimrc
+|4,39,551,6,1731171785,"~/.vim/vimrc"
+-'  551  6  ~/.vim/vimrc
+|4,39,551,6,1731171785,"~/.vim/vimrc"
+-'  551  6  ~/.vim/vimrc
+|4,39,551,6,1731171785,"~/.vim/vimrc"
+-'  551  6  ~/.vim/vimrc
+|4,39,551,6,1731171785,"~/.vim/vimrc"
+-'  551  6  ~/.vim/vimrc
+|4,39,551,6,1731171785,"~/.vim/vimrc"
+-'  551  6  ~/.vim/vimrc
+|4,39,551,6,1731171785,"~/.vim/vimrc"
+-'  551  6  ~/.vim/vimrc
+|4,39,551,6,1731171785,"~/.vim/vimrc"
+-'  548  4  ~/.vim/vimrc
+|4,39,548,4,1731170631,"~/.vim/vimrc"
+-'  548  4  ~/.vim/vimrc
+|4,39,548,4,1731170631,"~/.vim/vimrc"
+-'  548  4  ~/.vim/vimrc
+|4,39,548,4,1731170631,"~/.vim/vimrc"
+-'  548  4  ~/.vim/vimrc
+|4,39,548,4,1731170631,"~/.vim/vimrc"
+-'  548  4  ~/.vim/vimrc
+|4,39,548,4,1731170631,"~/.vim/vimrc"
+-'  548  4  ~/.vim/vimrc
+|4,39,548,4,1731170631,"~/.vim/vimrc"
+-'  548  4  ~/.vim/vimrc
+|4,39,548,4,1731170631,"~/.vim/vimrc"
+-'  548  4  ~/.vim/vimrc
+|4,39,548,4,1731170631,"~/.vim/vimrc"
+-'  556  4  ~/.vim/vimrc
+|4,39,556,4,1731170285,"~/.vim/vimrc"
+-'  556  4  ~/.vim/vimrc
+|4,39,556,4,1731170285,"~/.vim/vimrc"
+-'  556  4  ~/.vim/vimrc
+|4,39,556,4,1731170285,"~/.vim/vimrc"
+-'  556  4  ~/.vim/vimrc
+|4,39,556,4,1731170285,"~/.vim/vimrc"
+-'  556  4  ~/.vim/vimrc
+|4,39,556,4,1731170285,"~/.vim/vimrc"
+-'  556  4  ~/.vim/vimrc
+|4,39,556,4,1731170285,"~/.vim/vimrc"
+-'  556  4  ~/.vim/vimrc
+|4,39,556,4,1731170285,"~/.vim/vimrc"
+-'  556  4  ~/.vim/vimrc
+|4,39,556,4,1731170285,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
+|4,39,1,0,1731170216,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1730363669,"~/.vim/vimrc"
--'  7  0  ~/.vim/vimrc
-|4,39,7,0,1730361670,"~/.vim/vimrc"
--'  7  0  ~/.vim/vimrc
-|4,39,7,0,1730361670,"~/.vim/vimrc"
--'  7  0  ~/.vim/vimrc
-|4,39,7,0,1730361670,"~/.vim/vimrc"
--'  7  0  ~/.vim/vimrc
-|4,39,7,0,1730361670,"~/.vim/vimrc"
--'  7  0  ~/.vim/vimrc
-|4,39,7,0,1730361670,"~/.vim/vimrc"
--'  7  0  ~/.vim/vimrc
-|4,39,7,0,1730361670,"~/.vim/vimrc"
--'  7  0  ~/.vim/vimrc
-|4,39,7,0,1730361670,"~/.vim/vimrc"
--'  7  0  ~/.vim/vimrc
-|4,39,7,0,1730361670,"~/.vim/vimrc"
--'  7  0  ~/.vim/vimrc
-|4,39,7,0,1730361670,"~/.vim/vimrc"
--'  7  0  ~/.vim/vimrc
-|4,39,7,0,1730361670,"~/.vim/vimrc"
--'  7  0  ~/.vim/vimrc
-|4,39,7,0,1730361670,"~/.vim/vimrc"
+|4,39,1,0,1731170216,"~/.vim/vimrc"
+-'  535  0  ~/.vim/vimrc
+|4,39,535,0,1731170213,"~/.vim/vimrc"
+-'  535  0  ~/.vim/vimrc
+|4,39,535,0,1731170213,"~/.vim/vimrc"
+-'  535  0  ~/.vim/vimrc
+|4,39,535,0,1731170213,"~/.vim/vimrc"
+-'  535  0  ~/.vim/vimrc
+|4,39,535,0,1731170213,"~/.vim/vimrc"
+-'  535  0  ~/.vim/vimrc
+|4,39,535,0,1731170213,"~/.vim/vimrc"
+-'  535  0  ~/.vim/vimrc
+|4,39,535,0,1731170213,"~/.vim/vimrc"
+-'  535  0  ~/.vim/vimrc
+|4,39,535,0,1731170213,"~/.vim/vimrc"
+-'  535  0  ~/.vim/vimrc
+|4,39,535,0,1731170213,"~/.vim/vimrc"
+-'  660  0  ~/.vim/vimrc
+|4,39,660,0,1731170178,"~/.vim/vimrc"
+-'  660  0  ~/.vim/vimrc
+|4,39,660,0,1731170178,"~/.vim/vimrc"
+-'  660  0  ~/.vim/vimrc
+|4,39,660,0,1731170178,"~/.vim/vimrc"
+-'  660  0  ~/.vim/vimrc
+|4,39,660,0,1731170178,"~/.vim/vimrc"
+-'  660  0  ~/.vim/vimrc
+|4,39,660,0,1731170178,"~/.vim/vimrc"
+-'  660  0  ~/.vim/vimrc
+|4,39,660,0,1731170178,"~/.vim/vimrc"
+-'  660  0  ~/.vim/vimrc
+|4,39,660,0,1731170178,"~/.vim/vimrc"
+-'  660  0  ~/.vim/vimrc
+|4,39,660,0,1731170178,"~/.vim/vimrc"
+-'  568  0  ~/.vim/vimrc
+|4,39,568,0,1731170166,"~/.vim/vimrc"
+-'  568  0  ~/.vim/vimrc
+|4,39,568,0,1731170166,"~/.vim/vimrc"
+-'  568  0  ~/.vim/vimrc
+|4,39,568,0,1731170166,"~/.vim/vimrc"
+-'  568  0  ~/.vim/vimrc
+|4,39,568,0,1731170166,"~/.vim/vimrc"
+-'  568  0  ~/.vim/vimrc
+|4,39,568,0,1731170166,"~/.vim/vimrc"
+-'  568  0  ~/.vim/vimrc
+|4,39,568,0,1731170166,"~/.vim/vimrc"
+-'  568  0  ~/.vim/vimrc
+|4,39,568,0,1731170166,"~/.vim/vimrc"
+-'  568  0  ~/.vim/vimrc
+|4,39,568,0,1731170166,"~/.vim/vimrc"
+-'  543  4  ~/.vim/vimrc
+|4,39,543,4,1731170148,"~/.vim/vimrc"
+-'  543  4  ~/.vim/vimrc
+|4,39,543,4,1731170148,"~/.vim/vimrc"
 
 # Buffer list:
-%~/.vim/vimrc	1	0
+%~/lab/tailwindlab/lessionone/build/css/style.css	3	0
+%~/lab/tailwindlab/lessionone/build/index.html	1	0
 
 # History of marks within files (newest to oldest):
 
 > ~/.vim/vimrc
-	*	1730391617	0
+	*	1731183609	0
 	"	1	0
-	^	294	9
-	.	294	0
-	+	261	81
-	+	262	0
-	+	262	115
-	+	263	0
-	+	263	84
-	+	255	0
-	+	265	117
-	+	264	0
-	+	265	69
-	+	264	56
-	+	253	28
-	+	248	0
-	+	450	0
-	+	330	52
-	+	330	0
-	+	268	0
-	+	265	0
-	+	315	0
-	+	265	0
-	+	315	52
-	+	315	0
-	+	284	0
-	+	285	0
-	+	284	0
-	+	285	0
-	+	278	0
-	+	274	0
-	+	270	0
-	+	269	0
-	+	270	0
-	+	269	0
-	+	270	0
-	+	274	0
-	+	278	0
-	+	284	0
-	+	285	0
-	+	315	0
-	+	26	0
-	+	27	5
-	+	28	25
-	+	28	23
-	+	29	0
-	+	311	37
-	+	325	66
-	+	361	24
-	+	361	0
-	+	290	0
-	+	290	40
-	+	290	0
-	+	290	9
-	+	290	0
-	+	290	5
-	+	290	0
-	+	290	43
-	+	290	0
-	+	240	0
-	+	233	0
-	+	231	1
-	+	234	1
-	+	290	0
-	+	232	0
-	+	290	0
-	+	28	0
-	+	402	0
-	+	1	0
-	+	28	0
-	+	113	0
-	+	213	24
-	+	213	26
-	+	215	0
-	+	213	25
-	+	215	0
-	+	213	29
-	+	214	67
-	+	27	0
-	+	26	0
-	+	402	0
-	+	214	0
-	+	30	0
-	+	299	50
-	+	327	49
-	+	329	60
-	+	338	0
-	+	295	0
+	^	565	17
+	.	444	18
+	+	300	50
+	+	328	49
+	+	330	60
+	+	339	0
+	+	296	0
+	+	294	0
 	+	293	0
 	+	292	0
-	+	291	0
-	+	293	0
-	+	298	53
-	+	296	0
-	+	297	0
-	+	298	0
-	+	297	0
-	+	298	0
-	+	295	0
 	+	294	0
+	+	299	53
+	+	297	0
+	+	298	0
+	+	299	0
+	+	298	0
+	+	299	0
+	+	296	0
+	+	295	0
+	+	29	0
+	+	27	0
+	+	29	0
+	+	402	63
+	+	28	0
+	+	402	62
+	+	533	3
+	+	541	0
+	+	540	0
+	+	541	0
+	+	543	0
+	+	545	84
+	+	546	0
+	+	545	84
+	+	544	156
+	+	547	22
+	+	548	0
+	+	541	16
+	+	541	0
+	+	570	0
+	+	548	0
+	+	547	0
+	+	548	0
+	+	568	0
+	+	570	0
+	+	541	0
+	+	203	0
+	+	549	0
+	+	548	0
+	+	549	0
+	+	548	0
+	+	540	0
+	+	1	0
+	+	543	0
+	+	541	0
+	+	548	0
+	+	549	0
+	+	551	0
+	+	557	0
+	+	543	0
+	+	548	0
+	+	543	0
+	+	548	0
+	+	203	0
+	+	551	0
+	+	549	0
+	+	140	0
+	+	152	0
+	+	151	0
+	+	134	0
+	+	155	0
+	+	566	0
+	+	548	0
+	+	551	0
+	+	557	0
+	+	548	19
+	+	549	25
+	+	550	26
+	+	551	19
+	+	552	17
+	+	553	23
+	+	554	17
+	+	556	14
+	+	557	22
+	+	558	22
+	+	559	27
+	+	560	23
+	+	561	34
+	+	562	24
+	+	563	33
+	+	565	18
+	+	563	35
+	+	562	26
+	+	561	36
+	+	560	25
+	+	559	29
+	+	558	24
+	+	549	25
+	+	444	18
 
-> ~/lab/jslab/fact.js
-	*	1730385014	0
+> ~/lab/tailwindlab/lessionone/build/index.html
+	*	1731173134	0
 	"	1	0
-	.	11	0
-	+	19	0
-	+	18	10
-	+	19	0
-	+	18	0
-	+	13	17
-	+	15	11
-	+	12	8
-	+	11	6
-	+	11	9
-	+	11	0
-
-> ~/lab/htmllab/test.html
-	*	1730365566	0
-	"	1	0
-	^	1	1
-	.	1	0
-	+	19	0
-	+	18	7
-	+	19	11
-	+	19	0
-	+	17	0
-	+	16	30
-	+	16	0
-	+	15	16
-	+	14	0
-	+	13	16
-	+	12	16
-	+	11	0
+	^	7	35
+	.	7	34
+	+	1	0
+	+	1	14
+	+	1	0
+	+	1	8
+	+	1	0
+	+	1	11
+	+	1	0
 	+	1	15
-	+	9	16
-	+	10	7
-	+	8	15
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	15
+	+	4	24
+	+	6	0
+	+	3	1
+	+	6	3
+	+	5	53
+	+	6	69
+	+	11	0
+	+	8	3
+	+	9	3
+	+	10	0
 	+	1	1
-	+	1	15
-	+	6	16
-	+	7	0
-	+	1	15
-	+	5	4
-	+	1	15
-	+	1	2
-	+	3	0
-	+	1	15
-	+	2	15
+	+	7	34
+
+> ~/lab/tailwindlab/lessionone/NERD_tree_win_1
+	*	1731173026	0
+	"	7	14
+	.	1	0
 	+	1	0
 
-> ~/lab/htmllab/html_skeleton.html
-	*	1730346208	0
-	"	1	0
-	^	19	4
-	.	19	4
-	+	3	0
-	+	4	4
-	+	16	0
-	+	20	0
-	+	19	4
+> ~/lab/tailwindlab/lessionone/build/css/style.css
+	*	1731172958	0
+	"	3	0
 
-> ~/lab/lblab/getting-started/src/application.ts
-	*	1730319278	0
+> ~/lab/tailwindlab/lessionone/src/imput.css
+	*	1731171958	0
 	"	1	0
-	^	12	20
-	.	12	19
-	+	13	0
-	+	16	98
-	+	17	0
-	+	13	0
-	+	12	19
+	^	3	20
+	.	3	19
+	+	3	19
+
+> ~/lab/tailwindlab/lessionone/tailwind.config.js
+	*	1731170007	0
+	"	1	0
+	^	3	27
+	.	3	26
+	+	3	26
+
+> /usr/local/share/vim/vim91/doc/change.txt
+	*	1731169996	0
+	"	707	0
+
+> ~/lab/emberlab/PortfolioApp/app/templates/about.hbs
+	*	1731144325	0
+	"	1	0
+	^	39	31
+	.	39	30
+	+	25	16
+	+	39	30
+
+> ~/lab/emberlab/PortfolioApp/app/styles/app.css
+	*	1731142610	0
+	"	1	0
+	^	306	36
+	.	306	36
+	+	305	24
+	+	306	34
+	+	305	24
+	+	306	36
+
+> ~/lab/emberlab/PortfolioApp/app/templates/application.hbs
+	*	1731141405	0
+	"	1	0
+
+> ~/lab/emberlab/PortfolioApp/app/templates/contact.hbs
+	*	1731141405	0
+	"	1	0
+
+> ~/lab/emberlab/PortfolioApp/app/templates/index.hbs
+	*	1731141405	0
+	"	1	0
+
+> ~/lab/emberlab/PortfolioApp/app/templates/projects.hbs
+	*	1731141405	0
+	"	1	0
 
 > ~/lab/emberlab/PortfolioApp/app/components/contact.gjs
-	*	1730230621	0
+	*	1731137929	0
 	"	1	0
 	^	2	26
 	.	2	25
@@ -779,8 +835,79 @@ $true
 	+	3	0
 	+	2	25
 
+> ~/lab/emberlab/PortfolioApp/app/components/project.gjs
+	*	1731137928	0
+	"	1	0
+	^	2	4
+	.	2	3
+	+	33	30
+	+	33	14
+	+	33	24
+	+	33	0
+	+	32	0
+	+	33	0
+	+	33	16
+	+	18	0
+	+	32	0
+	+	18	25
+	+	33	0
+	+	33	21
+	+	33	0
+	+	33	15
+	+	33	21
+	+	33	27
+	+	33	21
+	+	33	27
+	+	33	20
+	+	33	19
+	+	33	60
+	+	33	0
+	+	33	21
+	+	33	0
+	+	33	15
+	+	33	0
+	+	33	12
+	+	33	35
+	+	33	18
+	+	33	0
+	+	11	0
+	+	33	0
+	+	33	19
+	+	33	24
+	+	33	39
+	+	33	37
+	+	33	0
+	+	33	25
+	+	33	0
+	+	11	62
+	+	33	15
+	+	33	37
+	+	33	16
+	+	33	0
+	+	33	9
+	+	25	47
+	+	21	23
+	+	23	5
+	+	21	0
+	+	22	0
+	+	26	22
+	+	28	0
+	+	26	0
+	+	27	39
+	+	21	50
+	+	33	0
+	+	33	38
+	+	33	13
+	+	33	0
+	+	26	28
+	+	33	0
+	+	18	26
+	+	4	0
+	+	3	0
+	+	2	3
+
 > ~/lab/emberlab/PortfolioApp/app/components/social.gjs
-	*	1730230615	0
+	*	1731137928	0
 	"	1	0
 	.	22	0
 	+	6	0
@@ -820,6 +947,284 @@ $true
 	+	2	3
 	+	3	0
 	+	22	0
+
+> ~/lab/emberlab/dutycalculator/app/routes/index.js
+	*	1730966849	0
+	"	1	0
+	.	8	0
+	+	8	0
+	+	9	0
+	+	10	15
+	+	10	48
+	+	10	56
+	+	10	0
+	+	8	0
+
+> ~/lab/emberlab/dutycalculator/app/routes/form.js
+	*	1730952871	0
+	"	1	0
+	.	5	0
+	+	3	0
+	+	5	0
+
+> ~/lab/emberlab/dutycalculator/app/routes/search-result.js
+	*	1730952871	0
+	"	1	0
+
+> ~/lab/emberlab/dutycalculator/config/content-security-policy.js
+	*	1730922230	0
+	"	1	0
+
+> ~/lab/guidemaker-ember-template/guidemaker-ember-template/src/components/guides-article.js
+	*	1730914779	0
+	"	1	0
+
+> ~/lab/typelab/academeez/app.ts
+	*	1730835905	0
+	"	1	0
+	^	12	20
+	.	9	2
+	+	8	26
+	+	13	46
+	+	14	3
+	+	8	27
+	+	9	0
+	+	12	0
+	+	13	0
+	+	9	2
+	+	9	0
+	+	12	0
+	+	9	1
+	+	12	0
+	+	9	1
+	+	15	0
+	+	14	0
+	+	13	0
+	+	7	0
+	+	13	0
+	+	9	2
+
+> ~/lab/reactlab/react001.html
+	*	1730657121	0
+	"	1	0
+	^	19	13
+	.	21	0
+	+	2	16
+	+	21	7
+	+	21	0
+	+	7	0
+	+	6	75
+	+	4	0
+	+	20	9
+	+	10	25
+	+	14	0
+	+	19	0
+	+	21	0
+
+> ~/lab/reactlab/my-react-app/src/App.css
+	*	1730657068	0
+	"	1	0
+
+> ~/lab/reactlab/my-react-app/src/App.js
+	*	1730657062	0
+	"	1	0
+	^	4	25
+	.	1	0
+	+	3	0
+	+	5	0
+	+	4	0
+	+	1	0
+
+> ~/lab/reactlab/my-react-app/public/index.html
+	*	1730646315	0
+	"	1	0
+
+> ~/lab/reactlab/my-react-app/src/index.js
+	*	1730640593	0
+	"	4	43
+	^	4	44
+	.	4	43
+	+	5	0
+	+	8	0
+	+	7	12
+	+	8	0
+	+	7	25
+	+	4	43
+
+> ~/lab/reactlab/reactjs-installation
+	*	1730635978	0
+	"	1	0
+	^	1	1
+	.	1	0
+	+	26	0
+	+	24	14
+	+	2	0
+	+	1	0
+
+> ~/lab/jslab/reduce.js
+	*	1730575128	0
+	"	1	0
+	.	33	0
+	+	4	10
+	+	8	13
+	+	12	11
+	+	13	3
+	+	5	3
+	+	4	11
+	+	16	40
+	+	33	0
+	+	16	40
+	+	18	18
+	+	33	0
+	+	23	0
+	+	20	6
+	+	22	19
+	+	18	15
+	+	22	31
+	+	28	10
+	+	27	14
+	+	33	0
+	+	25	17
+	+	26	31
+	+	27	24
+	+	28	23
+	+	29	3
+	+	30	0
+	+	33	0
+	+	30	2
+	+	32	46
+	+	22	39
+	+	33	0
+
+> ~/lab/typelab/example/indext.ts
+	*	1730545886	0
+	"	1	0
+	^	2	4
+	.	2	3
+	+	2	3
+
+> ~/lab/typelab/example/tsconfig.json
+	*	1730471450	0
+	"	1	0
+	.	66	0
+	+	58	0
+	+	56	0
+	+	57	0
+	+	56	0
+	+	57	0
+	+	56	0
+	+	66	0
+
+> ~/lab/typelab/example/indext.js.map
+	*	1730466066	0
+	"	1	0
+
+> ~/lab/typelab/example/package.json
+	*	1730431292	0
+	"	1	0
+	^	6	58
+	.	6	57
+	+	7	49
+	+	6	57
+
+> ~/lab/typelab/typescript-project/build/index.js
+	*	1730399427	0
+	"	1	0
+	.	2	0
+	+	2	0
+
+> ~/lab/typelab/typescript-project/index.ts
+	*	1730399132	0
+	"	1	0
+	^	4	11
+	.	5	0
+	+	3	26
+	+	3	0
+	+	6	0
+	+	3	51
+	+	5	0
+	+	3	40
+	+	2	0
+	+	4	9
+	+	5	0
+
+> ~/lab/typelab/typescript-project/tsconfig.json
+	*	1730398655	0
+	"	1	0
+	^	60	22
+	.	60	21
+	+	60	21
+
+> ~/lab/jslab/fact.js
+	*	1730385014	0
+	"	1	0
+	.	11	0
+	+	19	0
+	+	18	10
+	+	19	0
+	+	18	0
+	+	13	17
+	+	15	11
+	+	12	8
+	+	11	6
+	+	11	9
+	+	11	0
+
+> ~/lab/htmllab/test.html
+	*	1730365566	0
+	"	1	0
+	^	1	1
+	.	1	0
+	+	19	0
+	+	18	7
+	+	19	11
+	+	19	0
+	+	17	0
+	+	16	30
+	+	16	0
+	+	15	16
+	+	14	0
+	+	13	16
+	+	12	16
+	+	11	0
+	+	1	15
+	+	9	16
+	+	10	7
+	+	8	15
+	+	1	1
+	+	1	15
+	+	6	16
+	+	7	0
+	+	1	15
+	+	5	4
+	+	1	15
+	+	1	2
+	+	3	0
+	+	1	15
+	+	2	15
+	+	1	0
+
+> ~/lab/htmllab/html_skeleton.html
+	*	1730346208	0
+	"	1	0
+	^	19	4
+	.	19	4
+	+	3	0
+	+	4	4
+	+	16	0
+	+	20	0
+	+	19	4
+
+> ~/lab/lblab/getting-started/src/application.ts
+	*	1730319278	0
+	"	1	0
+	^	12	20
+	.	12	19
+	+	13	0
+	+	16	98
+	+	17	0
+	+	13	0
+	+	12	19
 
 > ~/lab/jslab/dnalab.js
 	*	1730226530	0
@@ -966,240 +1371,3 @@ $true
 > ~/lab/emberlab/dutycalculator/app/components/search.gjs
 	*	1730203547	0
 	"	10	0
-
-> ~/lab/emberlab/PortfolioApp/app/app.js
-	*	1730203116	0
-	"	1	0
-
-> ~/lab/emberlab/PortfolioApp/app/components/project.gjs
-	*	1730203033	0
-	"	1	0
-	^	2	4
-	.	2	3
-	+	33	30
-	+	33	14
-	+	33	24
-	+	33	0
-	+	32	0
-	+	33	0
-	+	33	16
-	+	18	0
-	+	32	0
-	+	18	25
-	+	33	0
-	+	33	21
-	+	33	0
-	+	33	15
-	+	33	21
-	+	33	27
-	+	33	21
-	+	33	27
-	+	33	20
-	+	33	19
-	+	33	60
-	+	33	0
-	+	33	21
-	+	33	0
-	+	33	15
-	+	33	0
-	+	33	12
-	+	33	35
-	+	33	18
-	+	33	0
-	+	11	0
-	+	33	0
-	+	33	19
-	+	33	24
-	+	33	39
-	+	33	37
-	+	33	0
-	+	33	25
-	+	33	0
-	+	11	62
-	+	33	15
-	+	33	37
-	+	33	16
-	+	33	0
-	+	33	9
-	+	25	47
-	+	21	23
-	+	23	5
-	+	21	0
-	+	22	0
-	+	26	22
-	+	28	0
-	+	26	0
-	+	27	39
-	+	21	50
-	+	33	0
-	+	33	38
-	+	33	13
-	+	33	0
-	+	26	28
-	+	33	0
-	+	18	26
-	+	4	0
-	+	3	0
-	+	2	3
-
-> ~/lab/emberlab/PortfolioApp/NERD_tree_win_1
-	*	1730203009	0
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/lab/lblab/getting-started/src/controllers/ping.controller.ts
-	*	1730202862	0
-	"	1	0
-
-> ~/lab/lblab/getting-started/src/controllers/index.ts
-	*	1730202825	0
-	"	1	0
-
-> ~/lab/lblab/getting-started/src/controllers/hello.controller.ts
-	*	1730202800	0
-	"	1	0
-
-> ~/lab/lblab/getting-started/src/models/README.md
-	*	1730202782	0
-	"	1	0
-
-> ~/lab/emberlab/dutycalculator/NERD_tree_win_2
-	*	1730202633	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/lab/emberlab/dutycalculator/app/components/form-utils.gjs
-	*	1730202624	0
-	"	1	0
-
-> ~/lab/emberlab/dutycalculator/app/components/form.gjs
-	*	1730202622	0
-	"	1	0
-
-> ~/lab/htmllab/exploration/flexbox_signature.css
-	*	1730202500	0
-	"	1	0
-	^	22	10
-	.	22	0
-	+	22	0
-
-> ~/lab/NERD_tree_win_1
-	*	1730199017	0
-	"	15	1
-	.	1	0
-	+	1	0
-
-> ~/lab/emberlab/dutycalculator/app/routes/search-result.js
-	*	1730196984	0
-	"	1	0
-
-> ~/lab/emberlab/dutycalculator/app/routes/index.js
-	*	1730196982	0
-	"	1	0
-
-> ~/lab/emberlab/dutycalculator/app/routes/form.js
-	*	1730193308	0
-	"	3	27
-	.	5	0
-	+	3	0
-	+	5	0
-
-> ~/lab/emberlab/dutycalculator/NERD_tree_tab_1
-	*	1730191157	0
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/lab/bashlab/inputs.sh
-	*	1730179716	0
-	"	1	0
-	^	2	9
-	.	2	9
-	+	6	2
-	+	2	9
-
-> ~/.vim/snippetSupport
-	*	1730174890	0
-	"	1	1
-
-> ~/lab/jslab/floors.js
-	*	1730145831	0
-	"	1	0
-	^	45	12
-	.	45	11
-	+	45	11
-
-> ~/lab/jslab/simple.js
-	*	1730145364	0
-	"	1	0
-	^	6	20
-	.	6	19
-	+	3	8
-	+	3	0
-	+	2	8
-	+	6	19
-
-> ~/.vim/LspHover
-	*	1730143937	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/lab/awklab/awkprof.out
-	*	1730138872	0
-	"	1	0
-	.	1	0
-	+	9	0
-	+	10	0
-	+	1	0
-
-> ~/lab/emberlab/PortfolioApp/.glintrc.yml
-	*	1730136362	0
-	"	1	0
-	^	1	25
-	.	1	24
-	+	1	24
-
-> ~/lab/NERD_tree_1
-	*	1730059885	0
-	"	6	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/bundle/vim-airline/doc/airline.txt
-	*	1730050577	0
-	"	2	0
-
-> /airline
-	*	1730036246	0
-	"	1	0
-
-> /usr/local/share/vim/vim91/doc/options.txt
-	*	1730026756	0
-	"	8446	38
-
-> /usr/local/share/vim/vim91/doc/syntax.txt
-	*	1730024971	0
-	"	5713	5
-
-> ~/lab/json.html
-	*	1730023060	0
-	"	1	0
-
-> /tmp/lsp-glint.log
-	*	1729966847	0
-	"	1	0
-
-> /tmp/lsp-glint.err
-	*	1729965201	0
-	"	1	0
-
-> ~/.vim/coc-settings.json
-	*	1729964334	0
-	"	1	0
-
-> ~/.vim/vim-coc
-	*	1729964306	0
-	"	484	0

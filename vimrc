@@ -71,6 +71,10 @@ Plugin 'rafamadriz/friendly-snippets'
 # ngram complete
 Plugin 'girishji/ngram-complete.vim'
 
+# emmet
+Plugin 'mattn/emmet-vim'
+
+
 # All of your Plugins must be added before the following line
 # required
 call vundle#end()
@@ -211,7 +215,7 @@ augroup END
 #     autocmd BufNewFile *.html 0r ~/.vim/skeletons/html
 # augroup END
 
-autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
+# autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
 # inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n" : "\<C-x>\<C-o>"
 
 # use system clipboard
@@ -363,7 +367,9 @@ cabbrev vls VimspectorLoadSession
 #Boolean toggle tool mapping to \t
 nnoremap <silent> <leader>t :ToggleBool<CR>
 
-set timeout ttimeoutlen=50
+# To wait and the time to wait in milliseconds
+set timeout         # Enable timeout for key sequences
+set timeoutlen=1000  # Wait 1000 milliseconds fo a key sequence to complete
 #
 # TextEdit might fail if hidden is not set.
 set hidden
@@ -381,6 +387,35 @@ set shortmess+=c
 # Always show the signcolumn, otherwise it would shift the text each time
 # diagnostics appear/become resolved.
 set signcolumn=yes
+
+# emmet shortcuts
+g:user_emmet_mode = 'n'       # only enable in normal mode
+g:user_emmet_leader_key = ',' # emmet expansion trigger
+
+# emmet adjustment
+g:user_emmet_settings = {
+  'variables': {'lang': 'en'},
+  'html': {
+    'default_attributes': {
+      'option': {'value': v:null},
+      'textarea': {'id': v:null, 'name': v:null, 'cols': 10, 'rows': 10},
+    },
+    'snippets': {
+      'html:5': "<!DOCTYPE html>\n"
+              .. "<html lang=\"${lang}\">\n"
+              .. "<head>\n"
+              .. "\t<meta charset=\"${charset}\">\n"
+              .. "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
+              .. "\t<meta name=\"description\" content=\"\">\n"
+              .. "\t<meta name=\"author\" content=\"\">\n"
+              .. "\t<title></title>\n"
+              .. "</head>\n"
+              .. "<body>\n\t${child}|\n</body>\n"
+              .. "</html>"
+    },
+  },
+}
+
 
 # This snippet allows users to navigate through completion items in the popup menu using the <Tab> and <S-Tab> keys:
 # When the popup menu is visible:
@@ -441,7 +476,7 @@ var lspOpts = {
   noNewlineInCompletion: v:false,
   omniComplete: v:true,
   outlineOnRight: v:false,
-  outlineWinSize: 40,
+  outlineWinSize: 60,
   semanticHighlight: v:true,
   showDiagInBalloon: v:true,
   showDiagInPopup: v:true,
@@ -650,7 +685,8 @@ augroup Lsp
     nnoremap <buffer> <LocalLeader>ds <Cmd>LspDiag show<CR>
     nnoremap <buffer> <LocalLeader>dc <Cmd>LspDiag current<CR>
     nnoremap <buffer> <LocalLeader>df <Cmd>LspDiag first<CR>
-    nnoremap <buffer> <LocalLeader>dht <Cmd>LspDiag highlight toggle<CR>
+    nnoremap <buffer> <LocalLeader>dh <Cmd>LspDiag here<CR>
+    nnoremap <buffer> <LocalLeader>dt <Cmd>LspDiag highlight toggle<CR>
     nnoremap <buffer> <LocalLeader>h <Cmd>LspHover<CR>
     nnoremap <buffer> [d <Cmd>LspDiag next<CR>
     nnoremap <buffer> ]d <Cmd>LspDiag prev<CR>

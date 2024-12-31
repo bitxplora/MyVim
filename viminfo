@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/auto-pairs
+~MSle0~/updatetime
 
 # Last Substitute Search Pattern:
 ~MSle0&dutycalculator
@@ -21,43 +21,76 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1731602921,,"q"
-:q!
-|2,0,1731602863,,"q!"
-:redo
-|2,0,1731598326,,"redo"
+|2,0,1735460278,,"q"
+:qa
+|2,0,1732774426,,"qa"
+:w
+|2,0,1732510140,,"w"
 :wq
-|2,0,1731597962,,"wq"
+|2,0,1732506827,,"wq"
+:redo
+|2,0,1732374310,,"redo"
+:W
+|2,0,1732373731,,"W"
+:r
+|2,0,1732344907,,"r"
+:!tidy -mi -html %
+|2,0,1732288972,,"!tidy -mi -html %"
+:set paste
+|2,0,1732286055,,"set paste"
+:set nopaste
+|2,0,1732186281,,"set nopaste"
+:ww
+|2,0,1732186205,,"ww"
+:w app/components/login.original
+|2,0,1732131392,,"w app/components/login.original"
+:343
+<//www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+|2,0,1732115898,,"//www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-eye\"><path d=\"M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/></svg>"
+:LspServer restart
+|2,0,1731959564,,"LspServer restart"
+:uu
+|2,0,1731926253,,"uu"
+:LspServer show status
+|2,0,1731902055,,"LspServer show status"
+:LspSever show status
+|2,0,1731902043,,"LspSever show status"
+:w tailwind.config.sample
+|2,0,1731831332,,"w tailwind.config.sample"
+:pwd
+|2,0,1731831304,,"pwd"
+:e!
+|2,0,1731857199,,"e!"
+:echo $VIMRUNTIME
+|2,0,1731779869,,"echo $VIMRUNTIME"
+:h runtimepath
+|2,0,1731779768,,"h runtimepath"
+:set runtimepath?
+|2,0,1731779723,,"set runtimepath?"
+:q!
+|2,0,1731777327,,"q!"
+:imap (
+|2,0,1731756574,,"imap ("
+:bd
+|2,0,1731757117,,"bd"
+:PluginClean
+|2,0,1731757107,,"PluginClean"
+:PluginUpdate
+|2,0,1731757046,,"PluginUpdate"
+:PluginInstall
+|2,0,1731754282,,"PluginInstall"
+:nohls
+|2,0,1731601718,,"nohls"
 :!
 |2,0,1731594401,,"!"
-:bd
-|2,0,1731592714,,"bd"
-:PluginInstall
-|2,0,1731592705,,"PluginInstall"
-:PluginUpdate
-|2,0,1731592612,,"PluginUpdate"
-:w
-|2,0,1731592386,,"w"
-:nohls
-|2,0,1731592380,,"nohls"
 :set timeout?
 |2,0,1731591930,,"set timeout?"
 :help =
 |2,0,1731169951,,"help ="
 :set indent?
 |2,0,1731170121,,"set indent?"
-:set nopaste
-|2,0,1731168118,,"set nopaste"
-:set paste
-|2,0,1731165298,,"set paste"
-:PluginClean
-|2,0,1731150562,,"PluginClean"
-:qa
-|2,0,1731145831,,"qa"
 :set AutoPairsFlyMode=0
 |2,0,1730830901,,"set AutoPairsFlyMode=0"
-:pwd
-|2,0,1730635263,,"pwd"
 :closeall
 |2,0,1730657062,,"closeall"
 :cloa
@@ -72,10 +105,6 @@ $
 |2,0,1730636356,,"vsp App.js"
 :e App.css
 |2,0,1730636319,,"e App.css"
-:LspServer show status
-|2,0,1730549610,,"LspServer show status"
-:e!
-|2,0,1730521443,,"e!"
 : BackInsert (g:AutoPairsShortcutBackInsert)
 |2,0,1730364519,," BackInsert (g:AutoPairsShortcutBackInsert)"
 : Jump to next closed pair (g:AutoPairsShortcutJump)
@@ -92,38 +121,28 @@ $
 |2,0,1730354468,,"CloseTagEnableBuffer"
 :paste
 |2,0,1730316565,,"paste"
-:hi
-|2,0,1730267886,,"hi"
-:w!
-|2,0,1730267739,,"w!"
-:tabe app/routes/
-|2,0,1730203002,,"tabe app/routes/"
-:VimCompleteCompletors
-|2,0,1730224000,,"VimCompleteCompletors"
-:VimcompleteCompletors
-|2,0,1730221890,,"VimcompleteCompletors"
-:VimCompletionCompletors
-|2,0,1730221863,,"VimCompletionCompletors"
-:h completionMatcherValue
-|2,0,1730218274,,"h completionMatcherValue"
-:LspDiag highlight toggle
-|2,0,1730208241,,"LspDiag highlight toggle"
-:LspHighlightClear
-|2,0,1730208172,,"LspHighlightClear"
-:LspHiighlightClear
-|2,0,1730208156,,"LspHiighlightClear"
-:LspInlayHints toggle
-|2,0,1730208107,,"LspInlayHints toggle"
-:LspInlayHints
-|2,0,1730208071,,"LspInlayHints"
-:LspShowReferences
-|2,0,1730204895,,"LspShowReferences"
-:LspServer debug messages
-|2,0,1730204744,,"LspServer debug messages"
 
 # Search String History (newest to oldest):
 ? \$\(cursor\|select\)\$
-|2,1,1731602380,,"\\$\\(cursor\\|select\\)\\$"
+|2,1,1732131019,,"\\$\\(cursor\\|select\\)\\$"
+?/<<
+|2,1,1731944712,47,"<<"
+?/>>
+|2,1,1731944353,47,">>"
+?/template-tag
+|2,1,1731850146,47,"template-tag"
+? \<xd\>
+|2,1,1731776274,,"\\<xd\\>"
+?/xd
+|2,1,1731775216,47,"xd"
+?/auto-p
+|2,1,1731757151,47,"auto-p"
+?/auto-
+|2,1,1731754421,47,"auto-"
+? updatetime
+|2,1,1731650714,,"updatetime"
+?/timeou
+|2,1,1731597925,47,"timeou"
 ?/timeout
 |2,1,1731591808,47,"timeout"
 ?/timeout7
@@ -150,8 +169,6 @@ $
 |2,1,1730398633,47,"outD"
 ?/auto-pa
 |2,1,1730364222,47,"auto-pa"
-?/auto-p
-|2,1,1730364210,47,"auto-p"
 ?/color
 |2,1,1730356082,47,"color"
 ?/AutoP
@@ -206,26 +223,20 @@ $
 |2,1,1730029792,47,"let"
 ?/win
 |2,1,1730027055,47,"win"
-?/term
-|2,1,1730026956,47,"term"
-?/line
-|2,1,1730026354,47,"line"
-?/colors
-|2,1,1730025731,47,"colors"
-?/background
-|2,1,1730025650,47,"background"
-?/colo
-|2,1,1730025405,47,"colo"
-? }
-|2,1,1730025355,,"}"
-?/fileM
-|2,1,1728572787,47,"fileM"
-?/soc
-|2,1,1728449728,47,"soc"
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@span>
+|2,3,1732097207,,"span>"
+@div>
+|2,3,1731950967,,"div>"
+@section>
+|2,3,1731816820,,"section>"
+@y
+|2,3,1731751134,,"y"
+@template>
+|2,3,1731735466,,"template>"
 @ol>li*
 |2,3,1731598354,,"ol>li*"
 @ul>li*
@@ -234,8 +245,6 @@ $
 |2,3,1731597349,,"ul>li"
 @Y
 |2,3,1731150825,,"Y"
-@div>
-|2,3,1727370619,,"div>"
 @li>
 |2,3,1727262898,,"li>"
 
@@ -243,37 +252,51 @@ $
 
 # Registers:
 "0	LINE	0
-	set timeout ttimeoutlen=50
-|3,0,0,1,1,0,1731591814,"set timeout ttimeoutlen=50"
-""1	LINE	0
-	<template></template>
-|3,1,1,1,1,0,1731601343,"<template></template>"
+	    <Project
+	      @image="dutycalculator.svg"
+	      @imageAlt="Duty Calculator, https://www.dutycalculator.ng; a web application that calculates import duty."
+	      @github="dutycalculator"
+	      @globe="www.dutycalculator.ng"
+	      >
+	      <:header>
+	        Duty Calculator
+	      </:header>
+	      <:description>
+	        Duty Calculator is a web application tool that calculates import duty on goods imported
+	        into Nigeria. It is in production and used by importers, custom agents,
+	        and so on. It is powered by an API server, that make the functionality
+	        possible.
+	      </:description>
+	    </Project>
+|3,0,0,1,16,0,1732470175,"    <Project","      @image=\"dutycalculator.svg\"","      @imageAlt=\"Duty Calculator, https://www.dutycalculator.ng; a web application that calculates import duty.\"","      @github=\"dutycalculator\"","      @globe=\"www.dutycalculator.ng\"","      >","      <:header>","        Duty Calculator","      </:header>","      <:description>",>97
+|<"        Duty Calculator is a web application tool that calculates import duty on goods imported","        into Nigeria. It is in production and used by importers, custom agents,","        and so on. It is powered by an API server, that make the functionality","        possible.","      </:description>","    </Project>"
+"1	LINE	0
+	        
+|3,0,1,1,1,0,1732471394,"        "
 "2	LINE	0
-	h1>Myl   
-|3,0,2,1,1,0,1731601307,"h1>Myl   "
+	        possible.
+|3,0,2,1,1,0,1732471096,"        possible."
 "3	LINE	0
-	  </section>
-|3,0,3,1,1,0,1731601092,"  </section>"
+	        and so on. It is powered by an API server, that make the functionality
+|3,0,3,1,1,0,1732471095,"        and so on. It is powered by an API server, that make the functionality"
 "4	LINE	0
-	<sec></sec>
-|3,0,4,1,1,0,1731601083,"<sec></sec>"
+	        into Nigeria. It is in production and used by importers, custom agents,
+|3,0,4,1,1,0,1732471095,"        into Nigeria. It is in production and used by importers, custom agents,"
 "5	LINE	0
-	  section
-|3,0,5,1,1,0,1731600928,"  section"
+	        Duty Calculator is a web application tool that calculates import duty on goods imported
+|3,0,5,1,1,0,1732471094,"        Duty Calculator is a web application tool that calculates import duty on goods imported"
 "6	LINE	0
-	  test1
-	  test2
-	  test3
-|3,0,6,1,3,0,1731598354,"  test1","  test2","  test3"
+	
+|3,0,6,1,1,0,1732383623,""
 "7	LINE	0
-	  </ul>
-|3,0,7,1,1,0,1731598223,"  </ul>"
+	Make use of the many generators for code, try `ember help generate` for more details
+|3,0,7,1,1,0,1732383606,"Make use of the many generators for code, try `ember help generate` for more details"
 "8	LINE	0
-	    <li>test3</li>
-|3,0,8,1,1,0,1731598222,"    <li>test3</li>"
+	
+|3,0,8,1,1,0,1732383597,""
 "9	LINE	0
-	    <li>test2</li>
-|3,0,9,1,1,0,1731598221,"    <li>test2</li>"
+	### Code Generators
+|3,0,9,1,1,0,1732383596,"### Code Generators"
 "a@	CHAR	0
 	f{€ý5a€ý5>>f}€ý5i€ý5j
 |3,2,10,0,1,0,1730223396,"f{€ý5a€ý5>>f}€ý5i€ý5j"
@@ -283,1100 +306,1119 @@ $
 "q	CHAR	0
 	af€ý5u€ý5
 |3,0,26,0,1,0,1730223340,"af€ý5u€ý5"
-"-	CHAR	0
-	e
-|3,0,36,0,1,0,1731601197,"e"
+""-	CHAR	0
+	 
+|3,1,36,0,1,0,1732506973," "
 
 # File marks:
-'0  1  0  ~/lab/htmllab/html_skeleton.html
-|4,48,1,0,1731602921,"~/lab/htmllab/html_skeleton.html"
-'1  1  0  ~/lab/htmllab/test.html
-|4,49,1,0,1731602863,"~/lab/htmllab/test.html"
-'2  1  0  ~/lab/htmllab/test.html
-|4,50,1,0,1731597962,"~/lab/htmllab/test.html"
-'3  1  0  ~/lab/htmllab/test.html
-|4,51,1,0,1731596049,"~/lab/htmllab/test.html"
-'4  1  0  ~/lab/htmllab/test.html
-|4,52,1,0,1731596049,"~/lab/htmllab/test.html"
-'5  1  0  ~/lab/htmllab/test.html
-|4,53,1,0,1731595981,"~/lab/htmllab/test.html"
-'6  1  0  ~/lab/htmllab/test.html
-|4,54,1,0,1731595981,"~/lab/htmllab/test.html"
-'7  1  0  ~/lab/htmllab/test.html
-|4,55,1,0,1731595981,"~/lab/htmllab/test.html"
-'8  1  0  ~/lab/htmllab/test.html
-|4,56,1,0,1731595981,"~/lab/htmllab/test.html"
-'9  1  0  ~/lab/htmllab/test.html
-|4,57,1,0,1731595941,"~/lab/htmllab/test.html"
+'0  1  0  ~/lab/reactlab/testviteapp/src/main.jsx
+|4,48,1,0,1735398403,"~/lab/reactlab/testviteapp/src/main.jsx"
+'1  1  0  ~/lab/reactlab/testviteapp/src/main.jsx
+|4,49,1,0,1735398403,"~/lab/reactlab/testviteapp/src/main.jsx"
+'2  1  0  ~/lab/reactlab/testviteapp/src/App.jsx
+|4,50,1,0,1735398377,"~/lab/reactlab/testviteapp/src/App.jsx"
+'3  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,51,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
+'4  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,52,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
+'5  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,53,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+'6  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,54,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+'7  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,55,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+'8  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,56,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+'9  1  0  ~/lab/reactlab/my-react-app/src/App.js
+|4,57,1,0,1734184867,"~/lab/reactlab/my-react-app/src/App.js"
 
 # Jumplist (newest first):
--'  1  0  ~/lab/htmllab/html_skeleton.html
-|4,39,1,0,1731602921,"~/lab/htmllab/html_skeleton.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731602863,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731602863,"~/lab/htmllab/test.html"
--'  35  12  ~/lab/htmllab/test.html
-|4,39,35,12,1731602380,"~/lab/htmllab/test.html"
--'  35  12  ~/lab/htmllab/test.html
-|4,39,35,12,1731602380,"~/lab/htmllab/test.html"
--'  36  10  ~/lab/htmllab/test.html
-|4,39,36,10,1731601339,"~/lab/htmllab/test.html"
--'  36  10  ~/lab/htmllab/test.html
-|4,39,36,10,1731601339,"~/lab/htmllab/test.html"
--'  34  9  ~/lab/htmllab/test.html
-|4,39,34,9,1731601126,"~/lab/htmllab/test.html"
--'  34  9  ~/lab/htmllab/test.html
-|4,39,34,9,1731601126,"~/lab/htmllab/test.html"
--'  33  8  ~/lab/htmllab/test.html
-|4,39,33,8,1731601072,"~/lab/htmllab/test.html"
--'  33  8  ~/lab/htmllab/test.html
-|4,39,33,8,1731601072,"~/lab/htmllab/test.html"
--'  32  8  ~/lab/htmllab/test.html
-|4,39,32,8,1731601051,"~/lab/htmllab/test.html"
--'  32  8  ~/lab/htmllab/test.html
-|4,39,32,8,1731601051,"~/lab/htmllab/test.html"
--'  31  5  ~/lab/htmllab/test.html
-|4,39,31,5,1731601041,"~/lab/htmllab/test.html"
--'  31  5  ~/lab/htmllab/test.html
-|4,39,31,5,1731601041,"~/lab/htmllab/test.html"
--'  30  12  ~/lab/htmllab/test.html
-|4,39,30,12,1731601006,"~/lab/htmllab/test.html"
--'  30  12  ~/lab/htmllab/test.html
-|4,39,30,12,1731601006,"~/lab/htmllab/test.html"
--'  29  9  ~/lab/htmllab/test.html
-|4,39,29,9,1731600955,"~/lab/htmllab/test.html"
--'  29  9  ~/lab/htmllab/test.html
-|4,39,29,9,1731600955,"~/lab/htmllab/test.html"
--'  22  30  ~/lab/htmllab/test.html
-|4,39,22,30,1731600880,"~/lab/htmllab/test.html"
--'  22  30  ~/lab/htmllab/test.html
-|4,39,22,30,1731600880,"~/lab/htmllab/test.html"
--'  21  18  ~/lab/htmllab/test.html
-|4,39,21,18,1731600686,"~/lab/htmllab/test.html"
--'  21  18  ~/lab/htmllab/test.html
-|4,39,21,18,1731600686,"~/lab/htmllab/test.html"
--'  16  2  ~/lab/htmllab/test.html
-|4,39,16,2,1731598354,"~/lab/htmllab/test.html"
--'  16  2  ~/lab/htmllab/test.html
-|4,39,16,2,1731598354,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731597962,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731597962,"~/lab/htmllab/test.html"
--'  21  40  ~/lab/htmllab/test.html
-|4,39,21,40,1731597959,"~/lab/htmllab/test.html"
--'  21  40  ~/lab/htmllab/test.html
-|4,39,21,40,1731597959,"~/lab/htmllab/test.html"
--'  22  19  ~/lab/htmllab/test.html
-|4,39,22,19,1731597806,"~/lab/htmllab/test.html"
--'  22  19  ~/lab/htmllab/test.html
-|4,39,22,19,1731597806,"~/lab/htmllab/test.html"
--'  16  2  ~/lab/htmllab/test.html
-|4,39,16,2,1731597379,"~/lab/htmllab/test.html"
--'  16  2  ~/lab/htmllab/test.html
-|4,39,16,2,1731597379,"~/lab/htmllab/test.html"
--'  23  2  ~/lab/htmllab/test.html
-|4,39,23,2,1731597361,"~/lab/htmllab/test.html"
--'  23  2  ~/lab/htmllab/test.html
-|4,39,23,2,1731597361,"~/lab/htmllab/test.html"
--'  12  26  ~/lab/htmllab/test.html
-|4,39,12,26,1731597224,"~/lab/htmllab/test.html"
--'  12  26  ~/lab/htmllab/test.html
-|4,39,12,26,1731597224,"~/lab/htmllab/test.html"
--'  12  26  ~/lab/htmllab/test.html
-|4,39,12,26,1731597224,"~/lab/htmllab/test.html"
--'  12  26  ~/lab/htmllab/test.html
-|4,39,12,26,1731597224,"~/lab/htmllab/test.html"
--'  11  2  ~/lab/htmllab/test.html
-|4,39,11,2,1731596062,"~/lab/htmllab/test.html"
--'  11  2  ~/lab/htmllab/test.html
-|4,39,11,2,1731596062,"~/lab/htmllab/test.html"
--'  11  2  ~/lab/htmllab/test.html
-|4,39,11,2,1731596062,"~/lab/htmllab/test.html"
--'  11  2  ~/lab/htmllab/test.html
-|4,39,11,2,1731596062,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731596049,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731596049,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731595981,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731595981,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731595941,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731595941,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731595037,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731595037,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731594594,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731594594,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731594514,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731594514,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731594412,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731594412,"~/lab/htmllab/test.html"
--'  44  2  ~/lab/htmllab/test.html
-|4,39,44,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  31  2  ~/lab/htmllab/test.html
-|4,39,31,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  44  2  ~/lab/htmllab/test.html
-|4,39,44,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  31  2  ~/lab/htmllab/test.html
-|4,39,31,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  8  2  ~/lab/htmllab/test.html
-|4,39,8,2,1731594408,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731593437,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731593437,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731593418,"~/lab/htmllab/test.html"
--'  1  0  ~/lab/htmllab/test.html
-|4,39,1,0,1731593418,"~/lab/htmllab/test.html"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1731592737,"~/.vim/vimrc"
+-'  1  0  ~/lab/reactlab/testviteapp/src/main.jsx
+|4,39,1,0,1735398403,"~/lab/reactlab/testviteapp/src/main.jsx"
+-'  1  0  ~/lab/reactlab/testviteapp/src/main.jsx
+|4,39,1,0,1735398403,"~/lab/reactlab/testviteapp/src/main.jsx"
+-'  1  0  ~/lab/reactlab/testviteapp/src/App.jsx
+|4,39,1,0,1735398377,"~/lab/reactlab/testviteapp/src/App.jsx"
+-'  1  0  ~/lab/reactlab/testviteapp/src/App.jsx
+|4,39,1,0,1735398377,"~/lab/reactlab/testviteapp/src/App.jsx"
+-'  1  0  ~/lab/reactlab/testviteapp/src/App.jsx
+|4,39,1,0,1735398377,"~/lab/reactlab/testviteapp/src/App.jsx"
+-'  1  0  ~/lab/reactlab/testviteapp/src/App.jsx
+|4,39,1,0,1735398377,"~/lab/reactlab/testviteapp/src/App.jsx"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/App.js
+|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/testapp/src/index.js
+|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/my-react-app/src/index.js
+|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
 
 # Buffer list:
-%~/lab/htmllab/html_skeleton.html	1	0
+%~/lab/reactlab/testviteapp/src/main.jsx	1	0
 
 # History of marks within files (newest to oldest):
 
-> ~/lab/htmllab/html_skeleton.html
-	*	1731602879	0
-	"	1	0
-	^	19	4
-	.	19	4
-	+	3	0
-	+	4	4
-	+	16	0
-	+	20	0
-	+	19	4
-
-> ~/lab/htmllab/test.html
-	*	1731602380	0
-	"	1	0
-	^	35	12
-	.	35	0
-	+	63	0
-	+	62	7
-	+	63	11
-	+	63	0
-	+	61	0
-	+	60	30
-	+	60	0
-	+	59	16
-	+	58	0
-	+	57	16
-	+	56	16
-	+	55	0
-	+	1	15
-	+	53	16
-	+	54	7
-	+	52	15
-	+	1	1
-	+	1	15
-	+	50	16
-	+	51	0
-	+	1	15
-	+	49	4
-	+	1	15
-	+	1	2
-	+	47	0
-	+	1	15
-	+	1	0
-	+	44	0
-	+	1	0
-	+	11	0
-	+	12	0
-	+	36	0
-	+	36	19
-	+	36	0
-	+	16	0
-	+	21	0
-	+	22	0
-	+	36	0
-	+	28	0
-	+	29	0
-	+	30	0
-	+	31	0
-	+	32	0
-	+	36	0
-	+	33	0
-	+	36	0
-	+	34	0
-	+	36	0
-	+	35	0
-
-> ~/.vim/vimrc
-	*	1731592733	0
-	"	1	0
-	^	371	19
-	.	87	0
-	+	300	0
-	+	299	0
-	+	29	0
-	+	27	0
-	+	29	0
-	+	408	63
-	+	28	0
-	+	408	62
-	+	539	3
-	+	547	0
-	+	546	0
-	+	547	0
-	+	549	0
-	+	551	84
-	+	552	0
-	+	551	84
-	+	550	156
-	+	553	22
-	+	554	0
-	+	547	16
-	+	547	0
-	+	576	0
-	+	554	0
-	+	553	0
-	+	554	0
-	+	574	0
-	+	576	0
-	+	547	0
-	+	207	0
-	+	555	0
-	+	554	0
-	+	555	0
-	+	554	0
-	+	546	0
-	+	1	0
-	+	549	0
-	+	547	0
-	+	554	0
-	+	555	0
-	+	557	0
-	+	563	0
-	+	549	0
-	+	554	0
-	+	549	0
-	+	554	0
-	+	207	0
-	+	557	0
-	+	555	0
-	+	144	0
-	+	156	0
-	+	155	0
-	+	138	0
-	+	159	0
-	+	572	0
-	+	554	0
-	+	557	0
-	+	563	0
-	+	554	19
-	+	555	25
-	+	556	26
-	+	557	19
-	+	558	17
-	+	559	23
-	+	560	17
-	+	562	14
-	+	563	22
-	+	564	22
-	+	565	27
-	+	566	23
-	+	567	34
-	+	568	24
-	+	569	33
-	+	571	18
-	+	569	35
-	+	568	26
-	+	567	36
-	+	566	25
-	+	565	29
-	+	564	24
-	+	555	25
-	+	450	18
-	+	659	54
-	+	660	36
-	+	71	0
-	+	77	0
-	+	74	8
-	+	75	0
-	+	77	0
-	+	75	0
-	+	80	0
-	+	76	0
-	+	75	24
-	+	74	7
-	+	372	0
-	+	371	0
-	+	370	45
-	+	371	45
-	+	372	72
-	+	371	18
-	+	87	0
-
-> ~/lab/emberlab/dutycalculator/app/modifiers/tippyTip.js
-	*	1731585102	0
+> ~/lab/reactlab/testviteapp/src/main.jsx
+	*	1735398385	0
 	"	1	0
 
-> ~/lab/emberlab/myApp/app/templates/application.hbs
-	*	1731528898	0
+> ~/lab/reactlab/testviteapp/src/App.jsx
+	*	1735398357	0
 	"	1	0
 
-> ~/lab/emberlab/my-fancy-app/app/templates/application.hbs
-	*	1731503959	0
-	"	1	0
-	^	8	12
-	.	8	11
-	+	8	11
-
-> ~/lab/tailwindlab/lessionone/build/index.html
-	*	1731173134	0
-	"	1	0
-	^	7	35
-	.	7	34
-	+	1	0
-	+	1	14
-	+	1	0
-	+	1	8
-	+	1	0
-	+	1	11
-	+	1	0
-	+	1	15
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	15
-	+	4	24
-	+	6	0
-	+	3	1
-	+	6	3
-	+	5	53
-	+	6	69
-	+	11	0
-	+	8	3
-	+	9	3
-	+	10	0
-	+	1	1
-	+	7	34
-
-> ~/lab/tailwindlab/lessionone/NERD_tree_win_1
-	*	1731173026	0
-	"	7	14
-	.	1	0
-	+	1	0
-
-> ~/lab/tailwindlab/lessionone/build/css/style.css
-	*	1731172958	0
-	"	3	0
-
-> ~/lab/tailwindlab/lessionone/src/imput.css
-	*	1731171958	0
-	"	1	0
-	^	3	20
-	.	3	19
-	+	3	19
-
-> ~/lab/tailwindlab/lessionone/tailwind.config.js
-	*	1731170007	0
-	"	1	0
-	^	3	27
-	.	3	26
-	+	3	26
-
-> /usr/local/share/vim/vim91/doc/change.txt
-	*	1731169996	0
-	"	707	0
-
-> ~/lab/emberlab/PortfolioApp/app/templates/about.hbs
-	*	1731144325	0
-	"	1	0
-	^	39	31
-	.	39	30
-	+	25	16
-	+	39	30
-
-> ~/lab/emberlab/PortfolioApp/app/styles/app.css
-	*	1731142610	0
-	"	1	0
-	^	306	36
-	.	306	36
-	+	305	24
-	+	306	34
-	+	305	24
-	+	306	36
-
-> ~/lab/emberlab/PortfolioApp/app/templates/application.hbs
-	*	1731141405	0
+> ~/lab/reactlab/testapp/src/index.js
+	*	1735397562	0
 	"	1	0
 
-> ~/lab/emberlab/PortfolioApp/app/templates/contact.hbs
-	*	1731141405	0
-	"	1	0
-
-> ~/lab/emberlab/PortfolioApp/app/templates/index.hbs
-	*	1731141405	0
-	"	1	0
-
-> ~/lab/emberlab/PortfolioApp/app/templates/projects.hbs
-	*	1731141405	0
-	"	1	0
-
-> ~/lab/emberlab/PortfolioApp/app/components/contact.gjs
-	*	1731137929	0
-	"	1	0
-	^	2	26
-	.	2	25
-	+	13	0
-	+	13	14
-	+	4	19
-	+	1	22
-	+	22	0
-	+	27	0
-	+	22	110
-	+	13	19
-	+	13	17
-	+	3	25
-	+	13	0
-	+	13	21
-	+	13	36
-	+	13	41
-	+	13	28
-	+	13	43
-	+	13	0
-	+	22	38
-	+	22	0
-	+	26	0
-	+	22	0
-	+	26	0
-	+	13	39
-	+	15	37
-	+	22	54
-	+	15	0
-	+	13	0
-	+	22	82
-	+	15	32
-	+	13	37
-	+	15	52
-	+	15	0
-	+	3	38
-	+	13	8
-	+	15	23
-	+	15	0
-	+	13	0
-	+	13	19
-	+	15	52
-	+	13	0
-	+	13	11
-	+	22	81
-	+	13	15
-	+	13	0
-	+	17	77
-	+	19	80
-	+	21	76
-	+	23	69
-	+	26	0
-	+	24	0
-	+	13	0
-	+	15	0
-	+	13	0
-	+	3	0
-	+	13	0
-	+	7	2
-	+	7	25
-	+	7	27
-	+	7	54
-	+	8	41
-	+	9	28
-	+	12	0
-	+	11	3
-	+	7	0
-	+	9	0
-	+	11	0
-	+	3	0
-	+	13	0
-	+	3	23
-	+	7	47
-	+	7	0
-	+	7	48
-	+	7	31
-	+	7	14
-	+	7	18
-	+	7	11
-	+	7	23
-	+	7	22
-	+	7	5
-	+	7	4
-	+	7	0
-	+	3	0
-	+	15	103
-	+	3	0
-	+	7	0
-	+	5	0
-	+	9	0
-	+	11	0
-	+	10	18
-	+	19	145
-	+	15	122
-	+	14	0
-	+	3	0
-	+	2	25
-
-> ~/lab/emberlab/PortfolioApp/app/components/project.gjs
-	*	1731137928	0
-	"	1	0
-	^	2	4
-	.	2	3
-	+	33	30
-	+	33	14
-	+	33	24
-	+	33	0
-	+	32	0
-	+	33	0
-	+	33	16
-	+	18	0
-	+	32	0
-	+	18	25
-	+	33	0
-	+	33	21
-	+	33	0
-	+	33	15
-	+	33	21
-	+	33	27
-	+	33	21
-	+	33	27
-	+	33	20
-	+	33	19
-	+	33	60
-	+	33	0
-	+	33	21
-	+	33	0
-	+	33	15
-	+	33	0
-	+	33	12
-	+	33	35
-	+	33	18
-	+	33	0
-	+	11	0
-	+	33	0
-	+	33	19
-	+	33	24
-	+	33	39
-	+	33	37
-	+	33	0
-	+	33	25
-	+	33	0
-	+	11	62
-	+	33	15
-	+	33	37
-	+	33	16
-	+	33	0
-	+	33	9
-	+	25	47
-	+	21	23
-	+	23	5
-	+	21	0
-	+	22	0
-	+	26	22
-	+	28	0
-	+	26	0
-	+	27	39
-	+	21	50
-	+	33	0
-	+	33	38
-	+	33	13
-	+	33	0
-	+	26	28
-	+	33	0
-	+	18	26
-	+	4	0
-	+	3	0
-	+	2	3
-
-> ~/lab/emberlab/PortfolioApp/app/components/social.gjs
-	*	1731137928	0
-	"	1	0
-	.	22	0
-	+	6	0
-	+	7	0
-	+	4	15
-	+	6	10
-	+	6	126
-	+	6	578
-	+	6	0
-	+	6	120
-	+	6	3
-	+	6	0
-	+	6	119
-	+	6	38
-	+	1	23
-	+	1	0
-	+	1	7
-	+	4	0
-	+	1	0
-	+	4	0
-	+	1	0
-	+	6	15
-	+	1	0
-	+	6	0
-	+	7	0
-	+	6	10
-	+	7	33
-	+	1	23
-	+	1	0
-	+	7	34
-	+	1	0
-	+	8	6
-	+	9	0
-	+	5	6
-	+	6	23
-	+	3	2
-	+	2	3
-	+	3	0
-	+	22	0
-
-> ~/lab/emberlab/dutycalculator/app/routes/index.js
-	*	1730966849	0
-	"	1	0
-	.	8	0
-	+	8	0
-	+	9	0
-	+	10	15
-	+	10	48
-	+	10	56
-	+	10	0
-	+	8	0
-
-> ~/lab/emberlab/dutycalculator/app/routes/form.js
-	*	1730952871	0
-	"	1	0
-	.	5	0
-	+	3	0
-	+	5	0
-
-> ~/lab/emberlab/dutycalculator/app/routes/search-result.js
-	*	1730952871	0
-	"	1	0
-
-> ~/lab/emberlab/dutycalculator/config/content-security-policy.js
-	*	1730922230	0
-	"	1	0
-
-> ~/lab/guidemaker-ember-template/guidemaker-ember-template/src/components/guides-article.js
-	*	1730914779	0
-	"	1	0
-
-> ~/lab/typelab/academeez/app.ts
-	*	1730835905	0
-	"	1	0
-	^	12	20
-	.	9	2
-	+	8	26
-	+	13	46
-	+	14	3
-	+	8	27
-	+	9	0
-	+	12	0
-	+	13	0
-	+	9	2
-	+	9	0
-	+	12	0
-	+	9	1
-	+	12	0
-	+	9	1
-	+	15	0
-	+	14	0
-	+	13	0
-	+	7	0
-	+	13	0
-	+	9	2
-
-> ~/lab/reactlab/react001.html
-	*	1730657121	0
-	"	1	0
-	^	19	13
-	.	21	0
-	+	2	16
-	+	21	7
-	+	21	0
-	+	7	0
-	+	6	75
-	+	4	0
-	+	20	9
-	+	10	25
-	+	14	0
-	+	19	0
-	+	21	0
-
-> ~/lab/reactlab/my-react-app/src/App.css
-	*	1730657068	0
-	"	1	0
-
-> ~/lab/reactlab/my-react-app/src/App.js
-	*	1730657062	0
-	"	1	0
-	^	4	25
-	.	1	0
-	+	3	0
-	+	5	0
-	+	4	0
-	+	1	0
-
-> ~/lab/reactlab/my-react-app/public/index.html
-	*	1730646315	0
+> ~/lab/reactlab/testapp/src/App.js
+	*	1735397317	0
 	"	1	0
 
 > ~/lab/reactlab/my-react-app/src/index.js
-	*	1730640593	0
-	"	4	43
-	^	4	44
-	.	4	43
+	*	1734184878	0
+	"	1	0
+
+> ~/lab/reactlab/my-react-app/src/App.js
+	*	1734184853	0
+	"	1	0
+
+> ~/lab/reactlab/react001.html
+	*	1734184650	0
+	"	1	0
+
+> ~/lab/emberlab/ember-basic-js/index.js
+	*	1732815770	0
+	"	1	0
+
+> ~/lab/emberlab/bitstreamapp/app/components/password.gts
+	*	1732774415	0
+	"	1	0
+	^	18	42
+	.	18	41
+	+	14	12
+	+	16	7
+	+	35	0
+	+	17	0
+	+	10	20
+	+	16	18
+	+	36	6
+	+	35	0
+	+	16	0
+	+	16	12
+	+	17	52
+	+	17	0
+	+	17	101
+	+	16	0
+	+	36	0
+	+	17	121
+	+	16	0
+	+	19	7
+	+	33	4
+	+	19	26
+	+	33	0
+	+	18	0
+	+	19	0
+	+	33	0
+	+	34	4
+	+	25	0
+	+	33	0
+	+	33	356
+	+	33	0
+	+	33	92
+	+	33	115
+	+	33	33
+	+	33	0
+	+	10	0
+	+	25	496
+	+	25	0
+	+	25	96
+	+	25	108
+	+	25	50
+	+	25	106
+	+	25	24
+	+	25	0
+	+	33	0
+	+	10	0
+	+	18	51
+	+	12	2
+	+	3	36
+	+	12	55
+	+	15	33
+	+	15	0
+	+	10	0
+	+	18	18
+	+	16	23
+	+	18	39
+	+	16	29
+	+	18	38
+	+	25	26
+	+	33	28
+	+	25	28
+	+	33	28
+	+	25	28
+	+	25	70
+	+	33	70
+	+	25	58
+	+	18	66
+	+	25	49
+	+	33	67
+	+	25	67
+	+	25	37
+	+	25	18
+	+	33	18
+	+	33	20
+	+	18	81
+	+	18	57
+	+	33	0
+	+	20	0
+	+	25	0
+	+	26	0
+	+	27	28
+	+	21	28
+	+	6	0
+	+	15	83
+	+	16	25
+	+	19	0
+	+	18	41
+
+> ~/lab/emberlab/bitstreamapp/app/components/login.gts
+	*	1732774380	0
+	"	1	0
+	^	55	52
+	.	58	0
+	+	45	165
+	+	45	0
+	+	45	243
+	+	45	133
+	+	45	0
+	+	53	0
+	+	47	57
+	+	47	168
+	+	32	26
+	+	72	67
+	+	32	132
+	+	72	54
+	+	32	50
+	+	72	66
+	+	32	82
+	+	32	0
+	+	24	60
+	+	37	63
+	+	24	47
+	+	39	88
+	+	39	0
+	+	39	93
+	+	39	0
+	+	39	93
+	+	39	0
+	+	39	93
+	+	24	123
+	+	24	61
+	+	20	15
+	+	21	17
+	+	24	19
+	+	27	21
+	+	37	36
+	+	38	23
+	+	55	23
+	+	13	35
+	+	14	25
+	+	13	32
+	+	17	3
+	+	21	11
+	+	22	0
+	+	23	0
+	+	21	10
+	+	25	0
+	+	25	120
+	+	26	0
+	+	51	0
+	+	40	114
+	+	44	0
+	+	28	81
+	+	28	118
+	+	31	0
+	+	66	45
+	+	67	0
+	+	47	57
+	+	51	0
+	+	28	48
+	+	28	81
+	+	28	0
+	+	31	10
+	+	33	0
+	+	34	11
+	+	35	30
+	+	36	0
+	+	43	0
+	+	40	105
+	+	42	0
+	+	40	0
+	+	42	0
+	+	39	20
+	+	41	0
+	+	46	0
+	+	48	30
+	+	49	1
+	+	49	31
+	+	50	0
+	+	48	29
+	+	52	0
+	+	53	14
+	+	58	60
+	+	58	62
+	+	60	41
+	+	61	0
+	+	58	60
+	+	60	0
+	+	58	60
+	+	57	30
+	+	66	58
+	+	13	20
+	+	17	0
+	+	61	0
+	+	66	58
+	+	17	0
+	+	13	0
+	+	66	0
+	+	55	0
+	+	61	0
+	+	58	60
+	+	60	0
+	+	58	0
+
+> ~/lab/emberlab/PortfolioApp/app/templates/projects.hbs
+	*	1732510141	0
+	"	1	0
+	^	49	21
+	.	49	20
+	+	37	0
+	+	38	28
+	+	39	78
+	+	40	22
+	+	41	32
+	+	44	55
+	+	40	26
+	+	44	28
+	+	41	21
+	+	50	0
+	+	48	13
+	+	50	8
+	+	49	51
+	+	48	73
+	+	49	40
+	+	50	0
+	+	47	29
+	+	48	59
+	+	49	20
+
+> ~/lab/emberlab/bitstreamapp/app/templates/application.gts
+	*	1732507067	0
+	"	1	0
+	^	12	10
+	.	5	0
+	+	14	23
+	+	11	0
+	+	5	0
+	+	9	0
+	+	11	0
+	+	14	0
+	+	5	0
+	+	11	0
+	+	14	0
+	+	8	40
+	+	14	0
+	+	14	34
+	+	14	17
+	+	14	0
+	+	14	3
+	+	14	27
+	+	5	0
+	+	14	30
+	+	14	6
+	+	5	0
+	+	14	30
+	+	14	21
+	+	14	60
+	+	14	0
+	+	14	29
+	+	14	27
+	+	14	0
+	+	14	49
+	+	14	0
+	+	14	33
+	+	14	0
+	+	14	49
+	+	14	27
+	+	5	0
+	+	14	30
+	+	14	0
+	+	14	110
+	+	14	9
+	+	14	30
+	+	14	0
+	+	14	30
+	+	4	48
+	+	12	0
+	+	14	0
+	+	14	7
+	+	4	31
+	+	14	0
+	+	11	0
+	+	13	0
+	+	5	55
+	+	12	12
+	+	4	0
+	+	5	0
+	+	4	0
+	+	12	9
+	+	5	0
+
+> ~/lab/emberlab/PortfolioApp/app/templates/index.hbs
+	*	1732506959	0
+	"	1	0
+
+> ~/lab/emberlab/PortfolioApp/app/templates/contact.hbs
+	*	1732506958	0
+	"	1	0
+
+> ~/lab/emberlab/PortfolioApp/app/templates/application.hbs
+	*	1732506949	0
+	"	1	0
+
+> ~/lab/emberlab/PortfolioApp/app/templates/about.hbs
+	*	1732506946	0
+	"	1	0
+
+> ~/lab/emberlab/PortfolioApp/app/components/project.gjs
+	*	1732470104	0
+	"	1	0
+
+> ~/lab/emberlab/PortfolioApp/app/components/contact.gjs
+	*	1732470089	0
+	"	8	2
+	.	8	0
+	+	8	0
+
+> ~/lab/emberlab/PortfolioApp/app/components/social.gjs
+	*	1732470088	0
+	"	1	36
+
+> ~/lab/emberlab/bitstreamapp/README.md
+	*	1732383623	0
+	"	1	0
+	^	1	98
+	.	27	0
+	+	1	55
+	+	3	60
+	+	1	78
+	+	2	0
+	+	42	0
+	+	1	71
+	+	27	0
+
+> ~/lab/emberlab/bitstreamapp/eslint.config.mjs
+	*	1732379443	0
+	"	1	0
+	^	141	31
+	.	141	30
+	+	141	30
+
+> ~/lab/emberlab/bitstreamapp/tests/integration/components/password-test.gts
+	*	1732378079	0
+	"	1	0
+	^	29	89
+	.	39	0
+	+	13	38
+	+	5	0
+	+	39	0
+	+	5	0
+	+	13	0
+	+	39	0
+	+	20	33
+	+	39	0
+	+	20	75
+	+	14	16
+	+	15	20
+	+	16	17
+	+	17	0
+	+	19	20
+	+	20	20
+	+	9	36
+	+	13	0
+	+	20	50
+	+	22	32
+	+	39	0
+	+	23	53
+	+	20	69
+	+	25	79
+	+	26	91
+	+	39	0
+	+	28	81
+	+	29	22
+	+	28	67
+	+	29	41
+	+	27	0
+	+	12	0
+	+	14	27
+	+	12	0
+	+	14	0
+	+	15	0
+	+	31	34
+	+	3	43
+	+	39	84
+	+	32	0
+	+	34	0
+	+	33	0
+	+	34	28
+	+	35	91
+	+	39	4
+	+	5	42
+	+	37	29
+	+	5	63
+	+	39	0
+	+	40	0
+	+	12	0
+	+	8	0
+	+	12	0
+	+	36	0
+	+	37	24
+	+	39	0
+	+	37	0
+	+	39	9
+	+	37	35
+	+	38	40
+	+	37	40
+	+	38	47
+	+	37	0
+	+	8	0
 	+	5	0
 	+	8	0
-	+	7	12
-	+	8	0
-	+	7	25
-	+	4	43
+	+	37	0
+	+	28	99
+	+	37	95
+	+	39	0
+	+	4	21
+	+	3	0
+	+	39	0
+	+	38	91
+	+	29	88
+	+	39	0
 
-> ~/lab/reactlab/reactjs-installation
-	*	1730635978	0
+> ~/lab/emberlab/bitstreamapp/tests/integration/components/login-test.gts
+	*	1732377552	0
 	"	1	0
-	^	1	1
-	.	1	0
-	+	26	0
-	+	24	14
-	+	2	0
-	+	1	0
-
-> ~/lab/jslab/reduce.js
-	*	1730575128	0
-	"	1	0
-	.	33	0
-	+	4	10
-	+	8	13
-	+	12	11
-	+	13	3
-	+	5	3
-	+	4	11
-	+	16	40
-	+	33	0
-	+	16	40
-	+	18	18
-	+	33	0
-	+	23	0
-	+	20	6
+	^	33	94
+	.	33	83
+	+	1	46
+	+	5	0
+	+	13	26
+	+	18	0
+	+	13	46
+	+	35	0
+	+	13	26
+	+	1	41
+	+	35	0
+	+	19	130
+	+	19	102
+	+	9	25
+	+	28	14
+	+	15	15
+	+	14	0
+	+	15	0
+	+	17	0
+	+	28	0
+	+	20	0
+	+	19	26
+	+	5	0
+	+	35	0
+	+	28	0
+	+	21	0
 	+	22	19
-	+	18	15
-	+	22	31
-	+	28	10
-	+	27	14
-	+	33	0
-	+	25	17
-	+	26	31
-	+	27	24
-	+	28	23
-	+	29	3
-	+	30	0
-	+	33	0
-	+	30	2
-	+	32	46
-	+	22	39
-	+	33	0
+	+	23	53
+	+	9	35
+	+	28	0
+	+	24	45
+	+	25	47
+	+	27	35
+	+	26	0
+	+	27	0
+	+	26	35
+	+	27	61
+	+	4	21
+	+	29	39
+	+	34	0
+	+	31	20
+	+	30	30
+	+	31	86
+	+	32	102
+	+	33	83
 
-> ~/lab/typelab/example/indext.ts
-	*	1730545886	0
-	"	1	0
-	^	2	4
-	.	2	3
-	+	2	3
-
-> ~/lab/typelab/example/tsconfig.json
-	*	1730471450	0
-	"	1	0
-	.	66	0
-	+	58	0
-	+	56	0
-	+	57	0
-	+	56	0
-	+	57	0
-	+	56	0
-	+	66	0
-
-> ~/lab/typelab/example/indext.js.map
-	*	1730466066	0
+> ~/lab/emberlab/PortfolioApp/tests/integration/components/social-test.gjs
+	*	1732352949	0
 	"	1	0
 
-> ~/lab/typelab/example/package.json
-	*	1730431292	0
+> ~/lab/emberlab/bitstreamapp/tests/index.html
+	*	1732351371	0
 	"	1	0
-	^	6	58
-	.	6	57
-	+	7	49
-	+	6	57
+	^	5	20
+	.	5	19
+	+	35	0
+	+	5	19
 
-> ~/lab/typelab/typescript-project/build/index.js
-	*	1730399427	0
+> ~/lab/emberlab/bitstreamapp/app/transforms/boolean.js
+	*	1732345507	0
+	"	1	0
+	^	1	81
+	.	1	80
+	+	1	80
+
+> ~/lab/emberlab/bitstreamapp/app/transforms/string.js
+	*	1732345399	0
+	"	1	0
+	^	1	79
+	.	1	78
+	+	1	78
+
+> ~/lab/emberlab/bitstreamapp/app/transforms/number.js
+	*	1732345163	0
+	"	1	0
+	^	1	186
+	.	1	51
+	+	1	0
+	+	1	156
+	+	1	100
+	+	1	158
+	+	2	0
+	+	1	186
+	+	1	51
+
+> ~/lab/emberlab/bitstreamapp/app/date.js
+	*	1732344907	0
 	"	1	0
 	.	2	0
+	+	1	0
+	+	2	0
+	+	2	52
 	+	2	0
 
-> ~/lab/typelab/typescript-project/index.ts
-	*	1730399132	0
+> ~/lab/emberlab/bitstreamapp/app/services/store.js
+	*	1732344469	0
 	"	1	0
-	^	4	11
-	.	5	0
-	+	3	26
-	+	3	0
-	+	6	0
-	+	3	51
-	+	5	0
-	+	3	40
-	+	2	0
-	+	4	9
-	+	5	0
+	^	1	44
+	.	1	43
+	+	1	43
 
-> ~/lab/typelab/typescript-project/tsconfig.json
-	*	1730398655	0
+> ~/lab/emberlab/bitstreamapp/tests/integration/components/password-test.ts
+	*	1732341769	0
 	"	1	0
-	^	60	22
-	.	60	21
-	+	60	21
-
-> ~/lab/jslab/fact.js
-	*	1730385014	0
-	"	1	0
-	.	11	0
-	+	19	0
-	+	18	10
-	+	19	0
-	+	18	0
-	+	13	17
-	+	15	11
-	+	12	8
-	+	11	6
-	+	11	9
-	+	11	0
-
-> ~/lab/lblab/getting-started/src/application.ts
-	*	1730319278	0
-	"	1	0
-	^	12	20
-	.	12	19
-	+	13	0
-	+	16	98
-	+	17	0
-	+	13	0
-	+	12	19
-
-> ~/lab/jslab/dnalab.js
-	*	1730226530	0
-	"	1	0
-	^	5	25
-	.	2	2
-	+	3	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	11	0
-	+	14	0
-	+	17	0
-	+	36	0
-	+	3	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	11	0
-	+	14	0
-	+	17	0
-	+	36	0
-	+	17	0
-	+	18	0
-	+	36	0
-	+	35	0
-	+	34	0
-	+	32	0
-	+	31	11
-	+	31	0
-	+	30	11
-	+	30	0
-	+	29	0
-	+	26	0
-	+	18	0
-	+	25	11
-	+	24	11
-	+	28	0
-	+	30	0
-	+	31	0
-	+	10	6
-	+	24	0
-	+	23	0
-	+	22	0
-	+	20	0
-	+	2	2
-
-> ~/lab/emberlab/dutycalculator/app/templates/duty.hbs
-	*	1730224179	0
-	"	1	0
-	^	9	8
-	.	9	7
-	+	10	0
-	+	9	7
-
-> ~/lab/emberlab/dutycalculator/app/templates/application.hbs
-	*	1730217019	0
-	"	1	0
-	^	11	6
-	.	11	0
-	+	9	0
+	^	15	47
+	.	15	48
+	+	1	55
 	+	15	0
-	+	13	4
-	+	13	0
-	+	14	6
-	+	12	0
-	+	11	5
-	+	11	0
+	+	14	0
+	+	15	48
 
-> ~/lab/lblab/utility.js
-	*	1730208519	0
+> ~/lab/emberlab/bitstreamapp/.stylelintrc.js
+	*	1732302130	0
 	"	1	0
-	^	7	8
-	.	1	0
-	+	6	15
-	+	5	0
-	+	6	14
-	+	6	22
-	+	5	10
-	+	6	14
-	+	4	36
-	+	5	10
-	+	6	7
-	+	6	14
-	+	6	8
-	+	6	14
-	+	6	29
+	^	9	10
+	.	9	8
+	+	19	21
 	+	9	0
-	+	6	0
-	+	4	36
-	+	5	10
-	+	6	14
-	+	6	29
-	+	9	7
-	+	10	2
-	+	9	0
-	+	10	4
-	+	9	6
+	+	5	6
+	+	16	0
+	+	14	18
+	+	3	0
+	+	15	9
+	+	16	7
+	+	17	5
+	+	18	3
+	+	6	4
+	+	9	8
+
+> ~/lab/emberlab/bitstreamapp/.template-lintrc.js
+	*	1732301577	0
+	"	1	0
+	^	8	4
+	.	8	3
 	+	10	0
-	+	11	0
-	+	6	14
-	+	7	24
-	+	9	0
-	+	6	13
-	+	9	0
-	+	6	7
-	+	7	22
-	+	6	7
+	+	3	0
+	+	6	77
+	+	8	0
+	+	6	44
 	+	7	0
-	+	8	5
-	+	9	4
-	+	9	0
-	+	7	29
-	+	5	8
-	+	7	0
+	+	3	13
+	+	8	3
+
+> ~/lab/emberlab/bitstreamapp/tailwind.config.js
+	*	1732301271	0
+	"	1	0
+	^	10	30
+	.	10	8
+	+	3	12
+	+	2	15
+	+	16	0
+	+	15	1
+	+	3	14
+	+	5	23
+	+	5	16
+	+	5	25
 	+	5	0
-	+	7	28
-	+	5	26
-	+	1	0
-	k	6	14
+	+	5	24
+	+	5	9
+	+	5	10
+	+	5	13
+	+	5	21
+	+	5	22
+	+	5	18
+	+	5	22
+	+	5	0
+	+	5	13
+	+	5	21
+	+	5	22
+	+	5	0
+	+	5	13
+	+	7	67
+	+	8	7
+	+	7	31
+	+	7	45
+	+	7	0
+	+	7	43
+	+	7	12
+	+	7	43
+	+	7	47
+	+	7	49
+	+	7	0
+	+	10	32
+	+	3	47
+	+	10	26
+	+	11	7
+	+	10	8
 
-> ~/lab/lblab/getting-started/src/sequence.ts
-	*	1730203882	0
-	"	1	0
-
-> ~/lab/lblab/getting-started/src/index.ts
-	*	1730203838	0
-	"	1	0
-
-> ~/lab/emberlab/dutycalculator/NERD_tree_win_1
-	*	1730203705	0
+> ~/lab/emberlab/bitstreamapp/index.html
+	*	1732288992	0
 	"	1	0
 	.	1	0
+	+	1	13
+	+	1	60
 	+	1	0
+	+	1	64
+	+	1	44
+	+	1	50
+	+	1	0
+	+	1	122
+	+	1	88
+	+	1	0
+	+	1	34
+	+	1	27
+	+	1	73
+	+	1	44
+	+	1	48
+	+	1	52
+	+	1	40
+	+	1	59
+	+	1	35
+	+	1	0
+	+	1	83
+	+	1	67
+	+	1	82
+	+	1	66
+	+	1	54
+	+	1	82
+	+	1	54
+	+	1	0
+	+	1	1
+	+	1	0
+
+> ~/lab/emberlab/dutycalculator/dist/index.html
+	*	1732223471	0
+	"	1	0
+
+> ~/lab/emberlab/bitstreamapp/dist/index.html
+	*	1732215176	0
+	"	1	0
+
+> ~/lab/nginx-for-emberjs/polarisx.olutayo.dev
+	*	1732215095	0
+	"	1	0
+	^	22	66
+	.	22	65
+	+	10	22
+	+	13	36
+	+	10	27
+	+	17	50
+	+	18	50
+	+	21	61
+	+	22	65
+
+> ~/lab/nginx-for-emberjs/abs.bitstream.ng
+	*	1732214524	0
+	"	1	0
+	^	22	54
+	.	22	53
+	+	17	47
+	+	18	38
+	+	21	49
+	+	22	53
+
+> ~/lab/nginx-for-emberjs/bitstream.ng
+	*	1732195023	0
+	"	1	0
+	^	22	62
+	.	22	61
+	+	10	35
+	+	13	40
+	+	17	43
+	+	18	43
+	+	21	57
+	+	22	61
+
+> ~/lab/emberlab/bitstreamapp/dist/assets/main-QEyxdO1u.css
+	*	1732137728	0
+	"	1	0
+
+> ~/lab/emberlab/bitstreamapp/dist/assets/bitstreamapp.css
+	*	1732137711	0
+	"	1	0
+
+> ~/lab/emberlab/bitstreamapp/dist/@embroider/virtual/vendor.js
+	*	1732137664	0
+	"	1	0
+
+> ~/lab/emberlab/bitstreamapp/.git/COMMIT_EDITMSG
+	*	1732128240	0
+	"	4	60
+	^	4	61
+	.	4	60
+	+	1	22
+	+	8	11
+	+	1	7
+	+	8	2
+	+	10	0
+	+	8	71
+	+	9	24
+	+	5	37
+	+	3	67
+	+	5	0
+	+	4	60
+
+> ~/lab/emberlab/bitstreamapp/app/components/password.hbs
+	*	1732114155	0
+	"	1	0
+
+> ~/lab/emberlab/bitstreamapp/app/components/password.ts
+	*	1732114110	0
+	"	1	0
+	^	12	10
+	.	12	0
+	+	6	11
+	+	6	0
+	+	5	0
+	+	12	0
+
+> ~/lab/emberlab/PortfolioApp/app/index.html
+	*	1732106898	0
+	"	1	0
+
+> ~/lab/emberlab/bitstreamapp/NERD_tree_tab_1
+	*	1732106568	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/vimrc
+	*	1731949831	0
+	"	1	0
+	.	586	10
+	+	69	0
+	+	75	0
+	+	72	8
+	+	73	0
+	+	75	0
+	+	73	0
+	+	78	0
+	+	74	0
+	+	73	24
+	+	72	7
+	+	371	0
+	+	370	0
+	+	369	45
+	+	370	45
+	+	371	72
+	+	370	18
+	+	85	0
+	+	216	0
+	+	394	0
+	+	393	25
+	+	393	18
+	+	393	23
+	+	394	0
+	+	393	23
+	+	419	0
+	+	418	0
+	+	394	0
+	+	416	0
+	+	397	0
+	+	396	0
+	+	397	26
+	+	409	0
+	+	410	0
+	+	410	55
+	+	410	36
+	+	393	23
+	+	395	17
+	+	404	35
+	+	405	42
+	+	406	25
+	+	407	50
+	+	409	95
+	+	410	61
+	+	410	56
+	+	410	36
+	+	411	26
+	+	412	47
+	+	405	15
+	+	406	0
+	+	404	35
+	+	405	43
+	+	406	26
+	+	407	51
+	+	409	96
+	+	410	62
+	+	410	57
+	+	410	37
+	+	411	27
+	+	412	48
+	+	413	25
+	+	406	0
+	+	371	31
+	+	391	0
+	+	393	0
+	+	392	21
+	+	393	55
+	+	392	57
+	+	393	32
+	+	391	16
+	+	410	0
+	+	408	0
+	+	379	72
+	+	26	0
+	+	27	0
+	+	26	0
+	+	93	0
+	+	27	0
+	+	295	73
+	+	339	17
+	+	340	17
+	+	341	17
+	+	343	17
+	+	344	17
+	+	346	17
+	+	347	17
+	+	348	17
+	+	350	17
+	+	351	17
+	+	605	28
+	+	607	52
+	+	663	67
+	+	655	80
+	+	663	137
+	+	666	0
+	+	585	34
+	+	586	33
+	+	587	0
+	+	586	35
+	+	585	10
+	+	586	10
+	m	393	24
+
+> ~/lab/emberlab/bitstreamapp/vite.config.mjs
+	*	1731945746	0
+	"	1	0
+	^	64	6
+	.	64	5
+	+	62	30
+	+	13	37
+	+	62	32
+	+	63	7
+	+	64	5

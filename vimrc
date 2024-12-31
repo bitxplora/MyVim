@@ -24,8 +24,6 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'nvie/vim-flake8'                    #PEP8 style checker
 Plugin 'jiangmiao/auto-pairs'
-# Plugin 'LunarWatcher/auto-pairs'
-# Plugin 'tpope/vim-ragtag'
 # Plugin 'tmhedberg/SimpylFold'
 Plugin 'tpope/vim-surround'                 #The plugin provides mappings to easily delete, change and add such surroundings in pairs.
 Plugin 'tpope/vim-commentary'
@@ -294,6 +292,7 @@ nmap        S   <Plug>(vsnip-cut-text)
 xmap        S   <Plug>(vsnip-cut-text)
 #
 #jiangmiao/auto-pairs
+#To insert literally without triggering auto-pairs user Ctrl-v e.g Ctrl-v )
 g:AutoPairsFlyMode = 1
 g:AutoPairsShortcutBackInsert = '<M-b>'
 # shorcuts:
@@ -337,19 +336,19 @@ xmap  ;l :call ListTrans_toggle_format('visual')<CR>
 
 # let g:vimspector_enable_mappings = 'HUMAN'
 #
-nnoremap <Leader>dl :call vimspector#Launch()<CR>
-nnoremap <Leader>dx :call vimspector#Reset()<CR>
-nnoremap <Leader>dr :call vimspector#Restart()<CR>
+nnoremap <Leader>vl :call vimspector#Launch()<CR>
+nnoremap <Leader>vx :call vimspector#Reset()<CR>
+nnoremap <Leader>vr :call vimspector#Restart()<CR>
 
-nnoremap <Leader>dc :call vimspector#Continue()<CR>
-nnoremap <Leader>ds :call vimspector#Stop()<CR>
+nnoremap <Leader>vc :call vimspector#Continue()<CR>
+nnoremap <Leader>vs :call vimspector#Stop()<CR>
 
-nnoremap <Leader>dso :call vimspector#StepOut()<CR>
-nnoremap <Leader>dsi :call vimspector#StepInto()<CR>
-nnoremap <Leader>dsv :call vimspector#StepOver()<CR>
+nnoremap <Leader>vso :call vimspector#StepOut()<CR>
+nnoremap <Leader>vsi :call vimspector#StepInto()<CR>
+nnoremap <Leader>vsv :call vimspector#StepOver()<CR>
 
-nnoremap <Leader>dtb :call vimspector#ToggleBreakpoint()<CR>
-nnoremap <Leader>dcb :call vimspector#ClearBreakpoints()<CR>
+nnoremap <Leader>vtb :call vimspector#ToggleBreakpoint()<CR>
+nnoremap <Leader>vcb :call vimspector#ClearBreakpoints()<CR>
 
 #command abbreviation of Vimspector Watch and Eval as vw for command on mode
 cabbrev vw VimspectorWatch
@@ -377,6 +376,7 @@ set hidden
 # Space for displaying messages or command.
 set cmdheight=1
 
+# How long vim waits after the user stops typing before triggering update
 # Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 # delays and poor user experience.
 set updatetime=300
@@ -405,9 +405,8 @@ g:user_emmet_settings = {
               .. "<html lang=\"${lang}\">\n"
               .. "<head>\n"
               .. "\t<meta charset=\"${charset}\">\n"
-              .. "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
               .. "\t<meta name=\"description\" content=\"\">\n"
-              .. "\t<meta name=\"author\" content=\"\">\n"
+              .. "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
               .. "\t<title></title>\n"
               .. "</head>\n"
               .. "<body>\n\t${child}|\n</body>\n"
@@ -583,10 +582,8 @@ var lspServers = [
       tailwindCSS: {
         classAttributes: [ "class", "className", "class:list", "classList", "ngClass" ],
         includeLanguages: {
-          eelixir: "html-eex",
-          eruby: "erb",
-          htmlangular: "html",
-          templ: "html"
+          'typescript.glimmer': "gts",
+          'javascript.glimmer': "gjs"
         },
         lint: {
           cssConflict: "warning",
@@ -605,8 +602,9 @@ var lspServers = [
   # vscode-json-language-server
   {
     name: 'vscode-json-language-servers',
-    filetype: ['json'],
+    filetype: ['json', 'jsonc'],
     path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-json-language-server',
+    initializationOption: { provideFormatter: true },
     args: ['--stdio'],
   },
 
@@ -654,18 +652,18 @@ var lspServers = [
   # Ember language server
   {
     name: 'emberls',
-    filetype: ['handlebars', 'html.handlebars', 'typescript.glimmer', 'tpescript.glimmer'],
+    filetype: ['handlebars', 'html.handlebars', 'typescript.glimmer', 'javascript.glimmer'],
     path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/ember-language-server',
     args: ['--stdio'],
   },
 
   # Tailwindcss language server
-  {
-    name: 'tailwindcssls',
-    filetype: 'tailwind',
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/tailwindcss-language-server',
-    args: ['--stdio'],
-  },
+  # {
+  #   name: 'tailwindcssls',
+  #   filetype: ['tailwind', 'typescript.glimmer', 'javascript.glimmer', 'html', 'handlebars', 'typescriptreact', 'javascriptreact', 'svelte'],
+  #   path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/tailwindcss-language-server',
+  #   args: ['--stdio'],
+  # },
 ]
 
 #lsp#lsp#AddServer(lspServers)

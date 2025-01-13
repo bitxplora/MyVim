@@ -11,23 +11,51 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/updatetime
+~MSle0~/omni
 
 # Last Substitute Search Pattern:
 ~MSle0&dutycalculator
 
 # Last Substitute String:
-$
+$false
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1736758092,,"q!"
 :q
-|2,0,1735460278,,"q"
-:qa
-|2,0,1732774426,,"qa"
+|2,0,1736758044,,"q"
 :w
-|2,0,1732510140,,"w"
+|2,0,1736711043,,"w"
+:<Plug>(vsnip_integ:on_complete_done_after)q
+|2,0,1736711087,,"<Plug>(vsnip_integ:on_complete_done_after)q"
 :wq
-|2,0,1732506827,,"wq"
+|2,0,1736708280,,"wq"
+:h completepopup
+|2,0,1736701511,,"h completepopup"
+:set paste
+|2,0,1736699064,,"set paste"
+:VimCompleteCompletors
+|2,0,1736698761,,"VimCompleteCompletors"
+:set nopaste
+|2,0,1736698440,,"set nopaste"
+:bd
+|2,0,1736687142,,"bd"
+:PluginUpdate
+|2,0,1736687098,,"PluginUpdate"
+:PluginInstall
+|2,0,1736687077,,"PluginInstall"
+:!
+|2,0,1736683877,,"!"
+:set all
+|2,0,1736671882,,"set all"
+:e!
+|2,0,1736671563,,"e!"
+:qa
+|2,0,1736624599,,"qa"
+:qjk
+|2,0,1735745891,,"qjk"
+:paste
+|2,0,1735745822,,"paste"
 :redo
 |2,0,1732374310,,"redo"
 :W
@@ -36,10 +64,6 @@ $
 |2,0,1732344907,,"r"
 :!tidy -mi -html %
 |2,0,1732288972,,"!tidy -mi -html %"
-:set paste
-|2,0,1732286055,,"set paste"
-:set nopaste
-|2,0,1732186281,,"set nopaste"
 :ww
 |2,0,1732186205,,"ww"
 :w app/components/login.original
@@ -59,30 +83,18 @@ $
 |2,0,1731831332,,"w tailwind.config.sample"
 :pwd
 |2,0,1731831304,,"pwd"
-:e!
-|2,0,1731857199,,"e!"
 :echo $VIMRUNTIME
 |2,0,1731779869,,"echo $VIMRUNTIME"
 :h runtimepath
 |2,0,1731779768,,"h runtimepath"
 :set runtimepath?
 |2,0,1731779723,,"set runtimepath?"
-:q!
-|2,0,1731777327,,"q!"
 :imap (
 |2,0,1731756574,,"imap ("
-:bd
-|2,0,1731757117,,"bd"
 :PluginClean
 |2,0,1731757107,,"PluginClean"
-:PluginUpdate
-|2,0,1731757046,,"PluginUpdate"
-:PluginInstall
-|2,0,1731754282,,"PluginInstall"
 :nohls
 |2,0,1731601718,,"nohls"
-:!
-|2,0,1731594401,,"!"
 :set timeout?
 |2,0,1731591930,,"set timeout?"
 :help =
@@ -109,20 +121,20 @@ $
 |2,0,1730364519,," BackInsert (g:AutoPairsShortcutBackInsert)"
 : Jump to next closed pair (g:AutoPairsShortcutJump)
 |2,0,1730364513,," Jump to next closed pair (g:AutoPairsShortcutJump)"
-: Fast Wrap (g:AutoPairsShortcutFastWrap)
-|2,0,1730364513,," Fast Wrap (g:AutoPairsShortcutFastWrap)"
-: Toggle Autopairs (g:AutoPairsShortcutToggle)
-|2,0,1730364513,," Toggle Autopairs (g:AutoPairsShortcutToggle)"
-:source %
-|2,0,1730363696,,"source %"
-:qa!
-|2,0,1730360310,,"qa!"
-:CloseTagEnableBuffer
-|2,0,1730354468,,"CloseTagEnableBuffer"
-:paste
-|2,0,1730316565,,"paste"
 
 # Search String History (newest to oldest):
+?/omni
+|2,1,1736710611,47,"omni"
+??wil
+|2,1,1736686433,63,"wil"
+?/wild
+|2,1,1736681801,47,"wild"
+??q!
+|2,1,1736683764,63,"q!"
+?/complete
+|2,1,1736677247,47,"complete"
+?/com
+|2,1,1736676844,47,"com"
 ? \$\(cursor\|select\)\$
 |2,1,1732131019,,"\\$\\(cursor\\|select\\)\\$"
 ?/<<
@@ -211,18 +223,6 @@ $
 |2,1,1730034501,47,"airli"
 ?/nosho
 |2,1,1730034179,47,"nosho"
-?/nosh
-|2,1,1730034171,47,"nosh"
-?/now
-|2,1,1730032492,47,"now"
-?/termw
-|2,1,1730030095,47,"termw"
-?/const
-|2,1,1730029881,47,"const"
-?/let
-|2,1,1730029792,47,"let"
-?/win
-|2,1,1730027055,47,"win"
 
 # Expression History (newest to oldest):
 
@@ -251,52 +251,41 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	    <Project
-	      @image="dutycalculator.svg"
-	      @imageAlt="Duty Calculator, https://www.dutycalculator.ng; a web application that calculates import duty."
-	      @github="dutycalculator"
-	      @globe="www.dutycalculator.ng"
-	      >
-	      <:header>
-	        Duty Calculator
-	      </:header>
-	      <:description>
-	        Duty Calculator is a web application tool that calculates import duty on goods imported
-	        into Nigeria. It is in production and used by importers, custom agents,
-	        and so on. It is powered by an API server, that make the functionality
-	        possible.
-	      </:description>
-	    </Project>
-|3,0,0,1,16,0,1732470175,"    <Project","      @image=\"dutycalculator.svg\"","      @imageAlt=\"Duty Calculator, https://www.dutycalculator.ng; a web application that calculates import duty.\"","      @github=\"dutycalculator\"","      @globe=\"www.dutycalculator.ng\"","      >","      <:header>","        Duty Calculator","      </:header>","      <:description>",>97
-|<"        Duty Calculator is a web application tool that calculates import duty on goods imported","        into Nigeria. It is in production and used by importers, custom agents,","        and so on. It is powered by an API server, that make the functionality","        possible.","      </:description>","    </Project>"
-"1	LINE	0
-	        
-|3,0,1,1,1,0,1732471394,"        "
+"0	CHAR	0
+	 
+|3,0,0,0,1,0,1736677779," "
+""1	LINE	0
+	  font-size
+|3,1,1,1,1,0,1736757209,"  font-size"
 "2	LINE	0
-	        possible.
-|3,0,2,1,1,0,1732471096,"        possible."
+	# To enable <Tab> and <S-Tab> for this purpose, add the following to your configuration:
+|3,0,2,1,1,0,1736699534,"# To enable <Tab> and <S-Tab> for this purpose, add the following to your configuration:"
 "3	LINE	0
-	        and so on. It is powered by an API server, that make the functionality
-|3,0,3,1,1,0,1732471095,"        and so on. It is powered by an API server, that make the functionality"
+	
+|3,0,3,1,1,0,1736699518,""
 "4	LINE	0
-	        into Nigeria. It is in production and used by importers, custom agents,
-|3,0,4,1,1,0,1732471095,"        into Nigeria. It is in production and used by importers, custom agents,"
+	g:vimcomplete_tab_enable = 1
+	g:VimCompleteInfoWindowOptionsSet({
+	    drag: false,    # Disable dragging
+	    close: 'none',  # Disable close button
+	    resize: false,  # Disable resizing
+	})
+|3,0,4,1,6,0,1736699503,"g:vimcomplete_tab_enable = 1","g:VimCompleteInfoWindowOptionsSet({","    drag: false,    # Disable dragging","    close: 'none',  # Disable close button","    resize: false,  # Disable resizing","})"
 "5	LINE	0
-	        Duty Calculator is a web application tool that calculates import duty on goods imported
-|3,0,5,1,1,0,1732471094,"        Duty Calculator is a web application tool that calculates import duty on goods imported"
+	#
+|3,0,5,1,1,0,1736698835,"#"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1732383623,""
+	inoremap <buffer><expr> <s-tab> g:VimCompleteSTab() ?? "{rhs}"
+|3,0,6,1,1,0,1736698832,"inoremap <buffer><expr> <s-tab> g:VimCompleteSTab() ?? \"{rhs}\""
 "7	LINE	0
-	Make use of the many generators for code, try `ember help generate` for more details
-|3,0,7,1,1,0,1732383606,"Make use of the many generators for code, try `ember help generate` for more details"
+	noremap <buffer><expr> <tab>   g:VimCompleteTab() ?? "{rhs}"
+|3,0,7,1,1,0,1736698831,"noremap <buffer><expr> <tab>   g:VimCompleteTab() ?? \"{rhs}\""
 "8	LINE	0
-	
-|3,0,8,1,1,0,1732383597,""
+	# as needed (using "\<Tab>" as "{rhs}" will behave the same as setting the variable
+|3,0,8,1,1,0,1736698831,"# as needed (using \"\\<Tab>\" as \"{rhs}\" will behave the same as setting the variable"
 "9	LINE	0
-	### Code Generators
-|3,0,9,1,1,0,1732383596,"### Code Generators"
+	# the above variable and instead use these custom mappings, substituting {rhs}
+|3,0,9,1,1,0,1736698830,"# the above variable and instead use these custom mappings, substituting {rhs}"
 "a@	CHAR	0
 	f{€ý5a€ý5>>f}€ý5i€ý5j
 |3,2,10,0,1,0,1730223396,"f{€ý5a€ý5>>f}€ý5i€ý5j"
@@ -304,238 +293,545 @@ $
 	€ý5
 |3,0,17,0,1,0,1730024718,"€ý5"
 "q	CHAR	0
-	af€ý5u€ý5
-|3,0,26,0,1,0,1730223340,"af€ý5u€ý5"
-""-	CHAR	0
-	 
-|3,1,36,0,1,0,1732506973," "
+	€ý5
+|3,0,26,0,1,0,1736699572,"€ý5"
+"-	CHAR	0
+	true
+|3,0,36,0,1,0,1736708161,"true"
 
 # File marks:
-'0  1  0  ~/lab/reactlab/testviteapp/src/main.jsx
-|4,48,1,0,1735398403,"~/lab/reactlab/testviteapp/src/main.jsx"
-'1  1  0  ~/lab/reactlab/testviteapp/src/main.jsx
-|4,49,1,0,1735398403,"~/lab/reactlab/testviteapp/src/main.jsx"
-'2  1  0  ~/lab/reactlab/testviteapp/src/App.jsx
-|4,50,1,0,1735398377,"~/lab/reactlab/testviteapp/src/App.jsx"
-'3  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,51,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
-'4  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,52,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
-'5  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,53,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
-'6  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,54,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
-'7  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,55,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
-'8  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,56,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
-'9  1  0  ~/lab/reactlab/my-react-app/src/App.js
-|4,57,1,0,1734184867,"~/lab/reactlab/my-react-app/src/App.js"
+'0  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,48,1,0,1736758092,"~/lab/reactlab/luckycastapp/src/index.css"
+'1  1  1  ~/.vim/snippetSupport
+|4,49,1,1,1736758044,"~/.vim/snippetSupport"
+'2  1  1  ~/.vim/snippetSupport
+|4,50,1,1,1736758044,"~/.vim/snippetSupport"
+'3  444  0  ~/.vim/vim-lsp
+|4,51,444,0,1736757905,"~/.vim/vim-lsp"
+'4  444  0  ~/.vim/vim-lsp
+|4,52,444,0,1736757905,"~/.vim/vim-lsp"
+'5  1  0  ~/.vim/old/vimrc-vim9script-backup
+|4,53,1,0,1736757821,"~/.vim/old/vimrc-vim9script-backup"
+'6  1  0  ~/.vim/old/vimrc-vim9script-backup
+|4,54,1,0,1736757821,"~/.vim/old/vimrc-vim9script-backup"
+'7  1  0  ~/.vim/coc-settings.json
+|4,55,1,0,1736757658,"~/.vim/coc-settings.json"
+'8  1  0  ~/.vim/coc-settings.json
+|4,56,1,0,1736757658,"~/.vim/coc-settings.json"
+'9  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,57,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
 
 # Jumplist (newest first):
--'  1  0  ~/lab/reactlab/testviteapp/src/main.jsx
-|4,39,1,0,1735398403,"~/lab/reactlab/testviteapp/src/main.jsx"
--'  1  0  ~/lab/reactlab/testviteapp/src/main.jsx
-|4,39,1,0,1735398403,"~/lab/reactlab/testviteapp/src/main.jsx"
--'  1  0  ~/lab/reactlab/testviteapp/src/App.jsx
-|4,39,1,0,1735398377,"~/lab/reactlab/testviteapp/src/App.jsx"
--'  1  0  ~/lab/reactlab/testviteapp/src/App.jsx
-|4,39,1,0,1735398377,"~/lab/reactlab/testviteapp/src/App.jsx"
--'  1  0  ~/lab/reactlab/testviteapp/src/App.jsx
-|4,39,1,0,1735398377,"~/lab/reactlab/testviteapp/src/App.jsx"
--'  1  0  ~/lab/reactlab/testviteapp/src/App.jsx
-|4,39,1,0,1735398377,"~/lab/reactlab/testviteapp/src/App.jsx"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397576,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397559,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/App.js
-|4,39,1,0,1735397338,"~/lab/reactlab/testapp/src/App.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/testapp/src/index.js
-|4,39,1,0,1735397304,"~/lab/reactlab/testapp/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
--'  1  0  ~/lab/reactlab/my-react-app/src/index.js
-|4,39,1,0,1734190586,"~/lab/reactlab/my-react-app/src/index.js"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736758092,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  14  12  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,14,12,1736758083,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  1  ~/.vim/snippetSupport
+|4,39,1,1,1736758044,"~/.vim/snippetSupport"
+-'  1  1  ~/.vim/snippetSupport
+|4,39,1,1,1736758044,"~/.vim/snippetSupport"
+-'  444  0  ~/.vim/vim-lsp
+|4,39,444,0,1736757905,"~/.vim/vim-lsp"
+-'  444  0  ~/.vim/vim-lsp
+|4,39,444,0,1736757905,"~/.vim/vim-lsp"
+-'  444  0  ~/.vim/vim-lsp
+|4,39,444,0,1736757905,"~/.vim/vim-lsp"
+-'  1  0  ~/.vim/vim-lsp
+|4,39,1,0,1736757854,"~/.vim/vim-lsp"
+-'  1  0  ~/.vim/vim-lsp
+|4,39,1,0,1736757854,"~/.vim/vim-lsp"
+-'  1  0  ~/.vim/vim-lsp
+|4,39,1,0,1736757854,"~/.vim/vim-lsp"
+-'  1  0  ~/.vim/old/vimrc-vim9script-backup
+|4,39,1,0,1736757821,"~/.vim/old/vimrc-vim9script-backup"
+-'  1  0  ~/.vim/old/vimrc-vim9script-backup
+|4,39,1,0,1736757821,"~/.vim/old/vimrc-vim9script-backup"
+-'  1  0  ~/.vim/old/vimrc-vim9script-backup
+|4,39,1,0,1736757821,"~/.vim/old/vimrc-vim9script-backup"
+-'  1  0  ~/.vim/old/vimrc-vim9script-backup
+|4,39,1,0,1736757821,"~/.vim/old/vimrc-vim9script-backup"
+-'  1  0  ~/.vim/old/vimrc-vim9script-backup
+|4,39,1,0,1736757821,"~/.vim/old/vimrc-vim9script-backup"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1736757658,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1736757658,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1736757658,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1736757658,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1736757658,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1736757658,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1736757658,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1736757658,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1736757658,"~/.vim/coc-settings.json"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736757214,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  521  28  ~/.vim/vimrc
+|4,39,521,28,1736711106,"~/.vim/vimrc"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  1  0  ~/lab/reactlab/luckycastapp/src/index.css
+|4,39,1,0,1736711093,"~/lab/reactlab/luckycastapp/src/index.css"
+-'  87  6  ~/.vim/vimrc
+|4,39,87,6,1736710655,"~/.vim/vimrc"
+-'  87  6  ~/.vim/vimrc
+|4,39,87,6,1736710655,"~/.vim/vimrc"
+-'  87  6  ~/.vim/vimrc
+|4,39,87,6,1736710655,"~/.vim/vimrc"
+-'  87  6  ~/.vim/vimrc
+|4,39,87,6,1736710655,"~/.vim/vimrc"
+-'  87  6  ~/.vim/vimrc
+|4,39,87,6,1736710655,"~/.vim/vimrc"
+-'  87  6  ~/.vim/vimrc
+|4,39,87,6,1736710655,"~/.vim/vimrc"
+-'  87  6  ~/.vim/vimrc
+|4,39,87,6,1736710655,"~/.vim/vimrc"
+-'  87  6  ~/.vim/vimrc
+|4,39,87,6,1736710655,"~/.vim/vimrc"
+-'  87  6  ~/.vim/vimrc
+|4,39,87,6,1736710655,"~/.vim/vimrc"
+-'  87  6  ~/.vim/vimrc
+|4,39,87,6,1736710655,"~/.vim/vimrc"
+-'  87  6  ~/.vim/vimrc
+|4,39,87,6,1736710655,"~/.vim/vimrc"
 
 # Buffer list:
-%~/lab/reactlab/testviteapp/src/main.jsx	1	0
+%~/lab/reactlab/luckycastapp/src/index.css	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/lab/reactlab/luckycastapp/src/index.css
+	*	1736758084	0
+	"	1	0
+	^	14	13
+	.	14	12
+	+	1	11
+	+	2	40
+	+	7	0
+	+	2	20
+	+	7	0
+	+	1	3
+	+	3	0
+	+	4	22
+	+	4	12
+	+	4	10
+	+	4	9
+	+	4	10
+	+	4	9
+	+	7	0
+	+	5	13
+	+	6	15
+	+	11	25
+	+	2	0
+	+	4	0
+	+	8	19
+	+	4	11
+	+	5	11
+	+	8	17
+	+	6	16
+	+	13	15
+	+	52	0
+	+	51	10
+	+	51	0
+	+	50	10
+	+	50	0
+	+	49	10
+	+	48	10
+	+	48	0
+	+	47	10
+	+	46	10
+	+	46	0
+	+	45	5
+	+	44	10
+	+	43	10
+	+	43	0
+	+	42	10
+	+	41	5
+	+	40	11
+	+	39	10
+	+	38	12
+	+	37	11
+	+	36	5
+	+	35	10
+	+	34	10
+	+	33	10
+	+	32	10
+	+	31	10
+	+	30	11
+	+	29	10
+	+	28	10
+	+	27	10
+	+	26	10
+	+	26	0
+	+	25	13
+	+	24	5
+	+	23	11
+	+	22	11
+	+	21	10
+	+	20	10
+	+	19	0
+	+	18	10
+	+	17	5
+	+	16	10
+	+	15	10
+	+	15	0
+	+	14	12
+
+> ~/.vim/snippetSupport
+	*	1736757959	0
+	"	1	1
+
+> ~/.vim/vim-lsp
+	*	1736757903	0
+	"	444	0
+
+> ~/.vim/old/vimrc-vim9script-backup
+	*	1736757818	0
+	"	1	0
+
+> ~/.vim/coc-settings.json
+	*	1736757647	0
+	"	1	0
+
+> ~/.vim/vimrc
+	*	1736711044	0
+	"	521	28
+	^	492	22
+	.	461	0
+	+	494	18
+	+	504	0
+	+	149	0
+	+	152	73
+	+	153	0
+	+	152	42
+	+	279	0
+	+	430	0
+	+	443	58
+	+	471	0
+	+	149	0
+	+	150	15
+	+	453	0
+	+	452	0
+	+	451	0
+	+	448	0
+	+	447	0
+	+	446	0
+	+	492	0
+	+	471	0
+	+	484	0
+	+	491	0
+	+	493	0
+	+	503	0
+	+	505	0
+	+	508	0
+	+	512	0
+	+	488	0
+	+	695	0
+	+	455	0
+	+	290	0
+	+	151	0
+	+	433	0
+	+	430	0
+	+	431	0
+	+	434	1
+	+	433	73
+	+	433	0
+	+	433	73
+	+	432	1
+	+	434	83
+	+	455	0
+	+	434	1
+	+	434	2
+	+	434	74
+	+	434	0
+	+	434	75
+	+	434	50
+	+	455	51
+	+	434	0
+	+	434	61
+	+	434	60
+	+	434	0
+	+	433	0
+	+	434	0
+	+	434	62
+	+	430	0
+	+	431	0
+	+	433	0
+	+	434	0
+	+	433	35
+	+	433	0
+	+	455	0
+	+	458	0
+	+	457	80
+	+	457	0
+	+	456	0
+	+	458	0
+	+	433	0
+	+	461	0
+	+	433	0
+	+	460	0
+	+	459	0
+	+	466	0
+	+	458	0
+	+	461	0
+	+	458	91
+	+	458	0
+	+	457	0
+	+	458	0
+	+	455	0
+	+	453	0
+	+	512	0
+	+	471	0
+	+	472	0
+	+	474	0
+	+	481	0
+	+	484	0
+	+	490	30
+	+	491	0
+	+	492	21
+	+	500	0
+	+	501	0
+	+	506	0
+	+	455	0
+	+	390	0
+	+	430	0
+	+	424	0
+	+	431	0
+	+	461	0
+
+> ~/.vim/vim-lsp-original
+	*	1736707636	0
+	"	637	0
+
+> /usr/local/share/vim/vim91/doc/options.txt
+	*	1736701824	0
+	"	2954	12
+
+> ~/lab/reactlab/luckycastapp/src/components/LuckyCast.jsx
+	*	1736671288	0
+	"	1	0
+	^	5	19
+	.	5	0
+	+	5	10
+	+	1	24
+	+	5	15
+	+	1	0
+	+	5	0
+	+	6	0
+	+	6	6
+	+	8	0
+	+	6	6
+	+	6	0
+	+	5	0
+
+> ~/lab/reactlab/luckycastapp/src/components/Die.jsx
+	*	1736661957	0
+	"	1	0
+	^	4	63
+	.	4	26
+	+	1	11
+	+	2	0
+	+	4	25
+	+	2	0
+	+	1	14
+	+	4	26
+
+> ~/lab/reactlab/luckycastapp/src/main.jsx
+	*	1736627184	0
+	"	1	0
+
+> ~/lab/reactlab/luckycastapp/src/App.jsx
+	*	1736627137	0
+	"	1	0
+	^	1	40
+	.	1	44
+	+	3	13
+	+	5	15
+	+	6	3
+	+	7	0
+	+	3	14
+	+	1	43
+	+	2	0
+	+	1	44
+
+> ~/lab/reactlab/luckycastapp/NERD_tree_win_1
+	*	1736626999	0
+	"	11	0
+	.	1	0
+	+	1	0
+
+> ~/lab/reactlab/luckycastapp/src/AppOriginal.jsx
+	*	1736626984	0
+	"	1	0
+
+> ~/lab/reactlab/luckycastapp/package.json
+	*	1736624472	0
+	"	1	0
+
+> ~/lab/reactlab/luckycastapp/src/Main.jsx
+	*	1736623894	0
+	"	1	0
+
+> ~/lab/reactlab/reactluckycastapp/README.md
+	*	1735907128	0
+	"	1	0
+	^	1	7
+	.	1	6
+	+	1	6
+
+> ~/lab/reactlab/luckycastapp/README.md
+	*	1735847995	0
+	"	1	0
+	^	3	29
+	.	3	28
+	+	1	12
+	+	3	0
+	+	3	19
+	+	4	0
+	+	3	237
+	+	3	0
+	+	3	238
+	+	3	28
+
+> ~/lab/reactlab/luckycastapp/LICENSE
+	*	1735744729	0
+	"	1	0
+
+> ~/lab/reactlab/luckycastapp/vite.config.js
+	*	1735741788	0
+	"	1	0
+
+> ~/lab/reactlab/react001.html
+	*	1735741734	0
+	"	1	0
 
 > ~/lab/reactlab/testviteapp/src/main.jsx
 	*	1735398385	0
@@ -559,10 +855,6 @@ $
 
 > ~/lab/reactlab/my-react-app/src/App.js
 	*	1734184853	0
-	"	1	0
-
-> ~/lab/reactlab/react001.html
-	*	1734184650	0
 	"	1	0
 
 > ~/lab/emberlab/ember-basic-js/index.js
@@ -1087,338 +1379,3 @@ $
 	^	1	44
 	.	1	43
 	+	1	43
-
-> ~/lab/emberlab/bitstreamapp/tests/integration/components/password-test.ts
-	*	1732341769	0
-	"	1	0
-	^	15	47
-	.	15	48
-	+	1	55
-	+	15	0
-	+	14	0
-	+	15	48
-
-> ~/lab/emberlab/bitstreamapp/.stylelintrc.js
-	*	1732302130	0
-	"	1	0
-	^	9	10
-	.	9	8
-	+	19	21
-	+	9	0
-	+	5	6
-	+	16	0
-	+	14	18
-	+	3	0
-	+	15	9
-	+	16	7
-	+	17	5
-	+	18	3
-	+	6	4
-	+	9	8
-
-> ~/lab/emberlab/bitstreamapp/.template-lintrc.js
-	*	1732301577	0
-	"	1	0
-	^	8	4
-	.	8	3
-	+	10	0
-	+	3	0
-	+	6	77
-	+	8	0
-	+	6	44
-	+	7	0
-	+	3	13
-	+	8	3
-
-> ~/lab/emberlab/bitstreamapp/tailwind.config.js
-	*	1732301271	0
-	"	1	0
-	^	10	30
-	.	10	8
-	+	3	12
-	+	2	15
-	+	16	0
-	+	15	1
-	+	3	14
-	+	5	23
-	+	5	16
-	+	5	25
-	+	5	0
-	+	5	24
-	+	5	9
-	+	5	10
-	+	5	13
-	+	5	21
-	+	5	22
-	+	5	18
-	+	5	22
-	+	5	0
-	+	5	13
-	+	5	21
-	+	5	22
-	+	5	0
-	+	5	13
-	+	7	67
-	+	8	7
-	+	7	31
-	+	7	45
-	+	7	0
-	+	7	43
-	+	7	12
-	+	7	43
-	+	7	47
-	+	7	49
-	+	7	0
-	+	10	32
-	+	3	47
-	+	10	26
-	+	11	7
-	+	10	8
-
-> ~/lab/emberlab/bitstreamapp/index.html
-	*	1732288992	0
-	"	1	0
-	.	1	0
-	+	1	13
-	+	1	60
-	+	1	0
-	+	1	64
-	+	1	44
-	+	1	50
-	+	1	0
-	+	1	122
-	+	1	88
-	+	1	0
-	+	1	34
-	+	1	27
-	+	1	73
-	+	1	44
-	+	1	48
-	+	1	52
-	+	1	40
-	+	1	59
-	+	1	35
-	+	1	0
-	+	1	83
-	+	1	67
-	+	1	82
-	+	1	66
-	+	1	54
-	+	1	82
-	+	1	54
-	+	1	0
-	+	1	1
-	+	1	0
-
-> ~/lab/emberlab/dutycalculator/dist/index.html
-	*	1732223471	0
-	"	1	0
-
-> ~/lab/emberlab/bitstreamapp/dist/index.html
-	*	1732215176	0
-	"	1	0
-
-> ~/lab/nginx-for-emberjs/polarisx.olutayo.dev
-	*	1732215095	0
-	"	1	0
-	^	22	66
-	.	22	65
-	+	10	22
-	+	13	36
-	+	10	27
-	+	17	50
-	+	18	50
-	+	21	61
-	+	22	65
-
-> ~/lab/nginx-for-emberjs/abs.bitstream.ng
-	*	1732214524	0
-	"	1	0
-	^	22	54
-	.	22	53
-	+	17	47
-	+	18	38
-	+	21	49
-	+	22	53
-
-> ~/lab/nginx-for-emberjs/bitstream.ng
-	*	1732195023	0
-	"	1	0
-	^	22	62
-	.	22	61
-	+	10	35
-	+	13	40
-	+	17	43
-	+	18	43
-	+	21	57
-	+	22	61
-
-> ~/lab/emberlab/bitstreamapp/dist/assets/main-QEyxdO1u.css
-	*	1732137728	0
-	"	1	0
-
-> ~/lab/emberlab/bitstreamapp/dist/assets/bitstreamapp.css
-	*	1732137711	0
-	"	1	0
-
-> ~/lab/emberlab/bitstreamapp/dist/@embroider/virtual/vendor.js
-	*	1732137664	0
-	"	1	0
-
-> ~/lab/emberlab/bitstreamapp/.git/COMMIT_EDITMSG
-	*	1732128240	0
-	"	4	60
-	^	4	61
-	.	4	60
-	+	1	22
-	+	8	11
-	+	1	7
-	+	8	2
-	+	10	0
-	+	8	71
-	+	9	24
-	+	5	37
-	+	3	67
-	+	5	0
-	+	4	60
-
-> ~/lab/emberlab/bitstreamapp/app/components/password.hbs
-	*	1732114155	0
-	"	1	0
-
-> ~/lab/emberlab/bitstreamapp/app/components/password.ts
-	*	1732114110	0
-	"	1	0
-	^	12	10
-	.	12	0
-	+	6	11
-	+	6	0
-	+	5	0
-	+	12	0
-
-> ~/lab/emberlab/PortfolioApp/app/index.html
-	*	1732106898	0
-	"	1	0
-
-> ~/lab/emberlab/bitstreamapp/NERD_tree_tab_1
-	*	1732106568	0
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/vimrc
-	*	1731949831	0
-	"	1	0
-	.	586	10
-	+	69	0
-	+	75	0
-	+	72	8
-	+	73	0
-	+	75	0
-	+	73	0
-	+	78	0
-	+	74	0
-	+	73	24
-	+	72	7
-	+	371	0
-	+	370	0
-	+	369	45
-	+	370	45
-	+	371	72
-	+	370	18
-	+	85	0
-	+	216	0
-	+	394	0
-	+	393	25
-	+	393	18
-	+	393	23
-	+	394	0
-	+	393	23
-	+	419	0
-	+	418	0
-	+	394	0
-	+	416	0
-	+	397	0
-	+	396	0
-	+	397	26
-	+	409	0
-	+	410	0
-	+	410	55
-	+	410	36
-	+	393	23
-	+	395	17
-	+	404	35
-	+	405	42
-	+	406	25
-	+	407	50
-	+	409	95
-	+	410	61
-	+	410	56
-	+	410	36
-	+	411	26
-	+	412	47
-	+	405	15
-	+	406	0
-	+	404	35
-	+	405	43
-	+	406	26
-	+	407	51
-	+	409	96
-	+	410	62
-	+	410	57
-	+	410	37
-	+	411	27
-	+	412	48
-	+	413	25
-	+	406	0
-	+	371	31
-	+	391	0
-	+	393	0
-	+	392	21
-	+	393	55
-	+	392	57
-	+	393	32
-	+	391	16
-	+	410	0
-	+	408	0
-	+	379	72
-	+	26	0
-	+	27	0
-	+	26	0
-	+	93	0
-	+	27	0
-	+	295	73
-	+	339	17
-	+	340	17
-	+	341	17
-	+	343	17
-	+	344	17
-	+	346	17
-	+	347	17
-	+	348	17
-	+	350	17
-	+	351	17
-	+	605	28
-	+	607	52
-	+	663	67
-	+	655	80
-	+	663	137
-	+	666	0
-	+	585	34
-	+	586	33
-	+	587	0
-	+	586	35
-	+	585	10
-	+	586	10
-	m	393	24
-
-> ~/lab/emberlab/bitstreamapp/vite.config.mjs
-	*	1731945746	0
-	"	1	0
-	^	64	6
-	.	64	5
-	+	62	30
-	+	13	37
-	+	62	32
-	+	63	7
-	+	64	5

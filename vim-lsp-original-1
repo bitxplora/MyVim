@@ -387,7 +387,7 @@ set cmdheight=1
 set updatetime=300
 
 # Don't pass messages to |ins-completion-menu|.
-# set shortmess+=c
+set shortmess+=c
 
 # Always show the signcolumn, otherwise it would shift the text each time
 # diagnostics appear/become resolved.
@@ -427,8 +427,8 @@ g:user_emmet_settings = {
 #   <S-Tab> will move to the previous item.
 # When the popup menu is not visible:
 #   <Tab> and <S-Tab> will perform their default actions (inserting a tab character).
-# inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-# inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 #
 #
 
@@ -439,26 +439,26 @@ g:user_emmet_settings = {
 # highlight PmenuThumb ctermfg=white ctermbg=grey
 
 # # VimComplete
-var options = {
-  completor: { shuffleEqualPriority: true, postfixHighlight: true },
-  buffer: { enable: true, priority: 16, urlComplete: true, envComplete: true },
-  abbrev: { enable: true, priority: 10 },
-  lsp: { enable: true, priority: 20, maxCount: 5 },
-  omnifunc: { enable: false, priority: 8, filetypes: ['*'] },
-  vsnip: { enable: false, priority: 10 },
-  vimscript: { enable: true, priority: 10 },
-  path: { enable: true },
-  abbreviations: { enable: false },
-  tag: { enable: false },
-  ngram: { enable: false, priority: 10, bigram: false, filetypes: ['text', 'help', 'markdown'], filetypesComments: [] },
-}
-autocmd VimEnter * g:VimCompleteOptionsSet(options)
+# var options = {
+#   completor: { shuffleEqualPriority: true, postfixHighlight: true },
+#   buffer: { enable: true, priority: 16, urlComplete: true, envComplete: true },
+#   abbrev: { enable: true, priority: 10 },
+#   lsp: { enable: true, priority: 20, maxCount: 5 },
+#   omnifunc: { enable: false, priority: 8, filetypes: ['*'] },
+#   vsnip: { enable: false, priority: 10 },
+#   vimscript: { enable: true, priority: 10 },
+#   path: { enable: true },
+#   abbreviations: { enable: false },
+#   tag: { enable: false },
+#   ngram: { enable: false, priority: 10, bigram: false, filetypes: ['text', 'help', 'markdown'], filetypesComments: [] },
+# }
+# autocmd VimEnter * g:VimCompleteOptionsSet(options)
 
 # To apply basic customizations, you can use the completepopup option. For example:
 # autocmd VimEnter * set completepopup+=border:on,highlight:Normal
 
 # To enable <Tab> and <S-Tab> for this purpose, add the following to your configuration:
-g:vimcomplete_tab_enable = 1
+# g:vimcomplete_tab_enable = 1
 # g:VimCompleteInfoWindowOptionsSet({
 #     drag: false,    # Disable dragging
 #     close: 'none',  # Disable close button
@@ -468,28 +468,28 @@ g:vimcomplete_tab_enable = 1
 # LSP
 var lspOpts = {
   aleSupport: v:false,
-  autoComplete: v:true,
-  autoHighlight: v:false,
+  autoComplete: v:false,
+  autoHighlight: v:true,
   autoHighlightDiags: v:true,
-  autoPopulateDiags: v:false,
+  autoPopulateDiags: v:true,
   completionMatcher: 'case',
   completionMatcherValue: 1,
   diagSignErrorText: 'E>',
   diagSignHintText: 'H>',
   diagSignInfoText: 'I>',
   diagSignWarningText: 'W>',
-  echoSignature: v:false,
+  echoSignature: v:true,
   hideDisabledCodeActions: v:false,
   highlightDiagInline: v:true,
-  hoverInPreview: v:false,
+  hoverInPreview: v:true,
   ignoreMissingServer: v:false,
   keepFocusInDiags: v:true,
   keepFocusInReferences: v:true,
   completionTextEdit: v:true,
   diagVirtualTextAlign: 'after',
-  diagVirtualTextWrap: 'default',
-  noNewlineInCompletion: v:false,
-  omniComplete: v:null,
+  diagVirtualTextWrap: 'truncate',
+  noNewlineInCompletion: v:true,
+  omniComplete: v:true,
   outlineOnRight: v:false,
   outlineWinSize: 20,
   semanticHighlight: v:true,
@@ -497,13 +497,13 @@ var lspOpts = {
   showDiagInPopup: v:true,
   showDiagOnStatusLine: v:false,
   showDiagWithSign: v:true,
-  showDiagWithVirtualText: v:false,
-  showInlayHints: v:false,
+  showDiagWithVirtualText: v:true,
+  showInlayHints: v:true,
   showSignature: v:true,
   snippetSupport: v:false,
   ultisnipsSupport: v:false,
   useBufferCompletion: v:false,
-  usePopupInCodeAction: v:false,
+  usePopupInCodeAction: v:true,
   useQuickfixForLocations: v:false,
   vsnipSupport: v:false,
   bufferCompletionTimeout: 100,

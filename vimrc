@@ -67,7 +67,11 @@ Plugin 'hrsh7th/vim-vsnip-integ'
 Plugin 'rafamadriz/friendly-snippets'
 
 # ngram complete
-Plugin 'girishji/ngram-complete.vim'
+# Plugin 'girishji/ngram-complete.vim'
+
+# Lookup documation from devocs.io, using these commands
+# :DevdocsInstall,:DevdocsFind,:DevdocsUninstall
+Plugin 'girishji/devdocs.vim'
 
 # emmet
 Plugin 'mattn/emmet-vim'
@@ -84,7 +88,7 @@ filetype plugin on
 
 # Omin completion provides smart autocompletion for prgramms.
 # To turn on omni completion
-# set omnifunc=syntaxcomplete#Complete
+set omnifunc= # Do not use omni UI when VimComplete is active
 
 # Brief help
 # :PluginList       - lists configured plugins
@@ -148,10 +152,10 @@ set incsearch
 # Menu option for enhanced mode of commands completion = wildmenu
 # set wildmenu
 # set wildoptions=pum
-# set pumwidth=30
-# set completeopt=menuone,noinsert,noselec:t  #" Configure completion options
-# set completion_popup = 'width:150,highlight:Pmenu,align:item,padding:5'
-# set completeopt += menu,padding
+set pumwidth=0  # To make completion menu fit its content
+# set pumheight=10
+set completeopt=  # menu,menuone,noselect  # Configure completion options
+set shortmess+=c
 
 # when using the >> or << commands, shift lines by 2 spaces
 set shiftwidth=2
@@ -163,6 +167,7 @@ set tabstop=2
 set autoindent
 set smartindent
 set cindent
+set shiftround
 
 
 # show a visual line under the cursor's current line
@@ -171,10 +176,10 @@ set cursorline
 # show a visual vertical line on the cursor's current point
 # set cursorcolumn
 
-# Enabling session to save inaddition; resize for window line and columns,  and winpos for window position
+# Enabling session to save in addition; resize for window line and columns,  and winpos for window position
 set sessionoptions+=winpos,resize,options
 
-# Enabling view to save inaddition to default, loccaloptions
+# Enabling view to save in addition to default, localoptions
 set viewoptions+=localoptions
 
 # Automatically create and load a view each time you open and exit buffer.
@@ -198,10 +203,10 @@ set termguicolors
 
 # Spellcheck
 # setlocal spell
-setlocal spelllang=en_gb,en_us
+setlocal spelllang=en_us,en_gb
 
 # Words completion, use ctrl N or ctrl P in insert mode for word completion
-set complete+=kspell
+# set complete+=kspell
 
 set spellfile=~/.vim/spell/en.utf-8.add
 
@@ -249,8 +254,8 @@ g:airline_powerline_fonts = 1
 # Adjust the truncation if error messages are being truncated
 # g:airline#extensions#default#section_truncate_width = { 'error': 80, 'warning': 80, }
 
-highlight ErrorMsg ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
-highlight Error ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+# highlight ErrorMsg ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+# highlight Error ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
 
 #Check up other theme at https:/github.com/vim-airline/vim-airlin/wiki/Screenshots
 g:airline_theme =  'dark' #'serene'
@@ -259,35 +264,35 @@ g:airline_theme =  'dark' #'serene'
 g:airline_highlighting_cache = 0
 
 # Update airline warning and error highlight for good contrast.
-def UpdateHighlights()
-  hi airline_error term=bold cterm=standout ctermfg=15 ctermbg=9 gui=bold guifg=white guibg=red
-  hi airline_error_bold term=bold cterm=standout ctermfg=15 ctermbg=9 gui=bold guifg=white guibg=red
-  hi airline_error_red term=bold cterm=standout ctermfg=15 ctermbg=9 gui=bold guifg=white guibg=red
-  hi airline_error_inactive ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
-  hi airline_error_inactive_bold ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
-  hi airline_error_inactive_red ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
-  hi airline_warning_inactive ctermfg=255 ctermbg=166 guifg=#ffffff guibg=#df5f00
-  hi airline_warning_inactive_bold term=bold cterm=bold ctermbg=166 ctermfg=255 gui=bold guifg=#ffffff guibg=#df5f00
-  hi airline_warning_inactive_red ctermfg=255 ctermbg=166 guifg=#ffffff guibg=#df5f00
-  hi airline_warning_red term=bold cterm=bold ctermfg=255 ctermbg=166 guifg=#ff0000 guibg=#df5f00
-  hi airline_warning_to_airline_error term=bold cterm=bold ctermfg=255 ctermbg=166 guifg=#990000 guibg=#df5f00
-enddef
-autocmd User AirlineAfterTheme call UpdateHighlights()
+# def UpdateHighlights()
+#   hi airline_error term=bold cterm=standout ctermfg=15 ctermbg=9 gui=bold guifg=white guibg=red
+#   hi airline_error_bold term=bold cterm=standout ctermfg=15 ctermbg=9 gui=bold guifg=white guibg=red
+#   hi airline_error_red term=bold cterm=standout ctermfg=15 ctermbg=9 gui=bold guifg=white guibg=red
+#   hi airline_error_inactive ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+#   hi airline_error_inactive_bold ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+#   hi airline_error_inactive_red ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
+#   hi airline_warning_inactive ctermfg=255 ctermbg=166 guifg=#ffffff guibg=#df5f00
+#   hi airline_warning_inactive_bold term=bold cterm=bold ctermbg=166 ctermfg=255 gui=bold guifg=#ffffff guibg=#df5f00
+#   hi airline_warning_inactive_red ctermfg=255 ctermbg=166 guifg=#ffffff guibg=#df5f00
+#   hi airline_warning_red term=bold cterm=bold ctermfg=255 ctermbg=166 guifg=#ff0000 guibg=#df5f00
+#   hi airline_warning_to_airline_error term=bold cterm=bold ctermfg=255 ctermbg=166 guifg=#990000 guibg=#df5f00
+# enddef
+# autocmd User AirlineAfterTheme call UpdateHighlights()
 
 # NOTE: You can use other key to expand snippet.
 # # Expand
-# imap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
-# smap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
+inoremap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
+snoremap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
 
-# # Expand or jump
-# imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
-# smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+# Expand or jump
+inoremap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+snoremap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
 
-# # Jump forward or backward
-# imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
-# smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
-# imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
-# smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+# Jump forward or backward
+inoremap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+snoremap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+inoremap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+snoremap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
 
 # Select or cut text to use as $TM_SELECTED_TEXT in the next snippet.
 # See https://github.com/hrsh7th/vim-vsnip/pull/50
@@ -331,8 +336,8 @@ g:Hexokinase_highlighters = ['sign_column']   # sign-column is default, other ar
 g:Hexokinase_ftEnabled = ['css', 'html', 'javascript', 'typescript']  #This restricts the types it apply to, to those in list
 #
 #sumnerevans/vim-listtrans
-nmap  ;l :call ListTrans_toggle_format()<CR>
-xmap  ;l :call ListTrans_toggle_format('visual')<CR>
+nnoremap  ;l :call ListTrans_toggle_format()<CR>
+xnoremap  ;l :call ListTrans_toggle_format('visual')<CR>
 #
 #vimspector mapping
 #Installation of vimspector DAP gadgets
@@ -359,14 +364,15 @@ nnoremap <Leader>vcb :call vimspector#ClearBreakpoints()<CR>
 cabbrev vw VimspectorWatch
 cabbrev ve VimspectorEval
 
-nnoremap <leader>rtc <Plug>VimspectorRunToCursor
-nnoremap <leader>gtl <Plug>VimspectorGoToCurrentLine
+map <leader>rtc <Plug>VimspectorRunToCursor
+map <leader>gtl <Plug>VimspectorGoToCurrentLine
 
 # To make session e.g vms my_session_file
 cabbrev vms VimspectorMkSession
 #
 # To load session e.g vls my_session_file
 cabbrev vls VimspectorLoadSession
+
 
 #Boolean toggle tool mapping to \t
 nnoremap <silent> <leader>t :ToggleBool<CR>
@@ -445,12 +451,13 @@ var options = {
   abbrev: { enable: true, priority: 10 },
   lsp: { enable: true, priority: 20, maxCount: 5 },
   omnifunc: { enable: false, priority: 8, filetypes: ['*'] },
-  vsnip: { enable: false, priority: 10 },
+  vsnip: { enable: true, priority: 10 },
   vimscript: { enable: true, priority: 10 },
   path: { enable: true },
-  abbreviations: { enable: false },
-  tag: { enable: false },
-  ngram: { enable: false, priority: 10, bigram: false, filetypes: ['text', 'help', 'markdown'], filetypesComments: [] },
+  abbreviations: { enable: true },
+  tag: { enable: true },
+  info: {enable: false},
+  # ngram: { enable: true, priority: 10, bigram: false, filetypes: ['text', 'help', 'markdown'], filetypesComments: [] },
 }
 autocmd VimEnter * g:VimCompleteOptionsSet(options)
 
@@ -468,7 +475,7 @@ g:vimcomplete_tab_enable = 1
 # LSP
 var lspOpts = {
   aleSupport: v:false,
-  autoComplete: v:true,
+  autoComplete: v:false,
   autoHighlight: v:false,
   autoHighlightDiags: v:true,
   autoPopulateDiags: v:false,
@@ -488,24 +495,24 @@ var lspOpts = {
   completionTextEdit: v:true,
   diagVirtualTextAlign: 'after',
   diagVirtualTextWrap: 'default',
-  noNewlineInCompletion: v:false,
-  omniComplete: v:null,
+  noNewlineInCompletion: v:true,
+  omniComplete: v:false,
   outlineOnRight: v:false,
-  outlineWinSize: 20,
+  outlineWinSize: 30,
   semanticHighlight: v:true,
   showDiagInBalloon: v:true,
   showDiagInPopup: v:true,
-  showDiagOnStatusLine: v:false,
+  showDiagOnStatusLine: v:true,
   showDiagWithSign: v:true,
-  showDiagWithVirtualText: v:false,
-  showInlayHints: v:false,
+  showDiagWithVirtualText: v:true,
+  showInlayHints: v:true,
   showSignature: v:true,
-  snippetSupport: v:false,
+  snippetSupport: v:true,
   ultisnipsSupport: v:false,
-  useBufferCompletion: v:false,
-  usePopupInCodeAction: v:false,
-  useQuickfixForLocations: v:false,
-  vsnipSupport: v:false,
+  useBufferCompletion: v:true,
+  usePopupInCodeAction: v:true,
+  useQuickfixForLocations: v:true,
+  vsnipSupport: v:true,
   bufferCompletionTimeout: 100,
   customCompletionKinds: v:false,
   completionKinds: {},
@@ -564,12 +571,28 @@ var lspServers = [
     args: ['up', '--method', 'stdio'],
   },
 
+  # Dart language server
+  {
+    name: 'dart',
+    filetype: ['dart'],
+    path: '/usr/bin/dart',
+    args: ['language-server', '--client-id', 'vim'],
+  },
+
   # Tsserver language server
   {
     name: 'tsserver',
     filetype: ['javascript', 'typescript'],
     path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/typescript-language-server',
     args: ['--stdio'],
+  },
+
+  # Python language server
+  {
+    name: 'ruff-lsp',
+    filetype: ['python'],
+    path: '/home/olutayo/.local/bin/ruff-lsp',
+    args: [],
   },
 
   # # vscode-html-language-server

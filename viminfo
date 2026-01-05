@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/mouse
+~MSle0~/NERD
 
 # Last Substitute Search Pattern:
 ~MSle0&dutycalculator
@@ -20,10 +20,30 @@
 $true
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1767653714,,"q"
+:wq
+|2,0,1767653415,,"wq"
+:map <leader>nf
+|2,0,1767653300,,"map <leader>nf"
+:map <leader>n
+|2,0,1767653281,,"map <leader>n"
+:man <leader>n
+|2,0,1767653265,,"man <leader>n"
+:map <C-n>
+|2,0,1767653057,,"map <C-n>"
+:map <C-nf>
+|2,0,1767653035,,"map <C-nf>"
+:h <scriptcmd>
+|2,0,1767652358,,"h <scriptcmd>"
+:h cmd
+|2,0,1767651618,,"h cmd"
+:w
+|2,0,1767651310,,"w"
+:NERDTreeFind
+|2,0,1767650911,,"NERDTreeFind"
 :q!
 |2,0,1767590437,,"q!"
-:q
-|2,0,1767590405,,"q"
 :botright 5 split
 |2,0,1767590395,,"botright 5 split"
 :vertical botright 5split
@@ -116,8 +136,6 @@ $true
 |2,0,1767399627,,"map <leader>"
 :popup_list
 |2,0,1767388658,,"popup_list"
-:w
-|2,0,1767398399,,"w"
 :iab
 |2,0,1767398306,,"iab"
 :iab tehn then
@@ -136,8 +154,6 @@ $true
 |2,0,1767391487,,"iabbrev adn add"
 :iabbrew adn and
 |2,0,1767391441,,"iabbrew adn and"
-:wq
-|2,0,1767393039,,"wq"
 :map <C-j>
 |2,0,1767388973,,"map <C-j>"
 :LspHover
@@ -170,6 +186,8 @@ $true
 |2,0,1767230485,,"h ins-completion"
 
 # Search String History (newest to oldest):
+?/NERD
+|2,1,1767650746,47,"NERD"
 ?/mouse
 |2,1,1767556911,47,"mouse"
 ? mouse
@@ -217,8 +235,8 @@ $true
 
 # Registers:
 "0	CHAR	0
-	return
-|3,0,0,0,1,0,1767413050,"return"
+	NERDTreeFind
+|3,0,0,0,1,0,1767652931,"NERDTreeFind"
 "1	LINE	0
 	    return n * factorial(n - 1);
 |3,0,1,1,1,0,1767403545,"    return n * factorial(n - 1);"
@@ -256,237 +274,350 @@ $true
 	€ý5
 |3,0,26,0,1,0,1738774132,"€ý5"
 ""-	CHAR	0
-	'
-|3,1,36,0,1,0,1767409199,"'"
+	>
+|3,1,36,0,1,0,1767653387,">"
 
 # File marks:
-'0  555  0  ~/.vim/vimrc
-|4,48,555,0,1767590437,"~/.vim/vimrc"
-'1  1  0  ~/lab/vimlab/function.vim
-|4,49,1,0,1767590411,"~/lab/vimlab/function.vim"
-'2  1  0  ~/.vim/vim-coc
-|4,50,1,0,1767558273,"~/.vim/vim-coc"
-'3  1  0  ~/.vim/vimrc
-|4,51,1,0,1767556914,"~/.vim/vimrc"
-'4  1  0  ~/.vim/vimrc
-|4,52,1,0,1767556914,"~/.vim/vimrc"
-'5  1  0  /mouse
-|4,53,1,0,1767556872,"/mouse"
-'6  96  14  ~/.vim/compiling-vim
-|4,54,96,14,1767556834,"~/.vim/compiling-vim"
-'7  122  0  ~/.vim/compiling-vim
-|4,55,122,0,1767556309,"~/.vim/compiling-vim"
-'8  122  0  ~/.vim/compiling-vim
-|4,56,122,0,1767556309,"~/.vim/compiling-vim"
-'9  1  0  ~/lab/vimlab/vimrc
-|4,57,1,0,1767556244,"~/lab/vimlab/vimrc"
+'0  398  9  ~/.vim/vimrc
+|4,48,398,9,1767653714,"~/.vim/vimrc"
+'1  123  10  ~/.vim/vimrc
+|4,49,123,10,1767653415,"~/.vim/vimrc"
+'2  123  10  ~/.vim/vimrc
+|4,50,123,10,1767653415,"~/.vim/vimrc"
+'3  123  8  ~/.vim/vimrc
+|4,51,123,8,1767652981,"~/.vim/vimrc"
+'4  123  8  ~/.vim/vimrc
+|4,52,123,8,1767652981,"~/.vim/vimrc"
+'5  122  50  ~/.vim/vimrc
+|4,53,122,50,1767652835,"~/.vim/vimrc"
+'6  122  50  ~/.vim/vimrc
+|4,54,122,50,1767652835,"~/.vim/vimrc"
+'7  122  50  ~/.vim/vimrc
+|4,55,122,50,1767652835,"~/.vim/vimrc"
+'8  122  50  ~/.vim/vimrc
+|4,56,122,50,1767652835,"~/.vim/vimrc"
+'9  122  50  ~/.vim/vimrc
+|4,57,122,50,1767652835,"~/.vim/vimrc"
 
 # Jumplist (newest first):
+-'  398  9  ~/.vim/vimrc
+|4,39,398,9,1767653714,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1767653418,"~/.vim/vimrc"
+-'  123  10  ~/.vim/vimrc
+|4,39,123,10,1767653415,"~/.vim/vimrc"
+-'  123  10  ~/.vim/vimrc
+|4,39,123,10,1767653415,"~/.vim/vimrc"
+-'  122  5  ~/.vim/vimrc
+|4,39,122,5,1767653315,"~/.vim/vimrc"
+-'  122  5  ~/.vim/vimrc
+|4,39,122,5,1767653315,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1767652984,"~/.vim/vimrc"
+-'  123  8  ~/.vim/vimrc
+|4,39,123,8,1767652981,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1767652839,"~/.vim/vimrc"
+-'  122  50  ~/.vim/vimrc
+|4,39,122,50,1767652835,"~/.vim/vimrc"
+-'  122  50  ~/.vim/vimrc
+|4,39,122,50,1767652835,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1767651924,"~/.vim/vimrc"
+-'  123  8  ~/.vim/vimrc
+|4,39,123,8,1767651922,"~/.vim/vimrc"
+-'  123  8  ~/.vim/vimrc
+|4,39,123,8,1767651922,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1767651901,"~/.vim/vimrc"
+-'  122  0  ~/.vim/vimrc
+|4,39,122,0,1767651898,"~/.vim/vimrc"
+-'  122  0  ~/.vim/vimrc
+|4,39,122,0,1767651898,"~/.vim/vimrc"
+-'  123  28  ~/.vim/vimrc
+|4,39,123,28,1767651826,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1767651502,"~/.vim/vimrc"
+-'  121  10  ~/.vim/vimrc
+|4,39,121,10,1767651489,"~/.vim/vimrc"
+-'  121  10  ~/.vim/vimrc
+|4,39,121,10,1767651489,"~/.vim/vimrc"
+-'  121  10  ~/.vim/vimrc
+|4,39,121,10,1767651489,"~/.vim/vimrc"
+-'  121  10  ~/.vim/vimrc
+|4,39,121,10,1767651489,"~/.vim/vimrc"
+-'  121  10  ~/.vim/vimrc
+|4,39,121,10,1767651489,"~/.vim/vimrc"
+-'  121  10  ~/.vim/vimrc
+|4,39,121,10,1767651489,"~/.vim/vimrc"
+-'  121  10  ~/.vim/vimrc
+|4,39,121,10,1767651489,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1767651333,"~/.vim/vimrc"
+-'  123  43  ~/.vim/vimrc
+|4,39,123,43,1767651330,"~/.vim/vimrc"
+-'  123  43  ~/.vim/vimrc
+|4,39,123,43,1767651330,"~/.vim/vimrc"
+-'  120  2  ~/.vim/vimrc
+|4,39,120,2,1767650748,"~/.vim/vimrc"
+-'  120  2  ~/.vim/vimrc
+|4,39,120,2,1767650748,"~/.vim/vimrc"
+-'  120  2  ~/.vim/vimrc
+|4,39,120,2,1767650748,"~/.vim/vimrc"
+-'  120  2  ~/.vim/vimrc
+|4,39,120,2,1767650748,"~/.vim/vimrc"
+-'  120  2  ~/.vim/vimrc
+|4,39,120,2,1767650748,"~/.vim/vimrc"
+-'  120  2  ~/.vim/vimrc
+|4,39,120,2,1767650748,"~/.vim/vimrc"
+-'  120  2  ~/.vim/vimrc
+|4,39,120,2,1767650748,"~/.vim/vimrc"
+-'  120  2  ~/.vim/vimrc
+|4,39,120,2,1767650748,"~/.vim/vimrc"
+-'  121  11  ~/.vim/vimrc
+|4,39,121,11,1767650747,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1767650746,"~/.vim/vimrc"
+-'  151  0  ~/.vim/vimrc
+|4,39,151,0,1767650735,"~/.vim/vimrc"
+-'  151  0  ~/.vim/vimrc
+|4,39,151,0,1767650735,"~/.vim/vimrc"
+-'  151  0  ~/.vim/vimrc
+|4,39,151,0,1767650735,"~/.vim/vimrc"
+-'  151  0  ~/.vim/vimrc
+|4,39,151,0,1767650735,"~/.vim/vimrc"
+-'  151  0  ~/.vim/vimrc
+|4,39,151,0,1767650735,"~/.vim/vimrc"
+-'  151  0  ~/.vim/vimrc
+|4,39,151,0,1767650735,"~/.vim/vimrc"
+-'  151  0  ~/.vim/vimrc
+|4,39,151,0,1767650735,"~/.vim/vimrc"
+-'  151  0  ~/.vim/vimrc
+|4,39,151,0,1767650735,"~/.vim/vimrc"
+-'  556  0  ~/.vim/vimrc
+|4,39,556,0,1767590437,"~/.vim/vimrc"
+-'  555  0  ~/.vim/vimrc
+|4,39,555,0,1767590437,"~/.vim/vimrc"
+-'  556  0  ~/.vim/vimrc
+|4,39,556,0,1767590437,"~/.vim/vimrc"
+-'  555  0  ~/.vim/vimrc
+|4,39,555,0,1767590437,"~/.vim/vimrc"
+-'  556  0  ~/.vim/vimrc
+|4,39,556,0,1767590437,"~/.vim/vimrc"
+-'  555  0  ~/.vim/vimrc
+|4,39,555,0,1767590437,"~/.vim/vimrc"
+-'  556  0  ~/.vim/vimrc
+|4,39,556,0,1767590437,"~/.vim/vimrc"
+-'  555  0  ~/.vim/vimrc
+|4,39,555,0,1767590437,"~/.vim/vimrc"
+-'  556  0  ~/.vim/vimrc
+|4,39,556,0,1767590437,"~/.vim/vimrc"
+-'  555  0  ~/.vim/vimrc
+|4,39,555,0,1767590437,"~/.vim/vimrc"
+-'  556  0  ~/.vim/vimrc
+|4,39,556,0,1767590437,"~/.vim/vimrc"
+-'  555  0  ~/.vim/vimrc
+|4,39,555,0,1767590437,"~/.vim/vimrc"
+-'  556  0  ~/.vim/vimrc
+|4,39,556,0,1767590437,"~/.vim/vimrc"
+-'  555  0  ~/.vim/vimrc
+|4,39,555,0,1767590437,"~/.vim/vimrc"
+-'  556  0  ~/.vim/vimrc
+|4,39,556,0,1767590437,"~/.vim/vimrc"
 -'  555  0  ~/.vim/vimrc
 |4,39,555,0,1767590437,"~/.vim/vimrc"
 -'  1  0  ~/lab/vimlab/function.vim
 |4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1767571094,"~/.vim/vimrc"
--'  10  0  ~/lab/vimlab/function.vim
-|4,39,10,0,1767560079,"~/lab/vimlab/function.vim"
--'  1  0  ~/.vim/vim-coc
-|4,39,1,0,1767558273,"~/.vim/vim-coc"
--'  1  0  ~/.vim/vim-coc
-|4,39,1,0,1767558273,"~/.vim/vim-coc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1767556914,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1767556914,"~/.vim/vimrc"
--'  1  0  /mouse
-|4,39,1,0,1767556872,"/mouse"
--'  1  0  /mouse
-|4,39,1,0,1767556872,"/mouse"
--'  1  0  /mouse
-|4,39,1,0,1767556872,"/mouse"
--'  1  0  /mouse
-|4,39,1,0,1767556872,"/mouse"
--'  1  0  /mouse
-|4,39,1,0,1767556872,"/mouse"
--'  1  0  /mouse
-|4,39,1,0,1767556872,"/mouse"
--'  1  0  /mouse
-|4,39,1,0,1767556872,"/mouse"
--'  1  0  /mouse
-|4,39,1,0,1767556872,"/mouse"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  96  14  ~/.vim/compiling-vim
-|4,39,96,14,1767556834,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556363,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  122  0  ~/.vim/compiling-vim
-|4,39,122,0,1767556309,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/.vim/compiling-vim
-|4,39,1,0,1767556274,"~/.vim/compiling-vim"
--'  1  0  ~/lab/vimlab/vimrc
-|4,39,1,0,1767556244,"~/lab/vimlab/vimrc"
--'  1  0  ~/lab/vimlab/vimrc
-|4,39,1,0,1767556244,"~/lab/vimlab/vimrc"
--'  1  0  ~/lab/vimlab/vimrc
-|4,39,1,0,1767556244,"~/lab/vimlab/vimrc"
--'  1  0  ~/lab/vimlab/vimrc
-|4,39,1,0,1767556244,"~/lab/vimlab/vimrc"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
 
 # Buffer list:
-%~/.vim/vimrc	555	0
+%~/.vim/vimrc	398	9
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/vimrc
+	*	1767653694	0
+	"	398	9
+	^	123	11
+	.	123	10
+	+	7	42
+	+	60	0
+	+	462	0
+	+	473	0
+	+	475	0
+	+	476	0
+	+	482	0
+	+	89	0
+	+	159	8
+	+	161	42
+	+	231	41
+	+	236	52
+	+	231	0
+	+	235	0
+	+	237	0
+	+	488	0
+	+	492	0
+	+	513	0
+	+	157	0
+	+	155	0
+	+	160	28
+	+	89	0
+	+	150	0
+	+	153	1
+	+	152	0
+	+	150	5
+	+	152	27
+	+	160	29
+	+	155	0
+	+	160	43
+	+	232	23
+	+	233	16
+	+	162	0
+	+	161	0
+	+	162	21
+	+	152	25
+	+	155	0
+	+	156	0
+	+	160	56
+	+	162	0
+	+	161	0
+	+	160	54
+	+	304	0
+	+	438	273
+	+	441	58
+	+	306	0
+	+	308	0
+	+	309	0
+	+	310	0
+	+	306	0
+	+	309	0
+	+	312	0
+	+	308	0
+	+	312	0
+	+	306	0
+	+	307	0
+	+	301	0
+	+	306	0
+	+	310	0
+	+	715	0
+	+	201	15
+	+	293	19
+	+	294	83
+	+	293	83
+	+	297	83
+	+	298	19
+	+	297	19
+	+	301	21
+	+	302	21
+	+	303	21
+	+	304	83
+	+	303	83
+	+	302	85
+	+	301	85
+	+	304	0
+	+	303	22
+	+	304	23
+	+	161	38
+	+	160	17
+	+	122	43
+	+	121	0
+	+	123	43
+	+	122	9
+	+	123	10
+	+	122	12
+	+	123	32
+	+	122	0
+	+	123	0
+	+	122	50
+	+	123	8
+	+	122	12
+	+	123	10
+	a	438	94
+
+> ~/.vim/NERD_tree_tab_1
+	*	1767653450	0
+	"	17	0
+	.	1	0
+	+	1	0
+
+> /usr/local/share/vim/vim91/doc/map.txt
+	*	1767652791	0
+	"	435	48
+
+> /usr/local/share/vim/vim91/doc/starting.txt
+	*	1767651707	0
+	"	208	42
 
 > ~/lab/vimlab/function.vim
 	*	1767590408	0
@@ -499,92 +630,6 @@ $true
 	.	2	0
 	+	1	0
 	+	2	0
-
-> ~/.vim/vimrc
-	*	1767575362	0
-	"	555	0
-	^	159	49
-	.	159	17
-	+	7	42
-	+	60	0
-	+	461	0
-	+	472	0
-	+	474	0
-	+	475	0
-	+	481	0
-	+	89	0
-	+	158	8
-	+	160	42
-	+	230	41
-	+	235	52
-	+	230	0
-	+	234	0
-	+	236	0
-	+	487	0
-	+	491	0
-	+	512	0
-	+	156	0
-	+	154	0
-	+	159	28
-	+	89	0
-	+	149	0
-	+	152	1
-	+	151	0
-	+	149	5
-	+	151	27
-	+	159	29
-	+	154	0
-	+	159	43
-	+	231	23
-	+	232	16
-	+	161	0
-	+	160	0
-	+	161	21
-	+	151	25
-	+	154	0
-	+	155	0
-	+	159	56
-	+	161	0
-	+	160	0
-	+	159	54
-	+	303	0
-	+	437	273
-	+	440	58
-	+	305	0
-	+	307	0
-	+	308	0
-	+	309	0
-	+	305	0
-	+	308	0
-	+	311	0
-	+	307	0
-	+	311	0
-	+	305	0
-	+	306	0
-	+	300	0
-	+	305	0
-	+	309	0
-	+	714	0
-	+	200	15
-	+	292	19
-	+	293	83
-	+	292	83
-	+	296	83
-	+	297	19
-	+	296	19
-	+	300	21
-	+	301	21
-	+	302	21
-	+	303	83
-	+	302	83
-	+	301	85
-	+	300	85
-	+	303	0
-	+	302	22
-	+	303	23
-	+	160	38
-	+	159	17
-	a	437	94
 
 > ~/.vim/vim-coc
 	*	1767558264	0

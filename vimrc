@@ -118,8 +118,9 @@ autocmd BufWritePre * &bex = '@' .. strftime('%FT%H:%M') .. '.bak'
 set directory=/var/tmp//
 
 # NERDTree
-map <C-n> :NERDTreeToggle<CR>
-
+# map <C-n> :NERDTreeToggle<CR>
+map <leader>n  <scriptcmd>execute('NERDTreeToggle')<CR>
+map <leader>nf  <scriptcmd>execute('NERDTreeFind')<CR>
 
 # VIM specific
 # enable syntax highlighting

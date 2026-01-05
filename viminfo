@@ -10,11 +10,204 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/mouse
+
+# Last Substitute Search Pattern:
+~MSle0&dutycalculator
+
+# Last Substitute String:
+$true
+
 # Command Line History (newest to oldest):
+:q!
+|2,0,1767590437,,"q!"
 :q
-|2,0,1767223250,,"q"
+|2,0,1767590405,,"q"
+:botright 5 split
+|2,0,1767590395,,"botright 5 split"
+:vertical botright 5split
+|2,0,1767590371,,"vertical botright 5split"
+:vertical botright split
+|2,0,1767590321,,"vertical botright split"
+:botrigh 4split
+|2,0,1767590275,,"botrigh 4split"
+:botright 10split
+|2,0,1767590238,,"botright 10split"
+:botright sp
+|2,0,1767589946,,"botright sp"
+:ter
+|2,0,1767589893,,"ter"
+:vertical -20
+|2,0,1767565413,,"vertical -20"
+:vertical res -30
+|2,0,1767565304,,"vertical res -30"
+:vertical res +20
+|2,0,1767565281,,"vertical res +20"
+:res +20
+|2,0,1767565257,,"res +20"
+:vs vim_reference_manual
+|2,0,1767565235,,"vs vim_reference_manual"
+:vterm
+|2,0,1767564399,,"vterm"
+:vertical term
+|2,0,1767560079,,"vertical term"
+:buffers
+|2,0,1767558308,,"buffers"
+:buff
+|2,0,1767558302,,"buff"
+:ls
+|2,0,1767558238,,"ls"
+:set nohidden
+|2,0,1767557957,,"set nohidden"
+:set active
+|2,0,1767557902,,"set active"
+:set hidden
+|2,0,1767557855,,"set hidden"
+:vertical ter
+|2,0,1767556341,,"vertical ter"
+:ver ter
+|2,0,1767556330,,"ver ter"
+:ver term
+|2,0,1767556320,,"ver term"
+:ter V
+|2,0,1767556217,,"ter V"
+:ter S
+|2,0,1767556209,,"ter S"
+:ter v
+|2,0,1767556178,,"ter v"
+:ter h\
+|2,0,1767556152,,"ter h\\"
+:ter s
+|2,0,1767556121,,"ter s"
+:ter h
+|2,0,1767556108,,"ter h"
+:term v
+|2,0,1767556081,,"term v"
+:verb set shiftwidth?
+|2,0,1767547193,,"verb set shiftwidth?"
+:h <C-W>*
+|2,0,1767501032,,"h <C-W>*"
+:nohls
+|2,0,1767500973,,"nohls"
+:redraw!
+|2,0,1767409241,,"redraw!"
+:vnoremap <leader>' S'
+|2,0,1767403533,,"vnoremap <leader>' S'"
+:vnoremap <leader>' <esc>bi'<esc>a'<esc>
+|2,0,1767403356,,"vnoremap <leader>' <esc>bi'<esc>a'<esc>"
+:h H
+|2,0,1767403091,,"h H"
+:nnoremap <leader>" viw<esc>a"<esc>bi"<esc>lel
+|2,0,1767403012,,"nnoremap <leader>\" viw<esc>a\"<esc>bi\"<esc>lel"
+:viw
+|2,0,1767401895,,"viw"
+:h viw
+|2,0,1767401874,,"h viw"
+:vim
+|2,0,1767401845,,"vim"
+:h `<
+|2,0,1767400552,,"h `<"
+:vnoremap <leader>'
+|2,0,1767400524,,"vnoremap <leader>'"
+:vnoremap <leader>' `<i'<esc>`a'<esc>
+|2,0,1767400428,,"vnoremap <leader>' `<i'<esc>`a'<esc>"
+:map <leader>
+|2,0,1767399627,,"map <leader>"
+:popup_list
+|2,0,1767388658,,"popup_list"
+:w
+|2,0,1767398399,,"w"
+:iab
+|2,0,1767398306,,"iab"
+:iab tehn then
+|2,0,1767398295,,"iab tehn then"
+:iabbrev
+|2,0,1767398189,,"iabbrev"
+:iab tehn
+|2,0,1767398129,,"iab tehn"
+:set iskeyword?
+|2,0,1767391924,,"set iskeyword?"
+:iabbrev tehn then
+|2,0,1767391619,,"iabbrev tehn then"
+:iabbrev waht what
+|2,0,1767391598,,"iabbrev waht what"
+:iabbrev adn add
+|2,0,1767391487,,"iabbrev adn add"
+:iabbrew adn and
+|2,0,1767391441,,"iabbrew adn and"
+:wq
+|2,0,1767393039,,"wq"
+:map <C-j>
+|2,0,1767388973,,"map <C-j>"
+:LspHover
+|2,0,1767328216,,"LspHover"
+:LspServer 
+|2,0,1767304780,,"LspServer "
+:mode
+|2,0,1767298207,,"mode"
+:mode()
+|2,0,1767298203,,"mode()"
+:bd
+|2,0,1767294235,,"bd"
+:PluginInstall
+|2,0,1767294208,,"PluginInstall"
+:h lsp
+|2,0,1767293848,,"h lsp"
+:h ins-autocompletion
+|2,0,1767293819,,"h ins-autocompletion"
+:h autocomplete
+|2,0,1767293710,,"h autocomplete"
+:h ins-autocomplete
+|2,0,1767293432,,"h ins-autocomplete"
+:version
+|2,0,1767218121,,"version"
+:vert term
+|2,0,1767231366,,"vert term"
+:PluginClean
+|2,0,1767230998,,"PluginClean"
+:h ins-completion
+|2,0,1767230485,,"h ins-completion"
 
 # Search String History (newest to oldest):
+?/mouse
+|2,1,1767556911,47,"mouse"
+? mouse
+|2,1,1767556894,,"mouse"
+? \<echo\>
+|2,1,1767500945,,"\\<echo\\>"
+?/sur
+|2,1,1767403580,47,"sur"
+? \<else\>
+|2,1,1767409673,,"\\<else\\>"
+?/<C-R>"<CR>
+|2,1,1767409634,47,"<C-R>\"<CR>"
+?/C-R"<CR>
+|2,1,1767409348,47,"C-R\"<CR>"
+?/complete
+|2,1,1767398371,47,"complete"
+?/79
+|2,1,1767388805,47,"79"
+?/Ta
+|2,1,1767294314,47,"Ta"
+?/autocomplete
+|2,1,1767293884,47,"autocomplete"
+?/auto
+|2,1,1767293227,47,"auto"
+?/omn
+|2,1,1767293195,47,"omn"
+?/autoc
+|2,1,1767293068,47,"autoc"
+?/autocom
+|2,1,1767231419,47,"autocom"
+?/vimcom
+|2,1,1767230960,47,"vimcom"
+?/pumvi
+|2,1,1767230231,47,"pumvi"
+?/complet
+|2,1,1767229930,47,"complet"
+?/autoco
+|2,1,1767229848,47,"autoco"
 
 # Expression History (newest to oldest):
 
@@ -23,20 +216,497 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+"0	CHAR	0
+	return
+|3,0,0,0,1,0,1767413050,"return"
+"1	LINE	0
+	    return n * factorial(n - 1);
+|3,0,1,1,1,0,1767403545,"    return n * factorial(n - 1);"
+"2	LINE	0
+	tehn.
+|3,0,2,1,1,0,1767398279,"tehn."
+"3	LINE	0
+	tehn.A
+|3,0,3,1,1,0,1767398090,"tehn.A"
+"4	LINE	0
+	n.
+|3,0,4,1,1,0,1767398047,"n."
+"5	LINE	0
+	n.
+|3,0,5,1,1,0,1767398033,"n."
+"6	LINE	0
+	tehn. hn.
+|3,0,6,1,1,0,1767393206,"tehn. hn."
+"7	LINE	0
+	.
+|3,0,7,1,1,0,1767392708,"."
+"8	LINE	0
+	n. 
+|3,0,8,1,1,0,1767392688,"n. "
+"9	LINE	0
+	# See https://github.com/hrsh7th/vim-vsnip/pull/50
+|3,0,9,1,1,0,1767299163,"# See https://github.com/hrsh7th/vim-vsnip/pull/50"
+"a@	CHAR	0
+	f{€ý5a€ý5>>f}€ý5i€ý5j
+|3,2,10,0,1,0,1730223396,"f{€ý5a€ý5>>f}€ý5i€ý5j"
+"h	CHAR	0
+	€ý5
+|3,0,17,0,1,0,1730024718,"€ý5"
+"q	CHAR	0
+	€ý5
+|3,0,26,0,1,0,1738774132,"€ý5"
+""-	CHAR	0
+	'
+|3,1,36,0,1,0,1767409199,"'"
 
 # File marks:
-'0  1  0  ~/.vim/viminfo
-|4,48,1,0,1767223250,"~/.vim/viminfo"
+'0  555  0  ~/.vim/vimrc
+|4,48,555,0,1767590437,"~/.vim/vimrc"
+'1  1  0  ~/lab/vimlab/function.vim
+|4,49,1,0,1767590411,"~/lab/vimlab/function.vim"
+'2  1  0  ~/.vim/vim-coc
+|4,50,1,0,1767558273,"~/.vim/vim-coc"
+'3  1  0  ~/.vim/vimrc
+|4,51,1,0,1767556914,"~/.vim/vimrc"
+'4  1  0  ~/.vim/vimrc
+|4,52,1,0,1767556914,"~/.vim/vimrc"
+'5  1  0  /mouse
+|4,53,1,0,1767556872,"/mouse"
+'6  96  14  ~/.vim/compiling-vim
+|4,54,96,14,1767556834,"~/.vim/compiling-vim"
+'7  122  0  ~/.vim/compiling-vim
+|4,55,122,0,1767556309,"~/.vim/compiling-vim"
+'8  122  0  ~/.vim/compiling-vim
+|4,56,122,0,1767556309,"~/.vim/compiling-vim"
+'9  1  0  ~/lab/vimlab/vimrc
+|4,57,1,0,1767556244,"~/lab/vimlab/vimrc"
 
 # Jumplist (newest first):
--'  1  0  ~/.vim/viminfo
-|4,39,1,0,1767223250,"~/.vim/viminfo"
+-'  555  0  ~/.vim/vimrc
+|4,39,555,0,1767590437,"~/.vim/vimrc"
+-'  1  0  ~/lab/vimlab/function.vim
+|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1767571094,"~/.vim/vimrc"
+-'  10  0  ~/lab/vimlab/function.vim
+|4,39,10,0,1767560079,"~/lab/vimlab/function.vim"
+-'  1  0  ~/.vim/vim-coc
+|4,39,1,0,1767558273,"~/.vim/vim-coc"
+-'  1  0  ~/.vim/vim-coc
+|4,39,1,0,1767558273,"~/.vim/vim-coc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1767556914,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1767556914,"~/.vim/vimrc"
+-'  1  0  /mouse
+|4,39,1,0,1767556872,"/mouse"
+-'  1  0  /mouse
+|4,39,1,0,1767556872,"/mouse"
+-'  1  0  /mouse
+|4,39,1,0,1767556872,"/mouse"
+-'  1  0  /mouse
+|4,39,1,0,1767556872,"/mouse"
+-'  1  0  /mouse
+|4,39,1,0,1767556872,"/mouse"
+-'  1  0  /mouse
+|4,39,1,0,1767556872,"/mouse"
+-'  1  0  /mouse
+|4,39,1,0,1767556872,"/mouse"
+-'  1  0  /mouse
+|4,39,1,0,1767556872,"/mouse"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  96  14  ~/.vim/compiling-vim
+|4,39,96,14,1767556834,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556363,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  122  0  ~/.vim/compiling-vim
+|4,39,122,0,1767556309,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/.vim/compiling-vim
+|4,39,1,0,1767556274,"~/.vim/compiling-vim"
+-'  1  0  ~/lab/vimlab/vimrc
+|4,39,1,0,1767556244,"~/lab/vimlab/vimrc"
+-'  1  0  ~/lab/vimlab/vimrc
+|4,39,1,0,1767556244,"~/lab/vimlab/vimrc"
+-'  1  0  ~/lab/vimlab/vimrc
+|4,39,1,0,1767556244,"~/lab/vimlab/vimrc"
+-'  1  0  ~/lab/vimlab/vimrc
+|4,39,1,0,1767556244,"~/lab/vimlab/vimrc"
 
 # Buffer list:
-%~/.vim/viminfo	1	0
+%~/.vim/vimrc	555	0
 
 # History of marks within files (newest to oldest):
 
+> ~/lab/vimlab/function.vim
+	*	1767590408	0
+	"	1	0
+
+> ~/lab/vimlab/vim_reference_manual
+	*	1767590405	0
+	"	2	0
+	^	2	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/.vim/vimrc
+	*	1767575362	0
+	"	555	0
+	^	159	49
+	.	159	17
+	+	7	42
+	+	60	0
+	+	461	0
+	+	472	0
+	+	474	0
+	+	475	0
+	+	481	0
+	+	89	0
+	+	158	8
+	+	160	42
+	+	230	41
+	+	235	52
+	+	230	0
+	+	234	0
+	+	236	0
+	+	487	0
+	+	491	0
+	+	512	0
+	+	156	0
+	+	154	0
+	+	159	28
+	+	89	0
+	+	149	0
+	+	152	1
+	+	151	0
+	+	149	5
+	+	151	27
+	+	159	29
+	+	154	0
+	+	159	43
+	+	231	23
+	+	232	16
+	+	161	0
+	+	160	0
+	+	161	21
+	+	151	25
+	+	154	0
+	+	155	0
+	+	159	56
+	+	161	0
+	+	160	0
+	+	159	54
+	+	303	0
+	+	437	273
+	+	440	58
+	+	305	0
+	+	307	0
+	+	308	0
+	+	309	0
+	+	305	0
+	+	308	0
+	+	311	0
+	+	307	0
+	+	311	0
+	+	305	0
+	+	306	0
+	+	300	0
+	+	305	0
+	+	309	0
+	+	714	0
+	+	200	15
+	+	292	19
+	+	293	83
+	+	292	83
+	+	296	83
+	+	297	19
+	+	296	19
+	+	300	21
+	+	301	21
+	+	302	21
+	+	303	83
+	+	302	83
+	+	301	85
+	+	300	85
+	+	303	0
+	+	302	22
+	+	303	23
+	+	160	38
+	+	159	17
+	a	437	94
+
+> ~/.vim/vim-coc
+	*	1767558264	0
+	"	1	0
+
+> /mouse
+	*	1767556864	0
+	"	1	0
+
+> ~/.vim/compiling-vim
+	*	1767556378	0
+	"	96	14
+
+> ~/lab/vimlab/vimrc
+	*	1767556240	0
+	"	1	0
+
+> /usr/local/share/vim/vim91/doc/cmdline.txt
+	*	1767501094	0
+	"	183	30
+
+> ~/lab/vimlab/assign.vim
+	*	1767480813	0
+	"	1	0
+	^	14	1
+	.	14	0
+	+	15	11
+	+	17	45
+	+	19	0
+	+	20	5
+	+	22	0
+	+	20	6
+	+	21	0
+	+	15	6
+	+	15	0
+	+	11	4
+	+	15	0
+	+	14	0
+
+> ~/lab/jslab/fact.js
+	*	1767413068	0
+	"	1	0
+	^	8	5
+	.	3	0
+	+	12	9
+	+	4	5
+	+	5	4
+	+	10	26
+	+	11	0
+	+	4	4
+	+	8	4
+	+	3	0
+
+> /usr/local/share/vim/vim91/doc/motion.txt
+	*	1767403091	0
+	"	1390	6
+
+> ~/lab/jslab/arraysplitting.js
+	*	1767377810	0
+	"	1	0
+
+> ~/lab/bashlab/inputs.sh
+	*	1767377757	0
+	"	1	0
+
+> ~/lab/bashlab/login.sh
+	*	1767377723	0
+	"	1	0
+	^	6	1
+	.	6	0
+	+	6	0
+
+> ~/lab/dartlab/test.dart
+	*	1767377523	0
+	"	1	0
+	^	4	6
+	.	4	5
+	+	2	0
+	+	4	5
+
+> ~/lab/dartlab/dynamic.dart
+	*	1767328599	0
+	"	1	0
+	^	12	4
+	.	12	3
+	+	12	3
+
+> ~/lab/dartlab/main.dart
+	*	1767296019	0
+	"	1	0
+	.	8	0
+	+	7	1
+	+	13	0
+	+	12	7
+	+	11	0
+	+	10	5
+	+	9	0
+	+	8	0
+
+> /usr/local/share/vim/vim91/doc/options.txt
+	*	1767293871	0
+	"	5794	18
+
+> /usr/local/share/vim/vim91/doc/insert.txt
+	*	1767293833	0
+	"	1185	41
+
 > ~/.vim/viminfo
 	*	1767223077	0
+	"	1	0
+
+> ~/.ssh/config
+	*	1767218460	0
+	"	4	24
+	^	4	27
+	.	4	24
+	+	3	0
+	+	7	0
+	+	6	39
+	+	4	25
+	+	3	8
+	+	4	24
+
+> ~/node_modules/.pnpm/typescript@5.8.3/node_modules/typescript/lib/lib.dom.d.ts
 	"	1	0

@@ -57,7 +57,7 @@ Plugin 'gerazov/vim-toggle-bool'
 Plugin 'yegappan/lsp'
 
 # VimComplete
-# Plugin 'girishji/vimcomplete'
+Plugin 'girishji/vimcomplete'
 
 # Vim-vsnip
 Plugin 'hrsh7th/vim-vsnip'
@@ -86,6 +86,9 @@ filetype plugin indent on    # required
 # To ignore plugin indent changes, instead use:
 filetype plugin on
 
+# Omin completion provides smart autocompletion for prgramms.
+# To turn on omni completion
+set omnifunc= # Do not use omni UI when VimComplete is active
 
 # Brief help
 # :PluginList       - lists configured plugins
@@ -146,19 +149,12 @@ set hlsearch
 #Incremental search highlighting
 set incsearch
 
-# Omni completion provides smart autocompletion for prgramms.
-# To turn on omni completion
-set omnifunc=lsp#complete
-#
 # Menu option for enhanced mode of commands completion = wildmenu
-set wildmenu
-set wildoptions=pum
-# set pumwidth=0  # To make completion menu fit its content
+# set wildmenu
+# set wildoptions=pum
+set pumwidth=0  # To make completion menu fit its content
 # set pumheight=10
-set autocomplete
-set complete+=o^10,.^5,w^5,b^5,u^5,t^5,i^5,k^5  #,spell^5
-set completeopt=menu,menuone,noselect #,fuzzy  # Configure completion options
-# set completeopt=popup # Configure completion options
+set completeopt=  # menu,menuone,noselect  # Configure completion options
 set shortmess+=c
 
 # when using the >> or << commands, shift lines by 2 spaces
@@ -197,7 +193,7 @@ set showmatch
 set showmode
 
 set encoding=UTF-8
-set textwidth=80
+set textwidth=79
 
 set t_Co=256
 syntax on
@@ -227,12 +223,8 @@ augroup END
 #     autocmd BufNewFile *.html 0r ~/.vim/skeletons/html
 # augroup END
 
-# Use Tab to navigate the completion menu
-inoremap <silent><expr><Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <silent><expr><S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-# Use Enter to confirm the selection
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
+# autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
+# inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n" : "\<C-x>\<C-o>"
 
 # use system clipboard
 set clipboard=unnamed
@@ -289,24 +281,25 @@ g:airline_highlighting_cache = 0
 
 # NOTE: You can use other key to expand snippet.
 # # Expand
-inoremap <expr> <C-x>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-x>'
-snoremap <expr> <C-x>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-x>'
+inoremap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
+snoremap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
 
 # Expand or jump
-inoremap <expr> <C-j>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-j>'
-snoremap <expr> <C-j>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-j>'
+inoremap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+snoremap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
 
 # Jump forward or backward
-inoremap <expr> <C-h>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<C-h>'
-snoremap <expr> <C-h>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<C-h>'
-inoremap <expr> <C-l>   vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<C-l>'
-snoremap <expr> <C-l>   vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<C-l>'
+inoremap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+snoremap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+inoremap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+snoremap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
 
 # Select or cut text to use as $TM_SELECTED_TEXT in the next snippet.
-nmap        s   <Plug>(vsnip-select-text)
-xmap        s   <Plug>(vsnip-select-text)
-nmap        S   <Plug>(vsnip-cut-text)
-xmap        S   <Plug>(vsnip-cut-text)
+# See https://github.com/hrsh7th/vim-vsnip/pull/50
+# nmap        s   <Plug>(vsnip-select-text)
+# xmap        s   <Plug>(vsnip-select-text)
+# nmap        S   <Plug>(vsnip-cut-text)
+# xmap        S   <Plug>(vsnip-cut-text)
 #
 #jiangmiao/auto-pairs
 #To insert literally without triggering auto-pairs user Ctrl-v e.g Ctrl-v )
@@ -452,27 +445,27 @@ g:user_emmet_settings = {
 # highlight PmenuThumb ctermfg=white ctermbg=grey
 
 # # VimComplete
-# var options = {
-#   completor: { shuffleEqualPriority: true, postfixHighlight: true },
-#   buffer: { enable: true, priority: 16, urlComplete: true, envComplete: true },
-#   abbrev: { enable: true, priority: 10 },
-#   lsp: { enable: true, priority: 20, maxCount: 5 },
-#   omnifunc: { enable: false, priority: 8, filetypes: ['*'] },
-#   vsnip: { enable: true, priority: 10 },
-#   vimscript: { enable: true, priority: 10 },
-#   path: { enable: true },
-#   abbreviations: { enable: true },
-#   tag: { enable: true },
-#   info: {enable: false},
+var options = {
+  completor: { shuffleEqualPriority: true, postfixHighlight: true },
+  buffer: { enable: true, priority: 16, urlComplete: true, envComplete: true },
+  abbrev: { enable: true, priority: 10 },
+  lsp: { enable: true, priority: 20, maxCount: 5 },
+  omnifunc: { enable: false, priority: 8, filetypes: ['*'] },
+  vsnip: { enable: true, priority: 10 },
+  vimscript: { enable: true, priority: 10 },
+  path: { enable: true },
+  abbreviations: { enable: true },
+  tag: { enable: true },
+  info: {enable: false},
   # ngram: { enable: true, priority: 10, bigram: false, filetypes: ['text', 'help', 'markdown'], filetypesComments: [] },
-# }
-# autocmd VimEnter * g:VimCompleteOptionsSet(options)
+}
+autocmd VimEnter * g:VimCompleteOptionsSet(options)
 
 # To apply basic customizations, you can use the completepopup option. For example:
 # autocmd VimEnter * set completepopup+=border:on,highlight:Normal
 
 # To enable <Tab> and <S-Tab> for this purpose, add the following to your configuration:
-# g:vimcomplete_tab_enable = 1
+g:vimcomplete_tab_enable = 1
 # g:VimCompleteInfoWindowOptionsSet({
 #     drag: false,    # Disable dragging
 #     close: 'none',  # Disable close button
@@ -482,7 +475,7 @@ g:user_emmet_settings = {
 # LSP
 var lspOpts = {
   aleSupport: v:false,
-  autoComplete: v:true,
+  autoComplete: v:false,
   autoHighlight: v:false,
   autoHighlightDiags: v:true,
   autoPopulateDiags: v:false,
@@ -503,7 +496,7 @@ var lspOpts = {
   diagVirtualTextAlign: 'after',
   diagVirtualTextWrap: 'default',
   noNewlineInCompletion: v:true,
-  omniComplete: v:true,
+  omniComplete: v:false,
   outlineOnRight: v:false,
   outlineWinSize: 30,
   semanticHighlight: v:true,

@@ -4,7 +4,7 @@ set nocompatible              # be iMproved, required
 filetype off                  # required
 
 # Viminfo, the default is "viminfo='100,<50,s10,h" at ~/.viminfo
-set viminfo="100,<100,:100,/100,%,'50,h,s1000,n~/.vim/viminfo
+set viminfo="50,<100,:100,/100,%,'50,h,s1000,n~/.vim/viminfo
 
 # set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim

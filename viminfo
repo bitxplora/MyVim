@@ -21,7 +21,13 @@ $true
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1767653714,,"q"
+|2,0,1767670153,,"q"
+:w
+|2,0,1767666454,,"w"
+:term
+|2,0,1767665875,,"term"
+:botright 10split
+|2,0,1767665827,,"botright 10split"
 :wq
 |2,0,1767653415,,"wq"
 :map <leader>nf
@@ -38,8 +44,6 @@ $true
 |2,0,1767652358,,"h <scriptcmd>"
 :h cmd
 |2,0,1767651618,,"h cmd"
-:w
-|2,0,1767651310,,"w"
 :NERDTreeFind
 |2,0,1767650911,,"NERDTreeFind"
 :q!
@@ -52,8 +56,6 @@ $true
 |2,0,1767590321,,"vertical botright split"
 :botrigh 4split
 |2,0,1767590275,,"botrigh 4split"
-:botright 10split
-|2,0,1767590238,,"botright 10split"
 :botright sp
 |2,0,1767589946,,"botright sp"
 :ter
@@ -274,32 +276,40 @@ $true
 	€ý5
 |3,0,26,0,1,0,1738774132,"€ý5"
 ""-	CHAR	0
-	>
-|3,1,36,0,1,0,1767653387,">"
+	0
+|3,1,36,0,1,0,1767666452,"0"
 
 # File marks:
-'0  398  9  ~/.vim/vimrc
-|4,48,398,9,1767653714,"~/.vim/vimrc"
-'1  123  10  ~/.vim/vimrc
-|4,49,123,10,1767653415,"~/.vim/vimrc"
-'2  123  10  ~/.vim/vimrc
-|4,50,123,10,1767653415,"~/.vim/vimrc"
-'3  123  8  ~/.vim/vimrc
-|4,51,123,8,1767652981,"~/.vim/vimrc"
-'4  123  8  ~/.vim/vimrc
-|4,52,123,8,1767652981,"~/.vim/vimrc"
-'5  122  50  ~/.vim/vimrc
-|4,53,122,50,1767652835,"~/.vim/vimrc"
-'6  122  50  ~/.vim/vimrc
-|4,54,122,50,1767652835,"~/.vim/vimrc"
-'7  122  50  ~/.vim/vimrc
-|4,55,122,50,1767652835,"~/.vim/vimrc"
-'8  122  50  ~/.vim/vimrc
-|4,56,122,50,1767652835,"~/.vim/vimrc"
-'9  122  50  ~/.vim/vimrc
-|4,57,122,50,1767652835,"~/.vim/vimrc"
+'0  7  15  ~/.vim/vimrc
+|4,48,7,15,1767670153,"~/.vim/vimrc"
+'1  398  9  ~/.vim/vimrc
+|4,49,398,9,1767653714,"~/.vim/vimrc"
+'2  398  9  ~/.vim/vimrc
+|4,50,398,9,1767653714,"~/.vim/vimrc"
+'3  123  10  ~/.vim/vimrc
+|4,51,123,10,1767653415,"~/.vim/vimrc"
+'4  123  10  ~/.vim/vimrc
+|4,52,123,10,1767653415,"~/.vim/vimrc"
+'5  123  10  ~/.vim/vimrc
+|4,53,123,10,1767653415,"~/.vim/vimrc"
+'6  123  10  ~/.vim/vimrc
+|4,54,123,10,1767653415,"~/.vim/vimrc"
+'7  123  8  ~/.vim/vimrc
+|4,55,123,8,1767652981,"~/.vim/vimrc"
+'8  123  8  ~/.vim/vimrc
+|4,56,123,8,1767652981,"~/.vim/vimrc"
+'9  123  8  ~/.vim/vimrc
+|4,57,123,8,1767652981,"~/.vim/vimrc"
 
 # Jumplist (newest first):
+-'  7  15  ~/.vim/vimrc
+|4,39,7,15,1767670153,"~/.vim/vimrc"
+-'  94  0  ~/.vim/vimrc
+|4,39,94,0,1767665875,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1767653863,"~/.vim/vimrc"
+-'  398  9  ~/.vim/vimrc
+|4,39,398,9,1767653714,"~/.vim/vimrc"
 -'  398  9  ~/.vim/vimrc
 |4,39,398,9,1767653714,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
@@ -308,6 +318,10 @@ $true
 |4,39,123,10,1767653415,"~/.vim/vimrc"
 -'  123  10  ~/.vim/vimrc
 |4,39,123,10,1767653415,"~/.vim/vimrc"
+-'  123  10  ~/.vim/vimrc
+|4,39,123,10,1767653415,"~/.vim/vimrc"
+-'  122  5  ~/.vim/vimrc
+|4,39,122,5,1767653315,"~/.vim/vimrc"
 -'  122  5  ~/.vim/vimrc
 |4,39,122,5,1767653315,"~/.vim/vimrc"
 -'  122  5  ~/.vim/vimrc
@@ -352,12 +366,16 @@ $true
 |4,39,121,10,1767651489,"~/.vim/vimrc"
 -'  121  10  ~/.vim/vimrc
 |4,39,121,10,1767651489,"~/.vim/vimrc"
+-'  121  10  ~/.vim/vimrc
+|4,39,121,10,1767651489,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
 |4,39,1,0,1767651333,"~/.vim/vimrc"
 -'  123  43  ~/.vim/vimrc
 |4,39,123,43,1767651330,"~/.vim/vimrc"
 -'  123  43  ~/.vim/vimrc
 |4,39,123,43,1767651330,"~/.vim/vimrc"
+-'  120  2  ~/.vim/vimrc
+|4,39,120,2,1767650748,"~/.vim/vimrc"
 -'  120  2  ~/.vim/vimrc
 |4,39,120,2,1767650748,"~/.vim/vimrc"
 -'  120  2  ~/.vim/vimrc
@@ -394,6 +412,8 @@ $true
 |4,39,151,0,1767650735,"~/.vim/vimrc"
 -'  151  0  ~/.vim/vimrc
 |4,39,151,0,1767650735,"~/.vim/vimrc"
+-'  151  0  ~/.vim/vimrc
+|4,39,151,0,1767650735,"~/.vim/vimrc"
 -'  556  0  ~/.vim/vimrc
 |4,39,556,0,1767590437,"~/.vim/vimrc"
 -'  555  0  ~/.vim/vimrc
@@ -426,28 +446,10 @@ $true
 |4,39,556,0,1767590437,"~/.vim/vimrc"
 -'  555  0  ~/.vim/vimrc
 |4,39,555,0,1767590437,"~/.vim/vimrc"
--'  1  0  ~/lab/vimlab/function.vim
-|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
--'  1  0  ~/lab/vimlab/function.vim
-|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
--'  1  0  ~/lab/vimlab/function.vim
-|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
--'  1  0  ~/lab/vimlab/function.vim
-|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
--'  1  0  ~/lab/vimlab/function.vim
-|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
--'  1  0  ~/lab/vimlab/function.vim
-|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
--'  1  0  ~/lab/vimlab/function.vim
-|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
--'  1  0  ~/lab/vimlab/function.vim
-|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
--'  1  0  ~/lab/vimlab/function.vim
-|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
--'  1  0  ~/lab/vimlab/function.vim
-|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
--'  1  0  ~/lab/vimlab/function.vim
-|4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
+-'  556  0  ~/.vim/vimrc
+|4,39,556,0,1767590437,"~/.vim/vimrc"
+-'  555  0  ~/.vim/vimrc
+|4,39,555,0,1767590437,"~/.vim/vimrc"
 -'  1  0  ~/lab/vimlab/function.vim
 |4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
 -'  1  0  ~/lab/vimlab/function.vim
@@ -502,15 +504,15 @@ $true
 |4,39,1,0,1767590411,"~/lab/vimlab/function.vim"
 
 # Buffer list:
-%~/.vim/vimrc	398	9
+%~/.vim/vimrc	7	15
 
 # History of marks within files (newest to oldest):
 
 > ~/.vim/vimrc
-	*	1767653694	0
-	"	398	9
+	*	1767666455	0
+	"	7	15
 	^	123	11
-	.	123	10
+	.	7	15
 	+	7	42
 	+	60	0
 	+	462	0
@@ -603,6 +605,7 @@ $true
 	+	123	8
 	+	122	12
 	+	123	10
+	+	7	15
 	a	438	94
 
 > ~/.vim/NERD_tree_tab_1

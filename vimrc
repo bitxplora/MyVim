@@ -188,8 +188,8 @@ set sessionoptions+=winpos,resize,options
 set viewoptions+=localoptions
 
 # Automatically create and load a view each time you open and exit buffer.
-autocmd BufWinEnter *.* mkview
-autocmd BufWinLeave *.* silent loadview
+autocmd BufWinEnter *.* silent loadview
+autocmd BufWinLeave *.* mkview
 
 # show the matching part of the pair for [] {} and ()
 set showmatch

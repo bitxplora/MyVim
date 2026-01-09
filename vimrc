@@ -158,7 +158,7 @@ set wildoptions=pum
 # set pumheight=10
 set autocomplete
 set complete+=o^10,.^5,w^5,b^5,u^5,t^5,i^5,k^5  #,spell^5
-set completeopt=menu,menuone,noselect #,fuzzy  # Configure completion options
+set completeopt=menu,menuone,noselect,popup #,fuzzy  # Configure completion options
 # set completeopt=popup # Configure completion options
 set shortmess+=c
 

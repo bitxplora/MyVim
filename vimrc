@@ -161,7 +161,6 @@ set wildignorecase
 set autocomplete
 set complete+=o^10,.^5,w^5,b^5,u^5,t^5,i^5,k^5  #,spell^5
 set completeopt=menu,menuone,noselect,popup #,fuzzy  # Configure completion options
-# set completeopt=popup # Configure completion options
 set shortmess+=c
 
 # when using the >> or << commands, shift lines by 2 spaces

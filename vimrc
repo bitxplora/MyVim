@@ -154,6 +154,8 @@ set omnifunc=lsp#complete
 # Menu option for enhanced mode of commands completion = wildmenu
 set wildmenu
 set wildoptions=pum
+set wildignorecase
+
 # set pumwidth=0  # To make completion menu fit its content
 # set pumheight=10
 set autocomplete

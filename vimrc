@@ -147,6 +147,9 @@ set hlsearch
 #Incremental search highlighting
 set incsearch
 
+# Auto-wrap text, comments, recognize numbered lists
+set formatoptions=tcqnj
+
 # Omni completion provides smart autocompletion for prgramms.
 # To turn on omni completion
 set omnifunc=lsp#complete

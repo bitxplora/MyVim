@@ -185,6 +185,7 @@ set cursorline
 # show a visual vertical line on the cursor's current point
 # set cursorcolumn
 
+# Session Management
 # Enabling session to save in addition; resize for window line and columns,  and winpos for window position
 set sessionoptions+=winpos,resize,options
 

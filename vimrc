@@ -66,6 +66,9 @@ Plugin 'hrsh7th/vim-vsnip-integ'
 # friendly-snippets
 Plugin 'rafamadriz/friendly-snippets'
 
+# ctags by gutentags
+Plugin 'ludovicchabant/vim-gutentags'
+
 # ngram complete
 # Plugin 'girishji/ngram-complete.vim'
 

@@ -515,7 +515,7 @@ var lspOpts = {
   noNewlineInCompletion: v:true,
   omniComplete: v:true,
   outlineOnRight: v:true,
-  outlineWinSize: 20,
+  outlineWinSize: 40,
   semanticHighlight: v:true,
   showDiagInBalloon: v:true,
   showDiagInPopup: v:true,
@@ -734,6 +734,10 @@ augroup Lsp
     setlocal tagfunc=lsp#lsp#TagFunc
     setlocal formatexpr=lsp#lsp#FormatExpr()
     nnoremap <buffer> <LocalLeader>f <Cmd>LspFormat<CR>
+    nnoremap <buffer> <LocalLeader>cl <Cmd>LspCodeLens<CR>
+    nnoremap <buffer> <LocalLeader>gf <Cmd>LspGotoDefinition<CR>
+    nnoremap <buffer> <LocalLeader>gd <Cmd>LspGotoDeclaration<CR>
+    nnoremap <buffer> <LocalLeader>gi <Cmd>LspGotoImpl<CR>
     nnoremap <buffer> <LocalLeader>a <Cmd>LspCodeAction<CR>
     nnoremap <buffer> <LocalLeader>r <Cmd>LspRename<CR>
     nnoremap <buffer> <LocalLeader>ds <Cmd>LspDiag show<CR>

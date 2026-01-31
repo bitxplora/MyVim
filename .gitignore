@@ -2,3 +2,6 @@ bundle
 view
 backup
 .netrwhist
+tags
+viminfo
+viminfo.~1~

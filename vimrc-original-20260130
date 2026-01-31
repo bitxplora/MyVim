@@ -67,7 +67,7 @@ Plugin 'hrsh7th/vim-vsnip-integ'
 Plugin 'rafamadriz/friendly-snippets'
 
 # ctags by gutentags
-Plugin 'ludovicchabant/vim-gutentags'
+# Plugin 'ludovicchabant/vim-gutentags'
 
 # ngram complete
 # Plugin 'girishji/ngram-complete.vim'
@@ -131,8 +131,8 @@ map <leader>nf  <scriptcmd>execute('NERDTreeFind')<CR>
 # enable syntax highlighting
 syntax enable
 
-# The setting for small terminal at bottom, full width
-set termwinsize=10x0
+# Setting termwinsize option row*columns
+# set termwinsize=0x900
 
 # show line numbers
 set number relativenumber
@@ -153,7 +153,7 @@ set hlsearch
 set incsearch
 
 # Auto-wrap text, comments, recognize numbered lists
-set formatoptions=tcqnj
+# set formatoptions=tcqnj
 
 # Omni completion provides smart autocompletion for prgramms.
 # To turn on omni completion
@@ -210,8 +210,8 @@ set showmode
 set encoding=UTF-8
 set textwidth=80
 
-syntax on
 # set t_Co=256
+syntax on
 set background=dark
 colorscheme  gruvbox # distinguished
 set termguicolors
@@ -277,7 +277,7 @@ g:airline_powerline_fonts = 1
 # highlight Error ctermfg=white ctermbg=red cterm=bold gui=bold guifg=white guibg=red
 
 #Check up other theme at https:/github.com/vim-airline/vim-airlin/wiki/Screenshots
-g:airline_theme = 'serene' #'dark'
+g:airline_theme =  'dark' #'serene'
 #
 # Set to 1 to enable cache for highlight
 g:airline_highlighting_cache = 0
@@ -350,7 +350,7 @@ g:indent_guides_guide_size = 1
 #
 #
 # Setting for color previewr Hexokinase
-# g:Hexokinase_highlighters = ['sign_column']   # sign-column is default, other are: virtual, background, foreground etc
+g:Hexokinase_highlighters = ['sign_column']   # sign-column is default, other are: virtual, background, foreground etc
 g:Hexokinase_ftEnabled = ['css', 'html', 'javascript', 'typescript']  #This restricts the types it apply to, to those in list
 #
 #sumnerevans/vim-listtrans
@@ -409,18 +409,19 @@ set cmdheight=1
 # Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 # delays and poor user experience.
 set updatetime=300
-#
-# Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
 
-# Always show the signcolumn, otherwise it will shift the text each time diagnostics appear.
-# set signcolumn=number
-#
+# Don't pass messages to |ins-completion-menu|.
+# set shortmess+=c
+
+# Always show the signcolumn, otherwise it would shift the text each time
+# diagnostics appear/become resolved.
+# set signcolumn=yes
+
 # emmet shortcuts
-g:user_emmet_mode = 'n'        # only enable in normal mode
-g:user_emmet_leader_key = ','  # emmet expansion trigger
-#
-# # emmet adjustment
+g:user_emmet_mode = 'n'       # only enable in normal mode
+g:user_emmet_leader_key = ',' # emmet expansion trigger
+
+# emmet adjustment
 g:user_emmet_settings = {
   'variables': {'lang': 'en'},
   'html': {
@@ -514,8 +515,8 @@ var lspOpts = {
   diagVirtualTextWrap: 'default',
   noNewlineInCompletion: v:true,
   omniComplete: v:true,
-  outlineOnRight: v:true,
-  outlineWinSize: 20,
+  outlineOnRight: v:false,
+  outlineWinSize: 30,
   semanticHighlight: v:true,
   showDiagInBalloon: v:true,
   showDiagInPopup: v:true,
@@ -630,7 +631,7 @@ var lspServers = [
 
   #  tailwindcssls-language-server
   {
-    name: 'tailwindcssls',
+    name: 'tailwindcssls-language-servers',
     filetype: ['css', 'handlebars', 'hbs', 'html', 'scss', 'javascript', 'javascriptreact', 'javascript.glimmer', 'typescript.glimmer', 'typescript', 'svelte'],
     path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/tailwindcss-language-server',
     args: ['--stdio'],
@@ -657,7 +658,7 @@ var lspServers = [
 
   # vscode-json-language-server
   {
-    name: 'jsonls',
+    name: 'vscode-json-language-servers',
     filetype: ['json', 'jsonc'],
     path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-json-language-server',
     initializationOption: { provideFormatter: true },
@@ -728,7 +729,7 @@ augroup Lsp
   autocmd User LspSetup call LspOptionsSet(lspOpts)
   autocmd User LspSetup call LspAddServer(lspServers)
   autocmd User LspAttached {
-    # setlocal signcolumn=yes
+    setlocal signcolumn=yes
 
     setlocal keywordprg=:LspHover
     setlocal tagfunc=lsp#lsp#TagFunc
@@ -746,3 +747,5 @@ augroup Lsp
     nnoremap <buffer> ]d <Cmd>LspDiag prev<CR>
   }
 augroup END
+
+

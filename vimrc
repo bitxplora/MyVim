@@ -576,7 +576,7 @@ var lspServers = [
   {
     name: 'vimls',
     filetype: 'vim',
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vim-language-server',
+    path: '/home/olutayo/.nvm/versions/node/v22.12.0/bin/vim-language-server',
     args: ['--stdio'],
   },
 
@@ -584,7 +584,7 @@ var lspServers = [
   {
     name: 'sqlls',
     filetype: ['sql', 'postgresql'],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/sql-language-server',
+    path: '/home/olutayo/.nvm/versions/node/v22.12.0/bin/sql-language-server',
     args: ['up', '--method', 'stdio'],
   },
 
@@ -600,7 +600,7 @@ var lspServers = [
   {
     name: 'tsserver',
     filetype: ['javascript', 'typescript'],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/typescript-language-server',
+    path: '/home/olutayo/.nvm/versions/node/v22.12.0/bin/typescript-language-server',
     args: ['--stdio'],
   },
 
@@ -616,7 +616,7 @@ var lspServers = [
   {
     name: 'vscode-html-language-server',
     filetype: ['html', 'handlebars', 'html.handlebars', 'typescript.glimmer', 'tpescript.glimmer'],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-html-language-server',
+    path: '/home/olutayo/.nvm/versions/node/v22.12.0/bin/vscode-html-language-server',
     args: ['--stdio'],
   },
 
@@ -624,7 +624,7 @@ var lspServers = [
   {
     name: 'css-language-servers',
     filetype: ['css'],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-css-language-server',
+    path: '/home/olutayo/.nvm/versions/node/v22.12.0/bin/vscode-css-language-server',
     args: ['--stdio'],
   },
 
@@ -632,7 +632,7 @@ var lspServers = [
   {
     name: 'tailwindcssls',
     filetype: ['css', 'handlebars', 'hbs', 'html', 'scss', 'javascript', 'javascriptreact', 'javascript.glimmer', 'typescript.glimmer', 'typescript', 'svelte'],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/tailwindcss-language-server',
+    path: '/home/olutayo/.nvm/versions/node/v22.12.0/bin/tailwindcss-language-server',
     args: ['--stdio'],
     workspaceConfig: {
       tailwindCSS: {
@@ -659,7 +659,7 @@ var lspServers = [
   {
     name: 'jsonls',
     filetype: ['json', 'jsonc'],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-json-language-server',
+    path: '/home/olutayo/.nvm/versions/node/v22.12.0/bin/vscode-json-language-server',
     initializationOption: { provideFormatter: true },
     args: ['--stdio'],
   },
@@ -668,7 +668,7 @@ var lspServers = [
   {
     name: 'vscode-eslint-language-servers',
     filetype: ['eslint'],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-eslint-language-server',
+    path: '/home/olutayo/.nvm/versions/node/v22.12.0/bin/vscode-eslint-language-server',
     args: ['--stdio'],
   },
 
@@ -676,7 +676,7 @@ var lspServers = [
   {
     name: 'vscode-markdown-language-servers',
     filetype: ['markdown'],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/vscode-markdown-language-server',
+    path: '/home/olutayo/.nvm/versions/node/v22.12.0/bin/vscode-markdown-language-server',
     args: ['--stdio'],
   },
 
@@ -700,7 +700,7 @@ var lspServers = [
     "glint.config.js",
     "package.json"
     ],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/glint-language-server',
+    path: '/home/olutayo/.nvm/versions/node/v22.12.0/bin/glint-language-server',
     args: [],
     syncInit: v:true,
   },
@@ -709,7 +709,7 @@ var lspServers = [
   {
     name: 'emberls',
     filetype: ['handlebars', 'html.handlebars', 'typescript.glimmer', 'javascript.glimmer'],
-    path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/ember-language-server',
+    path: '/home/olutayo/.nvm/versions/node/v22.12.0/bin/ember-language-server',
     args: ['--stdio'],
   },
 
@@ -717,7 +717,7 @@ var lspServers = [
   # {
   #   name: 'tailwindcssls',
   #   filetype: ['tailwind', 'typescript.glimmer', 'javascript.glimmer', 'html', 'handlebars', 'typescriptreact', 'javascriptreact', 'svelte'],
-  #   path: '/home/olutayo/.nvm/versions/node/v20.14.0/bin/tailwindcss-language-server',
+  #   path: '/home/olutayo/.nvm/versions/node/v22.12.0/bin/tailwindcss-language-server',
   #   args: ['--stdio'],
   # },
 ]

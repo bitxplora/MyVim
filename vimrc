@@ -225,11 +225,11 @@ setlocal spelllang=en_us,en_gb
 
 set spellfile=~/.vim/spell/en.utf-8.add
 
-# To auto enable spell on txt file
+# To auto enable spell on txt,markdown file
 augroup txtSpellCheck
   autocmd!
-  autocmd FileType txt setlocal spell
-  autocmd BufRead,BufNewFile *.txt setlocal spell
+  autocmd FileType txt,markdown setlocal spell
+  autocmd BufRead,BufNewFile * if &filetype == '' | setlocal spell | endif
 augroup END
 
 #To enable auto insertion of skeleton on creation of .html file

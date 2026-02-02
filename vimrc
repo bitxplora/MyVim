@@ -167,7 +167,7 @@ set wildignorecase
 # set pumwidth=0  # To make completion menu fit its content
 # set pumheight=10
 set autocomplete
-set complete+=o^10,.^5,w^5,b^5,u^5,t^5,i^5,k^5  #,spell^5
+set complete=.^5,w^5,b^5,u^5,t^5,i^5,k^5,o^10
 set completeopt=menu,menuone,noselect,popup #,fuzzy  # Configure completion options
 set shortmess+=c
 
@@ -745,6 +745,8 @@ augroup Lsp
     nnoremap <buffer> <LocalLeader>df <Cmd>LspDiag first<CR>
     nnoremap <buffer> <LocalLeader>dh <Cmd>LspDiag here<CR>
     nnoremap <buffer> <LocalLeader>dt <Cmd>LspDiag highlight toggle<CR>
+    nnoremap <buffer> <LocalLeader>hl <Cmd>LspHighlight<CR>
+    nnoremap <buffer> <LocalLeader>hc <Cmd>LspHighlightClear<CR>
     nnoremap <buffer> <LocalLeader>h <Cmd>LspHover<CR>
     nnoremap <buffer> [d <Cmd>LspDiag next<CR>
     nnoremap <buffer> ]d <Cmd>LspDiag prev<CR>

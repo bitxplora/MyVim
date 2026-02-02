@@ -166,7 +166,16 @@ set wildignorecase
 
 # set pumwidth=0  # To make completion menu fit its content
 # set pumheight=10
+
 set autocomplete
+# .		 current buffer
+# w		 other window
+# b    loaded buffers
+# u    unloaded buffers
+# t    tags
+# i    included files
+# k    dictionary
+# o    omnifunc (LSP)
 set complete=.^5,w^5,b^5,u^5,t^5,i^5,kspell^5,o^10
 set completeopt=menu,menuone,noselect,popup #,fuzzy  # Configure completion options
 set shortmess+=c

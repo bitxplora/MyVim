@@ -659,25 +659,6 @@ var lspServers = [
     ],
     path: '/home/olutayo/.nvm/versions/node/v22.12.0/bin/tailwindcss-language-server',
     args: ['--stdio'],
-    # workspaceConfig: {
-    #   tailwindCSS: {
-    #     classAttributes: [ "class", "className", "class:list", "classList", "ngClass" ],
-    #     includeLanguages: {
-    #       'typescript.glimmer': "gts",
-    #       'javascript.glimmer': "gjs"
-    #     },
-    #     lint: {
-    #       cssConflict: "warning",
-    #       invalidApply: "error",
-    #       invalidConfigPath: "error",
-    #       invalidScreen: "error",
-    #       invalidTailwindDirective: "error",
-    #       invalidVariant: "error",
-    #       recommendedVariantOrder: "warning"
-    #     },
-    #     validate: true
-    #   }
-    # }
   },
 
   # vscode-json-language-server

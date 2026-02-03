@@ -607,7 +607,7 @@ var LspOptions = {
 # filterCompletionDuplicates: v:false,
 # }
 
-var lspServers = [
+var LspServers = [
 
   # C/C++ langd language server
   {
@@ -794,7 +794,7 @@ var lspServers = [
 augroup Lsp
   au!
   autocmd User LspSetup call LspOptionsSet(LspOptions)
-  autocmd User LspSetup call LspAddServer(lspServers)
+  autocmd User LspSetup caLL LspAddServer(LspServers)
   autocmd User LspAttached {
     # setlocal signcolumn=yes
 

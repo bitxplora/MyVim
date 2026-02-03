@@ -229,8 +229,13 @@ set termguicolors
 # setlocal spell
 setlocal spelllang=en_us,en_gb
 
-# Words completion, use ctrl N or ctrl P in insert mode for word completion
-# set complete+=kspell
+# Using spell checker
+# ]s              # Next misspelled word
+# [s              # Previous misspelled word
+# z=              # Spelling suggestions
+# zg              # Add word to spellfile (good)
+# zw              # Mark as wrong
+# zG              # Add to session (temporary)
 
 set spellfile=~/.vim/spell/en.utf-8.add
 

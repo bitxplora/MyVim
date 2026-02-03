@@ -444,15 +444,15 @@ g:user_emmet_settings = {
     },
     'snippets': {
       'html:5': "<!DOCTYPE html>\n"
-              .. "<html lang=\"${lang}\">\n"
-              .. "<head>\n"
-              .. "\t<meta charset=\"${charset}\">\n"
-              .. "\t<meta name=\"description\" content=\"\">\n"
-              .. "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
-              .. "\t<title></title>\n"
-              .. "</head>\n"
-              .. "<body>\n\t${child}|\n</body>\n"
-              .. "</html>"
+        .. "<html lang=\"${lang}\">\n"
+        .. "<head>\n"
+        .. "\t<meta charset=\"${charset}\">\n"
+        .. "\t<meta name=\"description\" content=\"\">\n"
+        .. "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
+        .. "\t<title></title>\n"
+        .. "</head>\n"
+        .. "<body>\n\t${child}|\n</body>\n"
+        .. "</html>"
     },
   },
 }
@@ -488,7 +488,7 @@ g:user_emmet_settings = {
 #   abbreviations: { enable: true },
 #   tag: { enable: true },
 #   info: {enable: false},
-  # ngram: { enable: true, priority: 10, bigram: false, filetypes: ['text', 'help', 'markdown'], filetypesComments: [] },
+# ngram: { enable: true, priority: 10, bigram: false, filetypes: ['text', 'help', 'markdown'], filetypesComments: [] },
 # }
 # autocmd VimEnter * g:VimCompleteOptionsSet(options)
 
@@ -503,7 +503,7 @@ g:user_emmet_settings = {
 #     resize: false,  # Disable resizing
 # })
 
-# LSP Options
+# LSP Options Set
 var LspOptions = {
   aleSupport: v:false,
   autoComplete: v:true,
@@ -520,8 +520,8 @@ var LspOptions = {
   hideDisabledCodeActions: v:false,
   highlightDiagInline: v:true,
   hoverInPreview: v:false,
-	completionInPreview: v:false,
-	closePreviewOnComplete: v:true,
+  completionInPreview: v:false,
+  closePreviewOnComplete: v:true,
   ignoreMissingServer: v:false,
   keepFocusInDiags: v:true,
   keepFocusInReferences: v:true,
@@ -530,16 +530,16 @@ var LspOptions = {
   diagVirtualTextWrap: 'default',
   noNewlineInCompletion: v:true,
   omniComplete: v:true,
-	omniCompleteAllowBare: v:true,
+  omniCompleteAllowBare: v:true,
   outlineOnRight: v:true,
   outlineWinSize: 40,
-	popupBorder: v:true,
-	popupBorderHighlight: 'Title',
-	popupBorderHighlightPeek: 'Special',
-	popupBorderSignatureHelp: v:true,
-	popupHighlightSignatureHelp: 'Pmenu',
-	popupHighlight: 'Normal',
-	semanticHighlight: v:true,
+  popupBorder: v:true,
+  popupBorderHighlight: 'Title',
+  popupBorderHighlightPeek: 'Special',
+  popupBorderSignatureHelp: v:true,
+  popupHighlightSignatureHelp: 'Pmenu',
+  popupHighlight: 'Normal',
+  semanticHighlight: v:true,
   showDiagInBalloon: v:true,
   showDiagInPopup: v:true,
   showDiagOnStatusLine: v:true,
@@ -557,7 +557,7 @@ var LspOptions = {
   customCompletionKinds: v:false,
   completionKinds: {},
   filterCompletionDuplicates: v:false,
-	condensedCompletionMenu: v:false,
+  condensedCompletionMenu: v:false,
 }
 
 # LSP
@@ -794,7 +794,7 @@ var LspServers = [
 augroup Lsp
   au!
   autocmd User LspSetup call LspOptionsSet(LspOptions)
-  autocmd User LspSetup caLL LspAddServer(LspServers)
+  autocmd User LspSetup call LspAddServer(LspServers)
   autocmd User LspAttached {
     # setlocal signcolumn=yes
 

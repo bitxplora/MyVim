@@ -242,7 +242,7 @@ set spellfile=~/.vim/spell/en.utf-8.add
 # To auto enable spell on txt,markdown file
 augroup txtSpellCheck
   autocmd!
-  autocmd FileType txt,markdown setlocal spell
+  autocmd FileType txt,markdown,gitcommit setlocal spell
   autocmd BufRead,BufNewFile * if &filetype == '' | setlocal spell | endif
 augroup END
 

@@ -552,12 +552,17 @@ var lspOpts = {
 
 var lspServers = [
 
-  # langd language server
+  # C/C++ langd language server
   {
     name: 'clangd',
     filetype: ['c', 'cpp'],
     path: '/snap/bin/clangd',
-    args: ['--background-index']
+    args: [
+    '--background-index',       # Enable project index
+    '--clang-tidy',             # Linter integration
+    '--header-insertion=ivyu',  # Fix includes
+    '--all-scopes-completion'   # Complete private symbols
+    ]
   },
 
   # Go language server

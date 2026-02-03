@@ -503,8 +503,8 @@ g:user_emmet_settings = {
 #     resize: false,  # Disable resizing
 # })
 
-# LSP
-var lspOpts = {
+# LSP Options
+var LspOptions = {
   aleSupport: v:false,
   autoComplete: v:true,
   autoHighlight: v:false,
@@ -520,6 +520,8 @@ var lspOpts = {
   hideDisabledCodeActions: v:false,
   highlightDiagInline: v:true,
   hoverInPreview: v:false,
+	completionInPreview: v:false,
+	closePreviewOnComplete: v:true,
   ignoreMissingServer: v:false,
   keepFocusInDiags: v:true,
   keepFocusInReferences: v:true,
@@ -528,9 +530,16 @@ var lspOpts = {
   diagVirtualTextWrap: 'default',
   noNewlineInCompletion: v:true,
   omniComplete: v:true,
+	omniCompleteAllowBare: v:true,
   outlineOnRight: v:true,
   outlineWinSize: 40,
-  semanticHighlight: v:true,
+	popupBorder: v:true,
+	popupBorderHighlight: 'Title',
+	popupBorderHighlightPeek: 'Special',
+	popupBorderSignatureHelp: v:true,
+	popupHighlightSignatureHelp: 'Pmenu',
+	popupHighlight: 'Normal',
+	semanticHighlight: v:true,
   showDiagInBalloon: v:true,
   showDiagInPopup: v:true,
   showDiagOnStatusLine: v:true,
@@ -542,13 +551,61 @@ var lspOpts = {
   ultisnipsSupport: v:false,
   useBufferCompletion: v:true,
   usePopupInCodeAction: v:true,
-  useQuickfixForLocations: v:true,
+  useQuickfixForLocations: v:false,
   vsnipSupport: v:true,
   bufferCompletionTimeout: 100,
   customCompletionKinds: v:false,
   completionKinds: {},
   filterCompletionDuplicates: v:false,
+	condensedCompletionMenu: v:false,
 }
+
+# LSP
+# var lspOpts = {
+#   aleSupport: v:false,
+#   autoComplete: v:true,
+#   autoHighlight: v:false,
+#   autoHighlightDiags: v:true,
+#   autoPopulateDiags: v:false,
+#   completionMatcher: 'case',
+#   completionMatcherValue: 1,
+#   diagSignErrorText: 'E>',
+#   diagSignHintText: 'H>',
+#   diagSignInfoText: 'I>',
+#   diagSignWarningText: 'W>',
+#   echoSignature: v:false,
+#   hideDisabledCodeActions: v:false,
+#   highlightDiagInline: v:true,
+#   hoverInPreview: v:false,
+#   ignoreMissingServer: v:false,
+#   keepFocusInDiags: v:true,
+#   keepFocusInReferences: v:true,
+#   completionTextEdit: v:true,
+# diagVirtualTextAlign: 'after',
+# diagVirtualTextWrap: 'default',
+# noNewlineInCompletion: v:true,
+# omniComplete: v:true,
+# outlineOnRight: v:true,
+# outlineWinSize: 40,
+# semanticHighlight: v:true,
+# showDiagInBalloon: v:true,
+# showDiagInPopup: v:true,
+# showDiagOnStatusLine: v:true,
+# showDiagWithSign: v:true,
+# showDiagWithVirtualText: v:true,
+# showInlayHints: v:true,
+# showSignature: v:true,
+# snippetSupport: v:true,
+# ultisnipsSupport: v:false,
+# useBufferCompletion: v:true,
+# usePopupInCodeAction: v:true,
+# useQuickfixForLocations: v:true,
+# vsnipSupport: v:true,
+# bufferCompletionTimeout: 100,
+# customCompletionKinds: v:false,
+# completionKinds: {},
+# filterCompletionDuplicates: v:false,
+# }
 
 var lspServers = [
 
@@ -736,7 +793,7 @@ var lspServers = [
 #lsp#lsp#AddServer(lspServers)
 augroup Lsp
   au!
-  autocmd User LspSetup call LspOptionsSet(lspOpts)
+  autocmd User LspSetup call LspOptionsSet(LspOptions)
   autocmd User LspSetup call LspAddServer(lspServers)
   autocmd User LspAttached {
     # setlocal signcolumn=yes

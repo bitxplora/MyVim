@@ -157,7 +157,7 @@ set formatoptions=tcqnj
 
 # Omni completion provides smart autocompletion for prgramms.
 # To turn on omni completion
-set omnifunc=lsp#complete
+# set omnifunc=lsp#complete
 #
 # Menu option for enhanced mode of commands completion = wildmenu
 set wildmenu

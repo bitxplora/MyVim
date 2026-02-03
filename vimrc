@@ -801,13 +801,13 @@ augroup Lsp
     setlocal keywordprg=:LspHover
     setlocal tagfunc=lsp#lsp#TagFunc
     setlocal formatexpr=lsp#lsp#FormatExpr()
-    nnoremap <buffer> <LocalLeader>f <Cmd>LspFormat<CR>
+    nnoremap <buffer> <LocalLeader>fm <Cmd>LspFormat<CR>
     nnoremap <buffer> <LocalLeader>cl <Cmd>LspCodeLens<CR>
     nnoremap <buffer> <LocalLeader>gf <Cmd>LspGotoDefinition<CR>
     nnoremap <buffer> <LocalLeader>gd <Cmd>LspGotoDeclaration<CR>
     nnoremap <buffer> <LocalLeader>gi <Cmd>LspGotoImpl<CR>
-    nnoremap <buffer> <LocalLeader>a <Cmd>LspCodeAction<CR>
-    nnoremap <buffer> <LocalLeader>r <Cmd>LspRename<CR>
+    nnoremap <buffer> <LocalLeader>ca <Cmd>LspCodeAction<CR>
+    nnoremap <buffer> <LocalLeader>rn <Cmd>LspRename<CR>
     nnoremap <buffer> <LocalLeader>ds <Cmd>LspDiag show<CR>
     nnoremap <buffer> <LocalLeader>dc <Cmd>LspDiag current<CR>
     nnoremap <buffer> <LocalLeader>df <Cmd>LspDiag first<CR>
@@ -815,7 +815,7 @@ augroup Lsp
     nnoremap <buffer> <LocalLeader>dt <Cmd>LspDiag highlight toggle<CR>
     nnoremap <buffer> <LocalLeader>hl <Cmd>LspHighlight<CR>
     nnoremap <buffer> <LocalLeader>hc <Cmd>LspHighlightClear<CR>
-    nnoremap <buffer> <LocalLeader>h <Cmd>LspHover<CR>
+    nnoremap <buffer> <LocalLeader>hr <Cmd>LspHover<CR>
     nnoremap <buffer> [d <Cmd>LspDiag next<CR>
     nnoremap <buffer> ]d <Cmd>LspDiag prev<CR>
   }

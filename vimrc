@@ -735,13 +735,6 @@ var LspServers = [
     args: ['--stdio'],
   },
 
-  # Tailwindcss language server
-  # {
-  #   name: 'tailwindcssls',
-  #   filetype: ['tailwind', 'typescript.glimmer', 'javascript.glimmer', 'html', 'handlebars', 'typescriptreact', 'javascriptreact', 'svelte'],
-  #   path: '/home/olutayo/.nvm/versions/node/v22.12.0/bin/tailwindcss-language-server',
-  #   args: ['--stdio'],
-  # },
 ]
 
 #lsp#lsp#AddServer(lspServers)

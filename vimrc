@@ -743,7 +743,6 @@ augroup Lsp
   autocmd User LspSetup call LspOptionsSet(LspOptions)
   autocmd User LspSetup call LspAddServer(LspServers)
   autocmd User LspAttached {
-    # setlocal signcolumn=yes
 
     setlocal keywordprg=:LspHover
     setlocal tagfunc=lsp#lsp#TagFunc
